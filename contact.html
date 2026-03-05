@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact | Highlands Home Services Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Questions about applying, lead pricing, or Highlands County service coverage? Contact Highlands Home Services Network.">
+  <link rel="canonical" href="https://highlandshomeservicesnetwork.com/contact.html">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/main.js" defer></script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Highlands Home Services Network">
+  <meta property="og:description" content="Get in touch with Highlands Home Services Network about contractor applications, lead pricing, or coverage.">
+  <meta property="og:url" content="https://highlandshomeservicesnetwork.com/contact.html">
+  <meta property="og:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact | Highlands Home Services Network">
+  <meta name="twitter:description" content="We respond to all messages within 1 business day.">
+  <meta name="twitter:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network">
+      <img src="/images/logo-highlands-home-services.svg" alt="Highlands Home Services Network" class="site-logo" loading="lazy">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/how-it-works.html">How It Works</a></li>
+        <li><a href="/hvac.html">HVAC Leads</a></li>
+        <li><a href="/get-service.html">For Homeowners</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/apply.html" class="nav-cta">Apply to Join</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('/images/contact-hero.jpg');"></div>
+    <div class="page-hero-content">
+      <p class="section-label">Get in touch</p>
+      <h1>Questions about applying, lead pricing, or service coverage?</h1>
+      <p>
+        We’re here to help. We respond to all messages within 1 business day.
+      </p>
+    </div>
+  </section>
+
+  <section class="form-section section-pad">
+    <div class="container">
+      <div class="form-wrapper">
+        <h2>Send us a message.</h2>
+        <p>
+          Use this form for general questions. For homeowner service requests, please use the dedicated form on our For Homeowners page.
+        </p>
+
+        <div class="form-success" aria-live="polite">
+          Thank you — your message has been received. We’ll respond within 1 business day.
+        </div>
+
+        <form method="POST" action="[INSERT FORM ENDPOINT]" id="contact-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="contact-name">Your name</label>
+              <input type="text" id="contact-name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Phone (optional)</label>
+              <input type="tel" id="contact-phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="contact-topic">What is this about?</label>
+              <select id="contact-topic" name="topic" required>
+                <option value="">Select one</option>
+                <option value="contractor_application">Contractor application</option>
+                <option value="lead_pricing">Lead pricing</option>
+                <option value="coverage">Service coverage</option>
+                <option value="billing">Billing</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5"></textarea>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-note">
+              We use your information solely to respond to your inquiry. For details, see our Privacy Policy.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong style="font-family:var(--font-heading);">Highlands Home Services Network</strong>
+      <div class="footer-meta">
+        Obsidian Peak Holdings LLC &middot; Digital lead generation & referral service<br>
+        Highlands County, Florida &middot; Service area business — no public office
+      </div>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="/about.html">About</a>
+      <a href="/how-it-works.html">How It Works</a>
+      <a href="/hvac.html">HVAC Leads</a>
+      <a href="/get-service.html">For Homeowners</a>
+      <a href="/apply.html">Apply</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
