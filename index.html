@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Highlands Home Services Network connects licensed Highlands County contractors with exclusive, DBPR-verified homeowner leads. No shared leads, no contracts, Highlands County only.">
   <link rel="canonical" href="https://highlandshomeservicesnetwork.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" type="image/png" href="/images/logo-icon.png">
+  <link rel="apple-touch-icon" href="/images/logo-apple-touch.png">
   <script src="/js/main.js" defer></script>
 
   <!-- Open Graph -->
@@ -15,8 +20,9 @@
   <meta property="og:description" content="Exclusive, DBPR-verified homeowner leads for licensed contractors in Highlands County, Florida. No shared leads. No long-term contracts.">
   <meta property="og:url" content="https://highlandshomeservicesnetwork.com/">
   <meta property="og:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
+  <meta property="og:site_name" content="Highlands Home Services Network">
 
-  <!-- Twitter -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Highlands Home Services Network | Exclusive Highlands County Contractor Leads">
   <meta name="twitter:description" content="Connect with real Highlands County homeowners ready to hire. Exclusive pay-per-lead, DBPR-verified, Highlands-only.">
@@ -28,20 +34,30 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Highlands Home Services Network",
-    "image": "https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg",
     "@id": "https://highlandshomeservicesnetwork.com/#business",
     "url": "https://highlandshomeservicesnetwork.com/",
-    "description": "Hyperlocal, trade-neutral lead generation and referral service connecting Highlands County, Florida homeowners with DBPR-verified contractors.",
+    "image": "https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg",
+    "description": "Hyperlocal lead generation and referral service connecting licensed, DBPR-verified contractors with exclusive homeowner leads in Highlands County, Florida.",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Obsidian Peak Holdings LLC",
+      "sameAs": [
+        "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?inquirytype=EntityName&directionType=Initial&searchNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700&aggregateId=flal-l26000094970-e1abe3e8-814a-4352-9777-66d8f095e62f&searchTerm=Obsidian%20Peak%20Holdings%20LLC&listNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700"
+      ]
+    },
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Highlands County",
       "addressRegion": "FL",
       "addressCountry": "US"
     },
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "Highlands County, Florida"
-    },
+    "areaServed": [
+      {"@type": "City", "name": "Sebring"},
+      {"@type": "City", "name": "Avon Park"},
+      {"@type": "City", "name": "Lake Placid"},
+      {"@type": "City", "name": "Lorida"},
+      {"@type": "City", "name": "Venus"}
+    ],
     "serviceArea": {
       "@type": "GeoCircle",
       "geoMidpoint": {
@@ -51,11 +67,48 @@
       },
       "geoRadius": 45000
     },
-    "sameAs": [],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Contractor Lead Generation Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Exclusive HVAC Contractor Leads",
+            "areaServed": {"@type": "AdministrativeArea", "name": "Highlands County, Florida"}
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Plumbing Contractor Lead Waitlist",
+            "areaServed": {"@type": "AdministrativeArea", "name": "Highlands County, Florida"}
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Electrical Contractor Lead Waitlist",
+            "areaServed": {"@type": "AdministrativeArea", "name": "Highlands County, Florida"}
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Roofing Contractor Lead Waitlist",
+            "areaServed": {"@type": "AdministrativeArea", "name": "Highlands County, Florida"}
+          }
+        }
+      ]
+    },
     "knowsAbout": [
-      "HVAC lead generation",
+      "contractor lead generation",
       "home services marketing",
-      "contractor leads",
+      "HVAC lead generation",
       "Highlands County Florida",
       "Sebring FL",
       "Avon Park FL",
@@ -63,26 +116,26 @@
       "Lorida FL",
       "Venus FL"
     ],
-    "makesOffer": [
-      {
-        "@type": "Offer",
-        "name": "Exclusive HVAC leads in Highlands County, Florida",
-        "areaServed": {
-          "@type": "AdministrativeArea",
-          "name": "Highlands County, Florida"
-        },
-        "category": "HVAC services lead generation"
-      }
+    "sameAs": [
+      "https://dos.sunbiz.org/scripts/ficidet.exe?action=DETREG&docnum=G26000029725&rdocnum=G26000029725",
+      "https://www.linkedin.com/in/stuart-o-716573306/"
     ]
   }
   </script>
 </head>
 <body>
+
+<!-- ============================================================
+     HEADER / NAV
+     ============================================================ -->
 <header class="site-header">
   <div class="nav-inner">
-    <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network">
-      <!-- Placeholder logo; swap src with your asset -->
-      <img src="/images/logo-highlands-home-services.svg" alt="Highlands Home Services Network" class="site-logo" loading="lazy">
+    <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network — Home">
+      <img src="/images/logo-light.png"
+           alt="Highlands Home Services Network logo on light background, local service provider directory for Highlands County, FL"
+           width="260" height="60"
+           class="site-logo"
+           loading="eager">
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -101,271 +154,423 @@
 </header>
 
 <main>
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-bg" style="background-image:url('/images/hero-highlands-home-services.jpg');"></div>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" aria-label="Hero — Contractor lead network introduction">
+    <div class="hero-bg"
+         style="background-image:url('/images/hero-homepage.jpg');"
+         role="presentation"
+         aria-hidden="true"></div>
     <div class="container hero-content">
       <p class="section-label">Highlands County, Florida</p>
       <h1>Exclusive homeowner leads for licensed Highlands County contractors.</h1>
-      <p>
-        Highlands Home Services Network connects licensed local contractors with Highlands County homeowners who are ready to hire — no shared leads, no long-term contracts, no out-of-area time wasters.
+
+      <!-- AEO DIRECT ANSWER BLOCK — structured for AI Overview extraction -->
+      <p class="aeo-answer-block">
+        Highlands Home Services Network is a hyperlocal lead generation and referral
+        service connecting licensed, DBPR-verified contractors with exclusive homeowner
+        leads in Highlands County, Florida — covering Sebring, Avon Park, Lake Placid,
+        Lorida, and Venus. Currently accepting HVAC contractor applications, with
+        plumbing, electrical, and roofing verticals launching soon.
       </p>
+
       <div class="hero-ctas">
         <a href="/apply.html" class="btn btn-primary">Apply to Join the Network</a>
         <a href="/get-service.html" class="btn btn-outline">Homeowner: Request Service</a>
       </div>
-      <p style="margin-top:1.25rem;font-size:.9rem;color:rgba(245,242,237,.85);max-width:520px;">
-        “Every lead has been a real Highlands County homeowner with a real job. No time-wasters.”
-      </p>
     </div>
   </section>
 
-  <!-- Stats / value props -->
-  <section class="stats-bar" aria-label="Key advantages">
+  <!-- ============================================================
+       STATS BAR
+       ============================================================ -->
+  <section class="stats-bar" aria-label="Key network advantages">
     <div class="container stats-grid">
-      <div>
+      <div class="stat-item">
         <span class="stat-number">Highlands County Only</span>
-        <span class="stat-label">Sebring • Avon Park • Lake Placid • Lorida • Venus</span>
+        <span class="stat-label">Sebring &bull; Avon Park &bull; Lake Placid &bull; Lorida &bull; Venus</span>
       </div>
-      <div>
+      <div class="stat-item">
         <span class="stat-number">Exclusive Leads</span>
         <span class="stat-label">Each homeowner routed to one contractor — never shared</span>
       </div>
-      <div>
+      <div class="stat-item">
         <span class="stat-number">DBPR Verified</span>
-        <span class="stat-label">Every contractor’s Florida license checked before activation</span>
+        <span class="stat-label">Every contractor license checked before activation</span>
       </div>
-      <div>
+      <div class="stat-item">
         <span class="stat-number">Pay Per Lead</span>
         <span class="stat-label">No retainers, no ad spend, cancel anytime</span>
       </div>
     </div>
   </section>
 
-  <!-- How it works (short) -->
-  <section class="how-it-works section-pad">
-    <div class="how-it-works-bg" style="background-image:url('/images/how-it-works-bg.jpg');"></div>
+  <!-- ============================================================
+       HOW IT WORKS (SUMMARY)
+       ============================================================ -->
+  <section class="how-it-works section-pad" aria-label="How the contractor network works">
+    <div class="how-it-works-bg"
+         style="background-image:url('/images/bg-how-it-works.jpg');"
+         role="presentation"
+         aria-hidden="true"></div>
     <div class="container">
       <p class="section-label">Three-step onboarding</p>
       <h2>From application to your first Highlands County lead.</h2>
-      <div class="steps-grid" aria-label="How the contractor program works">
+      <div class="steps-grid">
         <article class="step-card">
-          <div class="step-number">1</div>
+          <div class="step-number" aria-hidden="true">1</div>
           <h3>Apply with your license</h3>
           <p>Submit your Florida trade license number and Highlands County service area. We verify every license against the DBPR database before activation.</p>
         </article>
         <article class="step-card">
-          <div class="step-number">2</div>
+          <div class="step-number" aria-hidden="true">2</div>
           <h3>Get screened local leads</h3>
           <p>We attract Highlands County homeowners who need home services now, review each request, and discard tire-kickers and out-of-area submissions.</p>
         </article>
         <article class="step-card">
-          <div class="step-number">3</div>
+          <div class="step-number" aria-hidden="true">3</div>
           <h3>Close the jobs you want</h3>
           <p>Qualified leads are routed exclusively to you with full contact info. You invoice the homeowner directly and only pay us for verified leads delivered.</p>
         </article>
       </div>
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="/how-it-works.html" class="btn btn-secondary">See the Full Process</a>
+      </div>
     </div>
   </section>
 
-  <!-- Verticals -->
-  <section class="section-pad">
+  <!-- ============================================================
+       TRADE VERTICALS
+       ============================================================ -->
+  <section class="verticals-section section-pad" aria-label="Available trade verticals">
     <div class="container">
       <p class="section-label">Trade-neutral, built to scale</p>
-      <h2>Building Highlands County’s most complete contractor network — one vertical at a time.</h2>
-      <p>
-        We started with HVAC, but the network is designed from day one to support multiple trades. Each vertical remains local, exclusive, and license-verified.
+      <h2>Building Highlands County's most complete contractor network — one vertical at a time.</h2>
+      <p class="section-intro">
+        We started with HVAC, but the network is designed from day one to support multiple trades.
+        Each vertical remains local, exclusive, and license-verified.
       </p>
+      <div class="verticals-grid">
 
-      <div class="verticals-grid" aria-label="Home service verticals">
-        <!-- HVAC active -->
-        <article class="vertical-card">
-          <div class="badge-active">Active</div>
-          <div class="vertical-icon" aria-hidden="true">❄️</div>
+        <!-- HVAC — Active -->
+        <article class="vertical-card vertical-card--active">
+          <div class="badge-active">Now Active</div>
+          <div class="vertical-icon" aria-hidden="true">&#10052;</div>
           <h3>HVAC Leads</h3>
           <p>Emergency repairs, tune-ups, and system replacements from Highlands County homeowners. All screened for location, intent, and valid contact info.</p>
           <a href="/hvac.html" class="btn btn-secondary" style="margin-top:1rem;">View HVAC Program</a>
         </article>
 
-        <!-- Plumbing waitlist -->
-        <article class="vertical-card">
-          <div class="badge-soon">Waitlist</div>
-          <div class="vertical-icon" aria-hidden="true">🚿</div>
+        <!-- Plumbing — Waitlist -->
+        <article class="vertical-card vertical-card--waitlist">
+          <div class="badge-soon">Waitlist Open</div>
+          <div class="vertical-icon" aria-hidden="true">&#128703;</div>
           <h3>Plumbing Leads</h3>
           <p>High-intent plumbing requests — from leaks to repipes — reserved for licensed Highlands County plumbers when this vertical opens.</p>
-          <form class="waitlist-form" aria-label="Join plumbing leads waitlist">
-            <input type="email" name="email" placeholder="Your email" aria-label="Email address">
+          <form class="waitlist-form" aria-label="Join the plumbing leads waitlist" novalidate>
+            <label for="plumbing-email" class="sr-only">Your email address</label>
+            <input type="email" id="plumbing-email" name="email" placeholder="Your email address" required>
             <button type="submit">Join Plumbing Waitlist</button>
           </form>
         </article>
 
-        <!-- Electrical waitlist -->
-        <article class="vertical-card">
-          <div class="badge-soon">Waitlist</div>
-          <div class="vertical-icon" aria-hidden="true">⚡</div>
+        <!-- Electrical — Waitlist -->
+        <article class="vertical-card vertical-card--waitlist">
+          <div class="badge-soon">Waitlist Open</div>
+          <div class="vertical-icon" aria-hidden="true">&#9889;</div>
           <h3>Electrical Leads</h3>
           <p>Panel upgrades, troubleshooting, and installs from Highlands County homeowners. Be first in when this vertical launches.</p>
-          <form class="waitlist-form" aria-label="Join electrical leads waitlist">
-            <input type="email" name="email" placeholder="Your email" aria-label="Email address">
+          <form class="waitlist-form" aria-label="Join the electrical leads waitlist" novalidate>
+            <label for="electrical-email" class="sr-only">Your email address</label>
+            <input type="email" id="electrical-email" name="email" placeholder="Your email address" required>
             <button type="submit">Join Electrical Waitlist</button>
           </form>
         </article>
 
-        <!-- Roofing waitlist -->
-        <article class="vertical-card">
-          <div class="badge-soon">Waitlist</div>
-          <div class="vertical-icon" aria-hidden="true">🏠</div>
+        <!-- Roofing — Waitlist -->
+        <article class="vertical-card vertical-card--waitlist">
+          <div class="badge-soon">Waitlist Open</div>
+          <div class="vertical-icon" aria-hidden="true">&#127968;</div>
           <h3>Roofing Leads</h3>
           <p>Storm damage, replacements, and inspections from Highlands County homeowners who want a licensed local roofer.</p>
-          <form class="waitlist-form" aria-label="Join roofing leads waitlist">
-            <input type="email" name="email" placeholder="Your email" aria-label="Email address">
+          <form class="waitlist-form" aria-label="Join the roofing leads waitlist" novalidate>
+            <label for="roofing-email" class="sr-only">Your email address</label>
+            <input type="email" id="roofing-email" name="email" placeholder="Your email address" required>
             <button type="submit">Join Roofing Waitlist</button>
           </form>
         </article>
+
       </div>
     </div>
   </section>
 
-  <!-- Why contractors choose HHSN -->
-  <section class="section-pad">
+  <!-- ============================================================
+       WHY CONTRACTORS CHOOSE HHSN
+       ============================================================ -->
+  <section class="why-section section-pad" aria-label="Why contractors choose Highlands Home Services Network">
     <div class="container">
       <p class="section-label">Built for Highlands County contractors</p>
       <h2>What makes this different from national lead platforms.</h2>
       <div class="why-list">
+
         <article class="why-item">
-          <div class="why-icon" aria-hidden="true">📍</div>
+          <div class="why-icon" aria-hidden="true">&#128205;</div>
           <div>
-            <h4>Hyperlocal focus</h4>
+            <h3>Hyperlocal focus</h3>
             <p>We serve Highlands County, Florida only — not the entire state. That means tighter service areas, less windshield time, and better job density.</p>
           </div>
         </article>
+
         <article class="why-item">
-          <div class="why-icon" aria-hidden="true">👤</div>
+          <div class="why-icon" aria-hidden="true">&#128100;</div>
           <div>
-            <h4>No shared leads</h4>
+            <h3>No shared leads</h3>
             <p>Each qualified homeowner is routed to a single contractor in the network. You are not competing against four other companies on the same lead.</p>
           </div>
         </article>
+
         <article class="why-item">
-          <div class="why-icon" aria-hidden="true">✔️</div>
+          <div class="why-icon" aria-hidden="true">&#10004;&#65039;</div>
           <div>
-            <h4>DBPR-verified licenses</h4>
-            <p>We verify every contractor’s Florida license against the DBPR database before activating their account. That protects homeowners and your reputation.</p>
+            <h3>DBPR-verified licenses</h3>
+            <p>We verify every contractor's Florida license against the DBPR database before activating their account. That protects homeowners and your reputation.</p>
           </div>
         </article>
+
         <article class="why-item">
-          <div class="why-icon" aria-hidden="true">📞</div>
+          <div class="why-icon" aria-hidden="true">&#128222;</div>
           <div>
-            <h4>Real jobs, not clicks</h4>
+            <h3>Real jobs, not clicks</h3>
             <p>You pay per verified lead delivered — not for ad impressions or generic clicks. Both urgent repair calls and scheduled appointments count.</p>
           </div>
         </article>
+
         <article class="why-item">
-          <div class="why-icon" aria-hidden="true">🤝</div>
+          <div class="why-icon" aria-hidden="true">&#129309;</div>
           <div>
-            <h4>No long-term contracts</h4>
+            <h3>No long-term contracts</h3>
             <p>Scale up or down as your schedule changes. Cancel anytime. We earn your business by delivering value, not locking you into a software contract.</p>
           </div>
         </article>
+
         <article class="why-item">
-          <div class="why-icon" aria-hidden="true">🌐</div>
+          <div class="why-icon" aria-hidden="true">&#127758;</div>
           <div>
-            <h4>Local ownership</h4>
-            <p>We’re not a national franchise or out-of-state software platform. Highlands Home Services Network is operated locally with a single-county focus.</p>
+            <h3>Local ownership</h3>
+            <p>We're not a national franchise or out-of-state software platform. Highlands Home Services Network is operated locally with a single-county focus.</p>
           </div>
         </article>
+
       </div>
     </div>
   </section>
 
-  <!-- Trust section -->
-  <section class="trust-section section-pad">
+  <!-- ============================================================
+       TRUST & CREDIBILITY — replaces fabricated testimonials
+       Option B (Founding Member hook) + Option C (verifiable trust signals)
+       ============================================================ -->
+  <section class="founding-section section-pad" aria-label="Founding member opportunity and business credibility">
+    <div class="founding-bg"
+         style="background-image:url('/images/bg-testimonials.jpg');"
+         role="presentation"
+         aria-hidden="true"></div>
+    <div class="container founding-content">
+
+      <!-- Option B: Founding Member Hook -->
+      <div class="founding-header">
+        <p class="section-label">Now accepting founding members</p>
+        <h2>Be one of the first licensed contractors in the Highlands County network.</h2>
+        <p class="founding-intro">
+          We are in active launch phase — which means the contractors who apply now
+          get something no one else will: first-mover position in their trade category
+          before competition fills those slots. Once a vertical reaches capacity,
+          it closes. There is no waitlist for a full network.
+        </p>
+        <a href="/apply.html" class="btn btn-primary">Apply for Founding Member Access</a>
+      </div>
+
+      <!-- Option C: Verifiable Trust Signals -->
+      <div class="trust-pillars" aria-label="Verifiable business credentials">
+        <p class="section-label" style="margin-top:3rem;">What you can verify right now</p>
+        <h3>This is a real, registered Florida business — not a lead mill.</h3>
+        <p class="trust-sub">
+          We understand skepticism. Every claim below is publicly verifiable.
+          We encourage you to check before you apply.
+        </p>
+
+        <div class="trust-pillars-grid">
+
+          <div class="trust-pillar">
+            <div class="trust-pillar-icon" aria-hidden="true">&#127981;</div>
+            <h4>Florida-Registered LLC</h4>
+            <p>Obsidian Peak Holdings LLC is an active Florida Limited Liability Company, registered with the Florida Division of Corporations.</p>
+            <a href="https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?inquirytype=EntityName&directionType=Initial&searchNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700&aggregateId=flal-l26000094970-e1abe3e8-814a-4352-9777-66d8f095e62f&searchTerm=Obsidian%20Peak%20Holdings%20LLC&listNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700"
+               class="trust-verify-link"
+               target="_blank"
+               rel="noopener noreferrer">
+              Verify on Sunbiz.org &#8599;
+            </a>
+          </div>
+
+          <div class="trust-pillar">
+            <div class="trust-pillar-icon" aria-hidden="true">&#128196;</div>
+            <h4>Registered DBA</h4>
+            <p>Highlands Home Services Network is a registered Fictitious Name (DBA) on file with the Florida Division of Corporations.</p>
+            <a href="https://dos.sunbiz.org/scripts/ficidet.exe?action=DETREG&docnum=G26000029725&rdocnum=G26000029725"
+               class="trust-verify-link"
+               target="_blank"
+               rel="noopener noreferrer">
+              Verify DBA Registration &#8599;
+            </a>
+          </div>
+
+          <div class="trust-pillar">
+            <div class="trust-pillar-icon" aria-hidden="true">&#128373;&#65039;</div>
+            <h4>DBPR License Verification</h4>
+            <p>Every contractor who joins the network has their Florida trade license verified against the DBPR database before their account is activated.</p>
+            <a href="https://www.myfloridalicense.com/wl11.asp"
+               class="trust-verify-link"
+               target="_blank"
+               rel="noopener noreferrer">
+              Check DBPR Database &#8599;
+            </a>
+          </div>
+
+          <div class="trust-pillar">
+            <div class="trust-pillar-icon" aria-hidden="true">&#128683;</div>
+            <h4>No Hidden Terms</h4>
+            <p>Pay per verified lead. No monthly retainer. No annual contract. No penalty for cancellation. The model only works if your leads are worth paying for.</p>
+            <a href="/how-it-works.html" class="trust-verify-link">
+              See how it works &#8594;
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TRUST BADGES
+       ============================================================ -->
+  <section class="trust-section section-pad" aria-label="Trust and compliance badges">
     <div class="container">
       <p class="section-label">Trust and compliance</p>
       <h2>Digital lead generation, not a contractor.</h2>
-      <p style="color:rgba(245,242,237,.85);max-width:640px;">
-        Highlands Home Services Network is a digital lead generation and referral service. We do not perform any trade work ourselves. Our role is to connect Highlands County homeowners with licensed contractors they can trust.
+      <p class="trust-intro">
+        Highlands Home Services Network is a digital lead generation and referral service.
+        We do not perform any trade work ourselves. Our role is to connect Highlands County
+        homeowners with licensed contractors they can trust.
       </p>
-      <div class="badges-grid" aria-label="Trust badges">
+      <div class="badges-grid">
+
         <div class="badge-item">
-          <img src="/images/icon-florida.svg" alt="Florida registered business" loading="lazy">
-          <p>Florida-registered business</p>
+          <img src="/images/badge-local.png"
+               alt="Highlands County Focused local search icon, connecting Florida residents with home service pros in their community"
+               width="200" height="200"
+               loading="lazy">
+          <p>Highlands County Focused</p>
         </div>
+
         <div class="badge-item">
-          <img src="/images/icon-dbpr.svg" alt="DBPR license verification" loading="lazy">
-          <p>DBPR license verification</p>
+          <img src="/images/badge-verified.png"
+               alt="Verified leads trust seal for Highlands County home services, guaranteeing quality customer connections for contractors"
+               width="200" height="200"
+               loading="lazy">
+          <p>DBPR License Verified</p>
         </div>
+
         <div class="badge-item">
-          <img src="/images/icon-exclusive.svg" alt="Exclusive lead delivery" loading="lazy">
-          <p>Exclusive lead delivery</p>
+          <img src="/images/badge-exclusive.png"
+               alt="Exclusive leads icon for Highlands County contractors, ensuring no shared customer inquiries in the local network"
+               width="200" height="200"
+               loading="lazy">
+          <p>Exclusive Lead Delivery</p>
         </div>
+
+        <div class="badge-item">
+          <img src="/images/badge-licensed.png"
+               alt="Highlands Home Services Network licensed contractors only badge, verifying local Florida trade professional credentials"
+               width="200" height="200"
+               loading="lazy">
+          <p>Licensed Contractors Only</p>
+        </div>
+
       </div>
+
+      <!-- Site-wide legal disclaimer — required on every page -->
+      <p class="legal-disclaimer">
+        Highlands Home Services Network is a referral and lead generation service.
+        We do not perform trade services.
+      </p>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section class="testimonials section-pad">
-    <div class="testimonials-bg" style="background-image:url('/images/testimonials-bg.jpg');"></div>
-    <div class="container testimonials-content">
-      <p class="section-label">Contractors in their own words</p>
-      <h2>“Every lead has been a real Highlands County homeowner with a real job.”</h2>
-      <div class="testimonials-grid" aria-label="Contractor testimonials">
-        <article class="testimonial-card">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <blockquote>
-            “Every lead has been a real Highlands County homeowner with a real job. No time-wasters.”
-          </blockquote>
-          <p class="testimonial-author">HVAC Contractor <span>Highlands County</span></p>
-        </article>
-        <article class="testimonial-card">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <blockquote>
-            “The exclusive lead model is what sold me. When the lead comes in, it’s mine to close.”
-          </blockquote>
-          <p class="testimonial-author">Licensed Contractor <span>Central Florida</span></p>
-        </article>
-        <article class="testimonial-card">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <blockquote>
-            “No contract, no nonsense. I got my first lead within the first week.”
-          </blockquote>
-          <p class="testimonial-author">Service Business Owner <span>Highlands County</span></p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA banner -->
-  <section class="cta-banner">
+  <!-- ============================================================
+       CTA BANNER
+       ============================================================ -->
+  <section class="cta-banner" aria-label="Call to action — apply to join the network">
     <div class="container">
       <h2>Ready to start receiving exclusive Highlands County leads?</h2>
       <p>Apply to join the network in a few minutes. We review every application and follow up within 1 business day.</p>
-      <a href="/apply.html" class="btn btn-secondary">Apply to Join the Network</a>
+      <a href="/apply.html" class="btn btn-primary">Apply to Join the Network</a>
     </div>
   </section>
+
 </main>
 
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
 <footer class="site-footer">
   <div class="footer-inner">
-    <div>
-      <strong style="font-family:var(--font-heading);">Highlands Home Services Network</strong>
+
+    <div class="footer-brand">
+      <img src="/images/logo-dark.png"
+           alt="Highlands Home Services Network logo on dark blue, connecting local Florida trades for Highlands County homeowners"
+           width="260" height="60"
+           class="site-logo-footer"
+           loading="lazy">
       <div class="footer-meta">
-        Obsidian Peak Holdings LLC &middot; Digital lead generation & referral service<br>
-        Highlands County, Florida &middot; Service area business — no public office
+        <strong>Highlands Home Services Network</strong><br>
+        A DBA of Obsidian Peak Holdings LLC &middot; Digital lead generation &amp; referral service<br>
+        Service Area: Highlands County, Florida<br>
+        Sebring &bull; Avon Park &bull; Lake Placid &bull; Lorida &bull; Venus<br>
+        <span class="footer-note">Service area business — no public walk-in office</span>
       </div>
     </div>
+
     <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="/">Home</a>
       <a href="/about.html">About</a>
       <a href="/how-it-works.html">How It Works</a>
       <a href="/hvac.html">HVAC Leads</a>
       <a href="/get-service.html">For Homeowners</a>
-      <a href="/apply.html">Apply</a>
+      <a href="/apply.html">Apply Now</a>
       <a href="/contact.html">Contact</a>
       <a href="/privacy.html">Privacy Policy</a>
-      <a href="/terms.html">Terms</a>
+      <a href="/terms.html">Terms of Service</a>
     </nav>
+
+    <div class="footer-legal">
+      <p class="legal-disclaimer">
+        Highlands Home Services Network is a referral and lead generation service.
+        We do not perform trade services.
+      </p>
+      <p class="footer-copyright">
+        &copy; <span id="footer-year"></span> Obsidian Peak Holdings LLC. All rights reserved.
+      </p>
+    </div>
+
   </div>
 </footer>
+
+<script>
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
-
