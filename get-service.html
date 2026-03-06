@@ -13,22 +13,16 @@
   <link rel="icon" type="image/png" href="/images/logo-icon.png">
   <link rel="apple-touch-icon" href="/images/logo-apple-touch.png">
   <script src="/js/main.js" defer></script>
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Request Home Service in Highlands County, FL | HHSN">
   <meta property="og:description" content="Free referral to a licensed Highlands County contractor. No obligation to hire.">
   <meta property="og:url" content="https://highlandshomeservicesnetwork.com/get-service.html">
   <meta property="og:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
   <meta property="og:site_name" content="Highlands Home Services Network">
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Request Home Service in Highlands County, FL | HHSN">
   <meta name="twitter:description" content="Submit your home service request and get connected to a DBPR-verified contractor in Highlands County.">
   <meta name="twitter:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
-
-  <!-- JSON-LD: Homeowner-facing referral Service -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -55,10 +49,7 @@
         "email": "hello@highlandshomeservicesnetwork.com"
       }
     },
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "Highlands County, Florida"
-    },
+    "areaServed": {"@type": "AdministrativeArea", "name": "Highlands County, Florida"},
     "description": "Free homeowner referral service that connects Highlands County residents with DBPR-verified local contractors for HVAC and other home services.",
     "isAccessibleForFree": true,
     "offers": {
@@ -75,7 +66,7 @@
   <div class="nav-inner">
     <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network — Home">
       <img src="/images/logo-light.png"
-           alt="Highlands Home Services Network - Homeowner service request"
+           alt=" Highlands Home Services Network logo on light background, local service provider directory for Highlands County, FL"
            class="site-logo"
            width="260" height="60"
            loading="eager">
@@ -88,33 +79,23 @@
         <li><a href="/about.html">About</a></li>
         <li><a href="/how-it-works.html">How It Works</a></li>
         <li><a href="/hvac.html">HVAC Leads</a></li>
-        <li><a href="/get-service.html" aria-current="page">For Homeowners</a></li>
         <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/get-service.html" aria-current="page" style="color:var(--color-accent);font-weight:700;">Get Service</a></li>
         <li><a href="/apply.html" class="nav-cta">Apply to Join</a></li>
       </ul>
     </nav>
   </div>
 </header>
-
 <main>
   <section class="page-hero" aria-label="Homeowner service request">
-    <div class="page-hero-bg"
-         style="background-image:url('/images/contact-header.jpg');"
-         role="presentation"
-         aria-hidden="true"></div>
+    <div class="page-hero-bg" style="background-image:url('/images/contact-header.jpg');" role="presentation" aria-hidden="true"></div>
     <div class="container page-hero-content">
       <p class="section-label">For Highlands County homeowners</p>
       <h1>Request service from a licensed Highlands County contractor.</h1>
-      <p>
-        Submit a free home service request below. A licensed local contractor will contact you directly —
-        usually within the hour for urgent issues.
-      </p>
-      <p class="hero-note">
-        Right now we primarily route HVAC requests, with additional home service trades being added over time.
-      </p>
+      <p>Submit a free home service request below. A licensed local contractor will contact you directly — usually within the hour for urgent issues.</p>
+      <p class="hero-note">Right now we primarily route HVAC requests, with additional home service trades being added over time.</p>
     </div>
   </section>
-
   <section class="section-pad" aria-label="How the homeowner referral works">
     <div class="container two-col">
       <div>
@@ -127,33 +108,18 @@
         </ol>
       </div>
       <div>
-        <h2>What we are (and aren’t).</h2>
-        <p>
-          <strong>Highlands Home Services Network is a free digital referral service, not a home services company.</strong>
-          We do not perform trade work, dispatch trucks, or charge homeowners. Our sole purpose is to connect you with an
-          independent, DBPR-licensed contractor who can help with your project. You always have the final say on whether to
-          hire them after receiving their pricing.
-        </p>
-        <p class="legal-disclaimer">
-          Highlands Home Services Network is a referral and lead generation service. We do not perform HVAC or any other
-          trade services.
-        </p>
+        <h2>What we are (and aren't).</h2>
+        <p><strong>Highlands Home Services Network is a free digital referral service, not a home services company.</strong> We do not perform trade work, dispatch trucks, or charge homeowners. Our sole purpose is to connect you with an independent, DBPR-licensed contractor who can help with your project. You always have the final say on whether to hire them after receiving their pricing.</p>
+        <p class="legal-disclaimer">Highlands Home Services Network is a referral and lead generation service. We do not perform HVAC or any other trade services.</p>
       </div>
     </div>
   </section>
-
   <section class="form-section section-pad" aria-label="Homeowner service request form">
     <div class="container">
       <div class="form-wrapper">
         <h2>Tell us about your issue.</h2>
-        <p>
-          The more details you share, the faster the contractor can understand what you need and how urgent it is.
-        </p>
-
-        <div class="form-success" aria-live="polite">
-          Thank you — your request has been received. A licensed Highlands County contractor will contact you shortly.
-        </div>
-
+        <p>The more details you share, the faster the contractor can understand what you need and how urgent it is.</p>
+        <div class="form-success" aria-live="polite">Thank you — your request has been received. A licensed Highlands County contractor will contact you shortly.</div>
         <form method="POST" action="[INSERT FORM ENDPOINT]" id="homeowner-form" enctype="multipart/form-data" novalidate>
           <div class="form-grid">
             <div class="form-group">
@@ -164,7 +130,6 @@
               <label for="homeowner-phone">Phone number</label>
               <input type="tel" id="homeowner-phone" name="phone" autocomplete="tel" required>
             </div>
-
             <div class="form-group">
               <label for="homeowner-email">Email</label>
               <input type="email" id="homeowner-email" name="email" autocomplete="email">
@@ -173,12 +138,10 @@
               <label for="homeowner-city">City in Highlands County</label>
               <input type="text" id="homeowner-city" name="city" placeholder="Example: Sebring, Avon Park, Lake Placid, Lorida, Venus" required>
             </div>
-
             <div class="form-group full-width">
               <label for="homeowner-address">Street address</label>
               <input type="text" id="homeowner-address" name="address" autocomplete="street-address" required>
             </div>
-
             <div class="form-group">
               <label for="service-type">What do you need help with?</label>
               <select id="service-type" name="service_type" required>
@@ -191,7 +154,6 @@
                 <option value="other">Something else (describe below)</option>
               </select>
             </div>
-
             <div class="form-group">
               <label for="urgency">How urgent is this?</label>
               <select id="urgency" name="urgency" required>
@@ -201,12 +163,10 @@
                 <option value="planning">Planning ahead / flexible timing</option>
               </select>
             </div>
-
             <div class="form-group full-width">
               <label for="details">Describe the issue</label>
               <textarea id="details" name="details" rows="4" placeholder="Example: AC not cooling, system making loud noise or smells, how long this has been happening, any recent work done."></textarea>
             </div>
-
             <div class="form-group full-width">
               <label for="preferred-contact">How should the contractor contact you?</label>
               <select id="preferred-contact" name="preferred_contact" required>
@@ -217,25 +177,20 @@
               </select>
             </div>
           </div>
-
           <div class="form-submit">
             <button type="submit" class="btn btn-primary">Submit Request</button>
-            <p class="form-note">
-              By submitting this form, you agree to be contacted by a licensed Highlands County contractor about your
-              request. There is no obligation to hire.
-            </p>
+            <p class="form-note">By submitting this form, you agree to be contacted by a licensed Highlands County contractor about your request. There is no obligation to hire.</p>
           </div>
         </form>
       </div>
     </div>
   </section>
 </main>
-
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
       <img src="/images/logo-dark.png"
-           alt="Highlands Home Services Network logo"
+           alt="Highlands Home Services Network logo on dark blue, connecting local Florida trades for Highlands County homeowners"
            class="site-logo-footer"
            width="260" height="60"
            loading="lazy">
@@ -253,7 +208,7 @@
       <a href="/about.html">About</a>
       <a href="/how-it-works.html">How It Works</a>
       <a href="/hvac.html">HVAC Leads</a>
-      <a href="/get-service.html" aria-current="page">For Homeowners</a>
+      <a href="/get-service.html">Get Service</a>
       <a href="/apply.html">Apply</a>
       <a href="/contact.html">Contact</a>
       <a href="/privacy.html">Privacy Policy</a>
@@ -269,12 +224,8 @@
     </div>
   </div>
 </footer>
-
 <script>
   document.getElementById('footer-year').textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>
-
-
