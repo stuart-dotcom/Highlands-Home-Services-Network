@@ -1,37 +1,37 @@
 # Highlands Home Services Network - robots.txt
 
-# General crawl policy — all bots welcome
+# PRE-LAUNCH: All crawlers blocked until site goes live
 User-agent: *
-Allow: /
+Disallow: /
 
-# Block backend and utility paths
+# Block backend and utility paths (remains after launch)
 Disallow: /cgi-bin/
 Disallow: /api/
 # Disallow: /thank-you.html (uncomment if you add a post-submission thank-you page)
 
 # ---------------------------------------------------------------
 # AEO — Explicit AI crawler directives
-# We actively welcome AI answer engines to index and cite this site.
+# PRE-LAUNCH: Blocked. Flip to Allow: / when going live.
 # Entity definitions, business scope, and AI guidelines are at:
 # https://highlandshomeservicesnetwork.com/llms.txt
 # ---------------------------------------------------------------
 
 User-agent: GPTBot
-Allow: /
+Disallow: /
 
 User-agent: Google-Extended
-Allow: /
+Disallow: /
 
 User-agent: PerplexityBot
-Allow: /
+Disallow: /
 
 User-agent: ClaudeBot
-Allow: /
+Disallow: /
 
 User-agent: anthropic-ai
-Allow: /
+Disallow: /
 
 User-agent: Applebot-Extended
-Allow: /
+Disallow: /
 
 Sitemap: https://highlandshomeservicesnetwork.com/sitemap.xml
