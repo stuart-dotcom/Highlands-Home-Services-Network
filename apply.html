@@ -1,6 +1,3 @@
-Here is the updated `apply.html` with your email added into schema and footer; everything else is unchanged:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,20 +13,16 @@ Here is the updated `apply.html` with your email added into schema and footer; e
   <link rel="icon" type="image/png" href="/images/logo-icon.png">
   <link rel="apple-touch-icon" href="/images/logo-apple-touch.png">
   <script src="/js/main.js" defer></script>
-
   <meta property="og:type" content="website">
   <meta property="og:title" content="Apply to Join | Highlands County Contractor Lead Network">
   <meta property="og:description" content="Licensed contractor in Highlands County? Apply to join our exclusive, pay-per-lead network.">
   <meta property="og:url" content="https://highlandshomeservicesnetwork.com/apply.html">
   <meta property="og:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
   <meta property="og:site_name" content="Highlands Home Services Network">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Apply to Join | Highlands County Contractor Lead Network">
   <meta name="twitter:description" content="Submit your license details to be considered for the Highlands Home Services Network.">
   <meta name="twitter:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
-
-  <!-- JSON-LD: ContactPage + Organization for contractor onboarding -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,9 +33,7 @@ Here is the updated `apply.html` with your email added into schema and footer; e
         "url": "https://highlandshomeservicesnetwork.com/apply.html",
         "name": "Apply to Join Highlands Home Services Network",
         "description": "Submit your Florida contractor license details to join the exclusive Highlands County lead network.",
-        "isPartOf": {
-          "@id": "https://highlandshomeservicesnetwork.com/#business"
-        }
+        "isPartOf": {"@id": "https://highlandshomeservicesnetwork.com/#business"}
       },
       {
         "@type": "Organization",
@@ -94,27 +85,20 @@ Here is the updated `apply.html` with your email added into schema and footer; e
         <li><a href="/about.html">About</a></li>
         <li><a href="/how-it-works.html">How It Works</a></li>
         <li><a href="/hvac.html">HVAC Leads</a></li>
-        <li><a href="/get-service.html">For Homeowners</a></li>
         <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/get-service.html" style="color:var(--color-accent);font-weight:700;">Get Service</a></li>
         <li><a href="/apply.html" class="nav-cta" aria-current="page">Apply to Join</a></li>
       </ul>
     </nav>
   </div>
 </header>
-
 <main>
   <section class="page-hero" aria-label="Contractor application hero">
-    <div class="page-hero-bg"
-         style="background-image:url('/images/sebring-aerial.jpg');"
-         role="presentation"
-         aria-hidden="true"></div>
+    <div class="page-hero-bg" style="background-image:url('/images/sebring-aerial.jpg');" role="presentation" aria-hidden="true"></div>
     <div class="container page-hero-content">
       <p class="section-label">Contractor application</p>
       <h1>Apply to join the Highlands Home Services Network.</h1>
-      <p>
-        We are building a tightly vetted network of local professionals in Highlands County.
-        To join Highlands Home Services Network, you must meet three strict requirements:
-      </p>
+      <p>We are building a tightly vetted network of local professionals in Highlands County. To join Highlands Home Services Network, you must meet three strict requirements:</p>
       <ul class="requirements-list">
         <li><strong>Active Florida license:</strong> You must hold a valid trade license verifiable via the Florida DBPR.</li>
         <li><strong>Local service area:</strong> You must physically serve homeowners in Highlands County (Sebring, Avon Park, Lake Placid, Lorida, Venus).</li>
@@ -123,20 +107,12 @@ Here is the updated `apply.html` with your email added into schema and footer; e
       <p>Fill out the application below. We review all submissions and follow up within 1 business day.</p>
     </div>
   </section>
-
   <section class="form-section section-pad" aria-label="Contractor application form">
     <div class="container">
       <div class="form-wrapper">
         <h2>Tell us about your business.</h2>
-        <p>
-          We use this information to verify your Florida license, confirm Highlands County coverage,
-          and determine fit for the network.
-        </p>
-
-        <div class="form-success" aria-live="polite">
-          Thank you — your application has been received. We will follow up within 1 business day.
-        </div>
-
+        <p>We use this information to verify your Florida license, confirm Highlands County coverage, and determine fit for the network.</p>
+        <div class="form-success" aria-live="polite">Thank you — your application has been received. We will follow up within 1 business day.</div>
         <form method="POST" action="[INSERT FORM ENDPOINT]" id="contractor-apply-form" novalidate>
           <div class="form-grid">
             <div class="form-group">
@@ -147,7 +123,6 @@ Here is the updated `apply.html` with your email added into schema and footer; e
               <label for="last-name">Last name</label>
               <input type="text" id="last-name" name="last_name" autocomplete="family-name" required>
             </div>
-
             <div class="form-group">
               <label for="business-name">Business name</label>
               <input type="text" id="business-name" name="business_name" autocomplete="organization" required>
@@ -156,7 +131,6 @@ Here is the updated `apply.html` with your email added into schema and footer; e
               <label for="phone">Mobile phone</label>
               <input type="tel" id="phone" name="phone" autocomplete="tel" required>
             </div>
-
             <div class="form-group">
               <label for="email">Work email</label>
               <input type="email" id="email" name="email" autocomplete="email" required>
@@ -166,7 +140,6 @@ Here is the updated `apply.html` with your email added into schema and footer; e
               <input type="text" id="license-number" name="license_number" required>
               <span class="field-hint">We will verify this against the Florida DBPR license database.</span>
             </div>
-
             <div class="form-group full-width">
               <label for="trade-verticals">Trade(s)</label>
               <div class="checkbox-group" id="trade-verticals">
@@ -177,35 +150,25 @@ Here is the updated `apply.html` with your email added into schema and footer; e
                 <label><input type="checkbox" name="trade[]" value="other"> Other home services</label>
               </div>
             </div>
-
             <div class="form-group full-width">
               <label for="cities">Highlands County cities you cover</label>
               <textarea id="cities" name="cities" rows="3" placeholder="Example: Sebring, Avon Park, Lake Placid, Lorida, Venus"></textarea>
             </div>
-
             <div class="form-group full-width">
               <label for="message">Anything else we should know?</label>
               <textarea id="message" name="message" rows="4" placeholder="Share details about your team size, service hours, and ideal job types."></textarea>
             </div>
           </div>
-
           <div class="form-submit">
             <button type="submit" class="btn btn-primary">Submit Application</button>
-            <p class="form-note">
-              We review every application and follow up within 1 business day. Your information is used solely to
-              evaluate your fit for the network.
-            </p>
+            <p class="form-note">We review every application and follow up within 1 business day. Your information is used solely to evaluate your fit for the network.</p>
           </div>
         </form>
-
-        <p class="legal-disclaimer">
-          Highlands Home Services Network is a referral and lead generation service. We do not perform trade services.
-        </p>
+        <p class="legal-disclaimer">Highlands Home Services Network is a referral and lead generation service. We do not perform trade services.</p>
       </div>
     </div>
   </section>
 </main>
-
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
@@ -228,8 +191,8 @@ Here is the updated `apply.html` with your email added into schema and footer; e
       <a href="/about.html">About</a>
       <a href="/how-it-works.html">How It Works</a>
       <a href="/hvac.html">HVAC Leads</a>
-      <a href="/get-service.html">For Homeowners</a>
-      <a href="/apply.html" aria-current="page">Apply</a>
+      <a href="/get-service.html">Get Service</a>
+      <a href="/apply.html">Apply</a>
       <a href="/contact.html">Contact</a>
       <a href="/privacy.html">Privacy Policy</a>
       <a href="/terms.html">Terms</a>
@@ -244,11 +207,8 @@ Here is the updated `apply.html` with your email added into schema and footer; e
     </div>
   </div>
 </footer>
-
 <script>
   document.getElementById('footer-year').textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>
-```
