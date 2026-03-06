@@ -1,0 +1,37 @@
+# Highlands Home Services Network - robots.txt
+
+# General crawl policy — all bots welcome
+User-agent: *
+Allow: /
+
+# Block backend and utility paths
+Disallow: /cgi-bin/
+Disallow: /api/
+# Disallow: /thank-you.html (uncomment if you add a post-submission thank-you page)
+
+# ---------------------------------------------------------------
+# AEO — Explicit AI crawler directives
+# We actively welcome AI answer engines to index and cite this site.
+# Entity definitions, business scope, and AI guidelines are at:
+# https://highlandshomeservicesnetwork.com/llms.txt
+# ---------------------------------------------------------------
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://highlandshomeservicesnetwork.com/sitemap.xml
