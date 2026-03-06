@@ -2,36 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>About | Highlands Home Services Network</title>
+  <title>About Us | Highlands Home Services Network — Sebring, FL</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Learn why Highlands Home Services Network focuses exclusively on Highlands County, Florida, with DBPR-verified contractors and a hyperlocal, exclusive lead model.">
   <link rel="canonical" href="https://highlandshomeservicesnetwork.com/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" type="image/png" href="/images/logo-icon.png">
+  <link rel="apple-touch-icon" href="/images/logo-apple-touch.png">
   <script src="/js/main.js" defer></script>
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="About | Highlands Home Services Network">
-  <meta property="og:description" content="Local, Highlands County–only contractor lead generation. Not a national franchise. Not a software platform from out of state.">
+  <meta property="og:title" content="About Us | Highlands Home Services Network — Sebring, FL">
+  <meta property="og:description" content="Local, Highlands County-only contractor lead generation. Not a national franchise. Not a software platform from out of state.">
   <meta property="og:url" content="https://highlandshomeservicesnetwork.com/about.html">
   <meta property="og:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
+  <meta property="og:site_name" content="Highlands Home Services Network">
 
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About | Highlands Home Services Network">
-  <meta name="twitter:description" content="A Highlands County–only, DBPR-verified contractor network with exclusive pay-per-lead delivery.">
+  <meta name="twitter:title" content="About Us | Highlands Home Services Network — Sebring, FL">
+  <meta name="twitter:description" content="A Highlands County-only, DBPR-verified contractor network with exclusive pay-per-lead delivery.">
   <meta name="twitter:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
+
+  <!-- JSON-LD: AboutPage + Organization — full entity chain with all sameAs references -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": "https://highlandshomeservicesnetwork.com/about.html",
+        "url": "https://highlandshomeservicesnetwork.com/about.html",
+        "name": "About Highlands Home Services Network",
+        "description": "Learn why Highlands Home Services Network focuses exclusively on Highlands County, Florida, with DBPR-verified contractors and a hyperlocal, exclusive lead model.",
+        "isPartOf": {
+          "@id": "https://highlandshomeservicesnetwork.com/#business"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://highlandshomeservicesnetwork.com/#organization",
+        "name": "Highlands Home Services Network",
+        "legalName": "Obsidian Peak Holdings LLC",
+        "url": "https://highlandshomeservicesnetwork.com/",
+        "logo": "https://highlandshomeservicesnetwork.com/images/logo-light.png",
+        "description": "A digital lead generation and referral service connecting licensed, DBPR-verified contractors with exclusive homeowner leads in Highlands County, Florida.",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Obsidian Peak Holdings LLC",
+          "sameAs": [
+            "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?inquirytype=EntityName&directionType=Initial&searchNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700&aggregateId=flal-l26000094970-e1abe3e8-814a-4352-9777-66d8f095e62f&searchTerm=Obsidian%20Peak%20Holdings%20LLC&listNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700"
+          ]
+        },
+        "areaServed": [
+          {"@type": "City", "name": "Sebring"},
+          {"@type": "City", "name": "Avon Park"},
+          {"@type": "City", "name": "Lake Placid"},
+          {"@type": "City", "name": "Lorida"},
+          {"@type": "City", "name": "Venus"}
+        ],
+        "sameAs": [
+          "https://dos.sunbiz.org/scripts/ficidet.exe?action=DETREG&docnum=G26000029725&rdocnum=G26000029725",
+          "https://www.linkedin.com/in/stuart-o-716573306/"
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+
+<!-- ============================================================
+     HEADER / NAV
+     ============================================================ -->
 <header class="site-header">
   <div class="nav-inner">
-    <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network">
-      <img src="/images/logo-highlands-home-services.svg" alt="Highlands Home Services Network" class="site-logo" loading="lazy">
+    <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network — Home">
+      <img src="/images/logo-light.png"
+           alt="Highlands Home Services Network — Highlands County contractor lead generation"
+           width="260" height="60"
+           class="site-logo"
+           loading="eager">
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <nav aria-label="Main navigation">
       <ul class="nav-list">
-        <li><a href="/about.html">About</a></li>
+        <li><a href="/about.html" aria-current="page">About</a></li>
         <li><a href="/how-it-works.html">How It Works</a></li>
         <li><a href="/hvac.html">HVAC Leads</a></li>
         <li><a href="/get-service.html">For Homeowners</a></li>
@@ -43,104 +105,212 @@
 </header>
 
 <main>
-  <section class="page-hero">
-    <div class="page-hero-bg" style="background-image:url('/images/about-hero.jpg');"></div>
-    <div class="page-hero-content">
+
+  <!-- ============================================================
+       PAGE HERO
+       ============================================================ -->
+  <section class="page-hero" aria-label="About page hero">
+    <div class="page-hero-bg"
+         style="background-image:url('/images/about-hero.jpg');"
+         role="presentation"
+         aria-hidden="true"></div>
+    <div class="container page-hero-content">
       <p class="section-label">About Highlands Home Services Network</p>
-      <h1>Local, Highlands County–only contractor lead generation.</h1>
+      <h1>Local, Highlands County&#8209;only contractor lead generation.</h1>
       <p>
-        We’re not a national franchise. We’re not a software platform from out of state. We’re a local operation focused on one county, built for licensed contractors who call Highlands County home.
+        We are not a national franchise. We are not a software platform from out of state.
+        We are a local operation focused on one county, built for licensed contractors
+        who call Highlands County home.
       </p>
     </div>
   </section>
 
-  <section class="section-pad">
+  <!-- ============================================================
+       WHO WE ARE + WHY WE BUILT THIS
+       ============================================================ -->
+  <section class="section-pad" aria-label="About the business">
     <div class="container two-col">
+
       <div>
         <h2>Why we built Highlands Home Services Network.</h2>
         <p>
-          Highlands County contractors are underserved by the big lead generation platforms. Services like HomeAdvisor and Angi share the same lead with multiple contractors, charge for leads regardless of outcome, and have no local accountability.
+          Highlands County contractors are underserved by the big lead generation platforms.
+          Services like HomeAdvisor and Angi share the same lead with multiple contractors,
+          charge for leads regardless of outcome, and have no local accountability.
         </p>
         <p>
-          We built Highlands Home Services Network to fix that — one county, one trade vertical at a time, with exclusive delivery and a straightforward pay-per-lead model.
+          We built Highlands Home Services Network to fix that — one county, one trade
+          vertical at a time, with exclusive delivery and a straightforward pay-per-lead model.
         </p>
         <p>
-          We operate homeowner-facing digital properties targeting Highlands County residents searching for local home service contractors. Every lead that enters our system is reviewed before it’s delivered to a contractor.
+          We operate homeowner-facing digital properties targeting Highlands County residents
+          searching for local home service contractors. Every lead that enters our system is
+          reviewed before it is delivered to a contractor.
         </p>
       </div>
+
       <div>
-        <h2>Who we are (and what we are not).</h2>
-        <p>
-          Highlands Home Services Network is a DBA of Obsidian Peak Holdings LLC, a Florida-registered company. We are a digital lead generation and referral service — not a licensed contractor and not a marketplace that sells the same lead five times.
+        <h2>Who we are — and what we are not.</h2>
+
+        <!-- AEO EXTRACTABLE SUMMARY — optimized for AI Overview citation -->
+        <p class="aeo-answer-block">
+          Highlands Home Services Network is a DBA of Obsidian Peak Holdings LLC, a
+          registered Florida company. We operate strictly as a digital lead generation
+          and referral service connecting Highlands County homeowners with DBPR-verified
+          contractors. We are not licensed contractors, we do not perform trade services,
+          and we never share or resell the same lead to multiple businesses.
         </p>
+
         <p>
-          We verify every contractor’s Florida license against the DBPR database before activating their account. We do not activate unlicensed applicants. We do not share leads. We do not perform any trade services ourselves.
+          We verify every contractor's Florida license against the DBPR database before
+          activating their account. We do not activate unlicensed applicants. Our role is
+          simple: find Highlands County homeowners who need a licensed tradesperson, screen
+          their requests, and connect them with one contractor in our network who is
+          equipped to do the work.
         </p>
-        <p>
-          Our role is simple: find Highlands County homeowners who need a licensed tradesperson, screen their requests, and connect them with one contractor in our network who is equipped to do the work.
+
+        <!-- Required site-wide legal disclaimer -->
+        <p class="legal-disclaimer">
+          Highlands Home Services Network is a referral and lead generation service.
+          We do not perform trade services.
         </p>
       </div>
+
     </div>
   </section>
 
-  <section class="section-pad">
+  <!-- ============================================================
+       HIGHLANDS COUNTY FOCUS + BUSINESS DETAILS
+       ============================================================ -->
+  <section class="section-pad" aria-label="Service area and business registration details">
     <div class="container two-col">
+
       <div>
         <h2>Highlands County, Florida — by design.</h2>
         <p>
-          We serve Highlands County, Florida only — Sebring, Avon Park, Lake Placid, Lorida, and Venus. This isn’t a scalability limitation — it’s a deliberate choice.
+          We serve Highlands County, Florida only — Sebring, Avon Park, Lake Placid,
+          Lorida, and Venus. This is not a scalability limitation — it is a deliberate choice.
         </p>
         <p>
-          Hyperlocal focus means better lead quality, faster homeowner response times, and stronger contractor relationships than any national platform can offer in a market this size.
+          Hyperlocal focus means better lead quality, faster homeowner response times,
+          and stronger contractor relationships than any national platform can offer in
+          a market this size.
         </p>
         <p>
-          By committing to a single county, we can invest in deeper coverage across multiple trades while keeping service areas tight and reducing wasted miles for contractors.
+          By committing to a single county, we can invest in deeper coverage across
+          multiple trades while keeping service areas tight and reducing wasted miles
+          for contractors.
         </p>
       </div>
+
       <div>
         <h2>Business details.</h2>
-        <p><strong>Obsidian Peak Holdings LLC</strong><br>
-           Florida Limited Liability Company<br>
-           DBA: Highlands Home Services Network</p>
-        <p>Digital Lead Generation &amp; Referral Service<br>
-           NAICS: 519130 (Internet Publishing)<br>
-           Not a licensed contractor</p>
-        <p>Highlands County, Florida<br>
-           Service area business — no public office</p>
-        <p>All network contractors verified via the Florida DBPR license database prior to account activation.</p>
+
+        <!-- E-E-A-T: Both Sunbiz verification links integrated into body text -->
+        <p>
+          <strong>Obsidian Peak Holdings LLC</strong><br>
+          Florida Limited Liability Company<br>
+          DBA: Highlands Home Services Network<br>
+          <a href="https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?inquirytype=EntityName&directionType=Initial&searchNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700&aggregateId=flal-l26000094970-e1abe3e8-814a-4352-9777-66d8f095e62f&searchTerm=Obsidian%20Peak%20Holdings%20LLC&listNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="verify-link">
+            Verify LLC registration on Sunbiz.org &#8599;
+          </a><br>
+          <a href="https://dos.sunbiz.org/scripts/ficidet.exe?action=DETREG&docnum=G26000029725&rdocnum=G26000029725"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="verify-link">
+            Verify DBA (Fictitious Name) registration &#8599;
+          </a>
+        </p>
+
+        <p>
+          Digital Lead Generation &amp; Referral Service<br>
+          NAICS: 519130 (Internet Publishing)<br>
+          Not a licensed contractor
+        </p>
+
+        <p>
+          Highlands County, Florida<br>
+          Service area business — no public walk-in office
+        </p>
+
+        <p>
+          All network contractors verified via the
+          <a href="https://www.myfloridalicense.com/wl11.asp"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="verify-link">Florida DBPR license database &#8599;</a>
+          prior to account activation.
+        </p>
       </div>
+
     </div>
   </section>
 
-  <section class="cta-banner">
+  <!-- ============================================================
+       CTA BANNER
+       ============================================================ -->
+  <section class="cta-banner" aria-label="Apply to join the contractor network">
     <div class="container">
       <h2>Licensed contractor in Highlands County?</h2>
-      <p>Apply once. If it’s a fit, you’ll start receiving exclusive, screened homeowner leads in as little as a few days.</p>
-      <a href="/apply.html" class="btn btn-secondary">Apply to Join the Network</a>
+      <p>Apply once. If it is a fit, you will start receiving exclusive, screened homeowner leads in as little as a few days.</p>
+      <a href="/apply.html" class="btn btn-primary">Apply to Join the Network</a>
     </div>
   </section>
+
 </main>
 
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
 <footer class="site-footer">
   <div class="footer-inner">
-    <div>
-      <strong style="font-family:var(--font-heading);">Highlands Home Services Network</strong>
+
+    <div class="footer-brand">
+      <img src="/images/logo-dark.png"
+           alt="Highlands Home Services Network logo"
+           width="260" height="60"
+           class="site-logo-footer"
+           loading="lazy">
       <div class="footer-meta">
-        Obsidian Peak Holdings LLC &middot; Digital lead generation & referral service<br>
-        Highlands County, Florida &middot; Service area business — no public office
+        <strong>Highlands Home Services Network</strong><br>
+        A DBA of Obsidian Peak Holdings LLC &middot; Digital lead generation &amp; referral service<br>
+        Service Area: Highlands County, Florida<br>
+        Sebring &bull; Avon Park &bull; Lake Placid &bull; Lorida &bull; Venus<br>
+        <span class="footer-note">Service area business — no public walk-in office</span>
       </div>
     </div>
+
     <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="/">Home</a>
       <a href="/about.html">About</a>
       <a href="/how-it-works.html">How It Works</a>
       <a href="/hvac.html">HVAC Leads</a>
       <a href="/get-service.html">For Homeowners</a>
-      <a href="/apply.html">Apply</a>
+      <a href="/apply.html">Apply Now</a>
       <a href="/contact.html">Contact</a>
       <a href="/privacy.html">Privacy Policy</a>
-      <a href="/terms.html">Terms</a>
+      <a href="/terms.html">Terms of Service</a>
     </nav>
+
+    <div class="footer-legal">
+      <p class="legal-disclaimer">
+        Highlands Home Services Network is a referral and lead generation service.
+        We do not perform trade services.
+      </p>
+      <p class="footer-copyright">
+        &copy; <span id="footer-year"></span> Obsidian Peak Holdings LLC. All rights reserved.
+      </p>
+    </div>
+
   </div>
 </footer>
+
+<script>
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
