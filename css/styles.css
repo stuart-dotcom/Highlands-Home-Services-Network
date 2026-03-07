@@ -80,6 +80,22 @@ a:hover { color: var(--color-primary); }
   }
 }
 
+.benefit-list {
+  margin-top: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.benefit-list li {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  margin-bottom: .75rem;
+  color: #333;
+}
+
+.benefit-list li::marker {
+  font-size: 1.3em;
+  color: var(--color-accent);
+}
 
 h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; color: var(--color-primary); }
 h1 { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 800; }
