@@ -42,6 +42,45 @@ a:hover { color: var(--color-primary); }
 .btn-secondary { background: var(--color-primary); color: var(--color-white); }
 .btn-secondary:hover { background: #142d47; color: var(--color-white); }
 
+.badge-icon {
+  font-size: 3.5rem;
+  line-height: 1;
+  margin: 0 auto 1rem;
+  display: block;
+  text-align: center;
+}
+
+.badge-item {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: rgba(255,255,255,.07);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,.15);
+  transition: transform var(--transition);
+}
+
+.badge-item:hover {
+  transform: translateY(-4px);
+}
+
+.badge-item p {
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0;
+  letter-spacing: .03em;
+}
+
+@media (max-width: 480px) {
+  .badge-icon { font-size: 2.8rem; }
+  .badges-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+
 h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; color: var(--color-primary); }
 h1 { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 800; }
 h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 700; }
