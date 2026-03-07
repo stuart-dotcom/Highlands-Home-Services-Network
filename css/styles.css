@@ -346,24 +346,22 @@ textarea { resize: vertical; min-height: 120px; }
   font-size: 1.2em;
 }
 
-.hero,
-.hero .container {
+.how-it-works {
+  position: relative;
+}
+
+.how-it-works-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: .12;
+  z-index: 0;
+}
+
+.how-it-works .container {
   position: relative;
   z-index: 1;
 }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-
-:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
-@media (max-width: 480px) { .hero-ctas { flex-direction: column; } .btn { text-align: center; } }
-
-.hero-ctas {
-  position: relative;
-  z-index: 2;
-}
 
