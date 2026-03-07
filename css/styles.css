@@ -181,6 +181,27 @@ p  { margin-bottom: 1rem; }
   color: var(--color-white);
 }
 
+/* Generic: any image inside a two-column layout fills its column */
+.two-col img {
+  width: 100%;
+  height: auto;
+}
+
+/* If your image is inside a wrapper, this helps it “sit” nicely */
+.two-col figure,
+.two-col .image-wrap,
+.two-col .image-col {
+  margin: 0;
+}
+
+/* Give the image column more visual weight on desktop */
+@media (min-width: 900px) {
+  .two-col {
+    grid-template-columns: 1.2fr 0.8fr; /* text gets 60%, image gets 40% */
+    align-items: center;
+  }
+}
+
 .badges-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; margin-top: 3rem; }
 .badge-item { text-align: center; padding: 1.75rem 1rem; background: rgba(255,255,255,.07); border-radius: var(--radius); border: 1px solid rgba(255,255,255,.1); }
 .badge-item img { width: 72px; height: 72px; margin: 0 auto 1rem; }
