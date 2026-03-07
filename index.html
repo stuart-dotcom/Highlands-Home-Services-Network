@@ -59,13 +59,17 @@
       "postalCode": "33870",
       "addressCountry": "US"
     },
-    "areaServed": [
-      {"@type": "City", "name": "Sebring"},
-      {"@type": "City", "name": "Avon Park"},
-      {"@type": "City", "name": "Lake Placid"},
-      {"@type": "City", "name": "Lorida"},
-      {"@type": "City", "name": "Venus"}
-    ],
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Highlands County",
+      "containsPlace": [
+        {"@type": "City", "name": "Sebring"},
+        {"@type": "City", "name": "Avon Park"},
+        {"@type": "City", "name": "Lake Placid"},
+        {"@type": "City", "name": "Lorida"},
+        {"@type": "City", "name": "Venus"}
+      ]
+    },
     "serviceArea": {
       "@type": "GeoCircle",
       "geoMidpoint": {
@@ -632,4 +636,3 @@
 
 </body>
 </html>
-
