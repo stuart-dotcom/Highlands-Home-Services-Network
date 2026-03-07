@@ -30,7 +30,8 @@
   <meta name="twitter:description" content="Highlands County-only, DBPR-verified contractor lead network. Exclusive pay-per-lead. No shared lists. No national franchise.">
   <meta name="twitter:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
 
-  <!-- JSON-LD BLOCK 1: LocalBusiness — identical root entity, matches index.html exactly -->
+  <!-- JSON-LD BLOCK 1: LocalBusiness — identical root entity, matches all other pages exactly -->
+  <!-- NOTE: areaServed updated sitewide to AdministrativeArea parent + containsPlace city children -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -59,13 +60,17 @@
       "postalCode": "33870",
       "addressCountry": "US"
     },
-    "areaServed": [
-      {"@type": "City", "name": "Sebring"},
-      {"@type": "City", "name": "Avon Park"},
-      {"@type": "City", "name": "Lake Placid"},
-      {"@type": "City", "name": "Lorida"},
-      {"@type": "City", "name": "Venus"}
-    ],
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Highlands County",
+      "containsPlace": [
+        {"@type": "City", "name": "Sebring"},
+        {"@type": "City", "name": "Avon Park"},
+        {"@type": "City", "name": "Lake Placid"},
+        {"@type": "City", "name": "Lorida"},
+        {"@type": "City", "name": "Venus"}
+      ]
+    },
     "serviceArea": {
       "@type": "GeoCircle",
       "geoMidpoint": {
@@ -392,7 +397,7 @@
     <div class="container page-hero-content">
       <p class="section-label">About Highlands Home Services Network</p>
       <h1>Stop Racing Four Other Trucks to the Same Door. There Is a Better Model.</h1>
-      <!-- AEO Direct Answer Block — visible, matches pattern on all other pages -->
+      <!-- AEO Direct Answer Block — visible to users and crawlers, matches pattern on all other pages -->
       <p class="aeo-definition">
         Highlands Home Services Network is a digital lead generation and referral service
         operating exclusively in Highlands County, Florida. It is a DBA of Obsidian Peak
@@ -445,8 +450,8 @@
       <div>
         <p class="section-label">Why this exists</p>
         <h2>Built for the contractors the big platforms ignore.</h2>
-        <p>Highlands County contractors are underserved by national lead generation platforms. The same lead gets sold to multiple contractors, billing happens regardless of outcome, and there is no local accountability when things go wrong.</p>
-        <p>Highlands Home Services Network was built to fix that — one county, one trade vertical at a time, with exclusive delivery and a straightforward pay-per-lead model that only charges you after a verified lead reaches your phone.</p>
+        <p><a href="/service-areas.html" class="verify-link">Highlands County contractors</a> are underserved by national lead generation platforms. The same lead gets sold to multiple contractors, billing happens regardless of outcome, and there is no local accountability when things go wrong.</p>
+        <p>Highlands Home Services Network was built to fix that — one county, one <a href="/hvac.html" class="verify-link">trade vertical</a> at a time, with <a href="/how-it-works.html" class="verify-link">exclusive delivery</a> and a straightforward pay-per-lead model that only charges you after a verified lead reaches your phone.</p>
         <p>Your service area stays tight. Your drive time stays short. Your leads stay yours.</p>
         <a href="/how-it-works.html" class="btn btn-secondary" style="margin-top:1.5rem;">See exactly how it works &rarr;</a>
       </div>
@@ -455,7 +460,7 @@
         <p class="section-label">What we are — and what we are not</p>
         <h2>A referral service. Not a contractor.</h2>
         <p>Highlands Home Services Network is a DBA of Obsidian Peak Holdings LLC, a registered Florida company. We operate strictly as a digital lead generation and referral service. We are not licensed contractors, we do not perform trade services, and we never share or resell the same lead to multiple businesses.</p>
-        <p>Every contractor's Florida license is verified against the DBPR database before their account is activated. Our role is straightforward: find Highlands County homeowners who need a licensed tradesperson, screen their requests, and connect them with one qualified contractor in our network.</p>
+        <p>Every contractor's Florida license is verified against the <a href="https://www.myfloridalicense.com/wl11.asp" target="_blank" rel="noopener noreferrer" class="verify-link">DBPR database &#8599;</a> before their account is activated. Our role is straightforward: find Highlands County homeowners who need a licensed tradesperson, screen their requests, and connect them with one qualified contractor in our network.</p>
         <p class="legal-disclaimer" style="margin-top:1rem;">Highlands Home Services Network is a referral and lead generation service. We do not perform trade services.</p>
       </div>
 
@@ -469,7 +474,7 @@
       <div>
         <p class="section-label">Highlands County, Florida — by design</p>
         <h2>Fewer wasted miles. Better lead quality. Stronger match rates.</h2>
-        <p>We serve Highlands County only — Sebring, Avon Park, Lake Placid, Lorida, and Venus. This is not a scalability limitation. It is a deliberate choice that benefits every contractor in the network.</p>
+        <p>We serve <a href="/service-areas.html" class="verify-link">Highlands County</a> only — Sebring, Avon Park, Lake Placid, Lorida, and Venus. This is not a scalability limitation. It is a deliberate choice that benefits every contractor in the network.</p>
         <p>Hyperlocal focus means your leads come from homeowners in your own backyard. Tighter service areas mean more jobs completed per day, lower fuel costs, and better response times — which is the single biggest factor in whether a homeowner hires the first contractor who calls or waits for someone else.</p>
         <p>By committing to a single county, we build deeper coverage across multiple trades while keeping every lead within a service area that actually makes sense for your business.</p>
       </div>
@@ -634,4 +639,5 @@
 
 </body>
 </html>
+
 
