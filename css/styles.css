@@ -364,4 +364,12 @@ textarea { resize: vertical; min-height: 120px; }
   z-index: 1;
 }
 
+.two-col img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+
 
