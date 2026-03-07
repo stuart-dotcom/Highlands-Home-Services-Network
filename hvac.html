@@ -15,11 +15,13 @@
   <script src="/js/main.js" defer></script>
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
   <meta property="og:title" content="Exclusive HVAC Leads in Highlands County, FL | HHSN">
   <meta property="og:description" content="Exclusive Highlands County HVAC leads screened for location, intent, and contact quality. No retainers. Pay per verified lead. No shared lists.">
   <meta property="og:url" content="https://highlandshomeservicesnetwork.com/hvac.html">
   <meta property="og:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Highlands Home Services Network">
 
   <!-- Twitter Card -->
@@ -28,61 +30,28 @@
   <meta name="twitter:description" content="Emergency repairs, tune-ups, installs — we qualify the leads, you close the jobs. No shared lists. No monthly fees.">
   <meta name="twitter:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
 
-  <!-- JSON-LD BLOCK 1: HVAC Service -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "HVAC Lead Generation for Highlands County Contractors",
-    "serviceType": "HVAC lead generation",
-    "provider": {
-      "@type": "Organization",
-      "@id": "https://highlandshomeservicesnetwork.com/#organization",
-      "name": "Highlands Home Services Network",
-      "legalName": "Obsidian Peak Holdings LLC",
-      "url": "https://highlandshomeservicesnetwork.com/",
-      "logo": "https://highlandshomeservicesnetwork.com/images/logo-light.png",
-      "sameAs": [
-        "https://dos.sunbiz.org/scripts/ficidet.exe?action=DETREG&docnum=G26000029725&rdocnum=G26000029725",
-        "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?inquirytype=EntityName&directionType=Initial&searchNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700&aggregateId=flal-l26000094970-e1abe3e8-814a-4352-9777-66d8f095e62f&searchTerm=Obsidian%20Peak%20Holdings%20LLC&listNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer support",
-        "availableLanguage": "English",
-        "areaServed": "Highlands County, Florida",
-        "email": "hello@highlandshomeservicesnetwork.com"
-      }
-    },
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "Highlands County, Florida"
-    },
-    "category": "HVAC services lead generation",
-    "description": "Exclusive, screened HVAC leads from Highlands County homeowners for licensed Florida HVAC contractors. Emergency repairs, tune-ups, replacements, and air quality upgrades. Pay per verified lead — no retainers, no shared lists.",
-    "offers": {
-      "@type": "Offer",
-      "url": "https://highlandshomeservicesnetwork.com/hvac.html",
-      "category": "Pay-per-lead",
-      "priceSpecification": {
-        "@type": "PriceSpecification",
-        "priceCurrency": "USD"
-      }
-    }
-  }
-  </script>
-
-  <!-- JSON-LD BLOCK 2: LocalBusiness -->
+  <!-- JSON-LD BLOCK 1: LocalBusiness — identical root entity, matches index.html exactly -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://highlandshomeservicesnetwork.com/#localbusiness",
     "name": "Highlands Home Services Network",
-    "image": "https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg",
+    "@id": "https://highlandshomeservicesnetwork.com/#business",
     "url": "https://highlandshomeservicesnetwork.com/",
-    "email": "hello@highlandshomeservicesnetwork.com",
-    "description": "Exclusive HVAC lead generation for licensed contractors in Highlands County, Florida — including Sebring, Avon Park, Lake Placid, Lorida, and Venus. Pay-per-lead. No retainers.",
+    "logo": "https://highlandshomeservicesnetwork.com/images/logo-light.png",
+    "image": "https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg",
+    "legalName": "Obsidian Peak Holdings LLC",
+    "description": "Highlands Home Services Network is the hyperlocal lead generation and referral service for licensed contractors in Highlands County, Florida. It provides exclusive, DBPR-verified homeowner leads in Sebring, Avon Park, Lake Placid, Lorida, and Venus — on a pay-per-lead basis with zero internal competition. Each lead is routed to one qualified contractor only.",
+    "priceRange": "$$",
+    "publicAccess": false,
+    "parentOrganization": {
+      "@type": "Organization",
+      "@id": "https://highlandshomeservicesnetwork.com/#organization",
+      "name": "Obsidian Peak Holdings LLC",
+      "sameAs": [
+        "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?inquirytype=EntityName&directionType=Initial&searchNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700&aggregateId=flal-l26000094970-e1abe3e8-814a-4352-9777-66d8f095e62f&searchTerm=Obsidian%20Peak%20Holdings%20LLC&listNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700"
+      ]
+    },
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Sebring",
@@ -101,15 +70,133 @@
       "@type": "GeoCircle",
       "geoMidpoint": {
         "@type": "GeoCoordinates",
-        "latitude": 27.4950,
-        "longitude": -81.4409
+        "latitude": 27.3409,
+        "longitude": -81.3400
       },
-      "geoRadius": "40000"
+      "geoRadius": 45000
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "availableLanguage": "English",
+      "areaServed": "Highlands County, Florida",
+      "email": "hello@highlandshomeservicesnetwork.com"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Contractor Lead Generation Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Exclusive HVAC Contractor Leads",
+            "description": "Emergency AC repair, HVAC tune-ups, and system replacements for licensed HVAC contractors serving Sebring, Avon Park, and Lake Placid, Florida.",
+            "areaServed": {"@type": "AdministrativeArea", "name": "Highlands County, Florida"}
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Plumbing Contractor Lead Waitlist",
+            "areaServed": {"@type": "AdministrativeArea", "name": "Highlands County, Florida"}
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Electrical Contractor Lead Waitlist",
+            "areaServed": {"@type": "AdministrativeArea", "name": "Highlands County, Florida"}
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Roofing Contractor Lead Waitlist",
+            "areaServed": {"@type": "AdministrativeArea", "name": "Highlands County, Florida"}
+          }
+        }
+      ]
+    },
+    "knowsAbout": [
+      "contractor lead generation",
+      "home services marketing",
+      "HVAC lead generation",
+      "emergency AC repair Sebring FL",
+      "HVAC contractor leads Highlands County",
+      "Highlands County Florida",
+      "Sebring FL",
+      "Avon Park FL",
+      "Lake Placid FL",
+      "Lorida FL",
+      "Venus FL"
+    ],
+    "sameAs": [
+      "https://dos.sunbiz.org/scripts/ficidet.exe?action=DETREG&docnum=G26000029725&rdocnum=G26000029725",
+      "https://www.linkedin.com/in/stuart-o-716573306/"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD BLOCK 2: Service — HVAC-specific, references root LocalBusiness @id -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Exclusive HVAC Lead Generation for Highlands County Contractors",
+    "serviceType": "HVAC lead generation",
+    "url": "https://highlandshomeservicesnetwork.com/hvac.html",
+    "description": "Exclusive, screened HVAC leads from Highlands County homeowners for licensed Florida HVAC contractors. Emergency AC repair, HVAC tune-ups, system replacements, and air quality upgrades in Sebring, Avon Park, and Lake Placid. Pay per verified lead — no retainers, no shared lists.",
+    "category": "HVAC services lead generation",
+    "provider": {
+      "@type": "LocalBusiness",
+      "@id": "https://highlandshomeservicesnetwork.com/#business"
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Sebring"},
+      {"@type": "City", "name": "Avon Park"},
+      {"@type": "City", "name": "Lake Placid"},
+      {"@type": "City", "name": "Lorida"},
+      {"@type": "City", "name": "Venus"}
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://highlandshomeservicesnetwork.com/hvac.html",
+      "category": "Pay-per-lead",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "USD"
+      }
     }
   }
   </script>
 
-  <!-- JSON-LD BLOCK 3: FAQ -->
+  <!-- JSON-LD BLOCK 3: BreadcrumbList — 2-level chain for this inner page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Highlands Home Services Network",
+        "item": "https://highlandshomeservicesnetwork.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "HVAC Contractor Leads",
+        "item": "https://highlandshomeservicesnetwork.com/hvac.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD BLOCK 4: FAQPage — matches visible FAQ section below -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -374,14 +461,12 @@
 
 <body>
 
-<!-- ═══════════════════════════════════════════════════
-     HEADER
-════════════════════════════════════════════════════ -->
+<!-- HEADER -->
 <header class="site-header">
   <div class="nav-inner">
     <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network — Home">
       <img src="/images/logo-light.png"
-           alt="Highlands Home Services Network logo — exclusive contractor leads for Highlands County, FL"
+           alt="Highlands Home Services Network logo — connecting licensed Highlands County contractors with exclusive leads"
            class="site-logo"
            width="260" height="60"
            loading="eager">
@@ -394,6 +479,7 @@
         <li><a href="/about.html">About</a></li>
         <li><a href="/how-it-works.html">How It Works</a></li>
         <li><a href="/hvac.html" aria-current="page">HVAC Leads</a></li>
+        <li><a href="/service-areas.html">Service Areas</a></li>
         <li><a href="/contact.html">Contact</a></li>
         <li><a href="/get-service.html" style="color:var(--color-accent);font-weight:700;">Get Service</a></li>
         <li><a href="/apply.html" class="nav-cta">Apply to Join</a></li>
@@ -404,9 +490,7 @@
 
 <main>
 
-  <!-- ═══════════════════════════════════════════════════
-       1. HERO + AEO ENTITY DEFINITION
-  ════════════════════════════════════════════════════ -->
+  <!-- 1. HERO + AEO ENTITY DEFINITION -->
   <section class="page-hero" aria-label="HVAC leads page hero">
     <div class="page-hero-bg"
          style="background-image:url('/images/hvac-hero.jpg');"
@@ -415,21 +499,19 @@
     <div class="container page-hero-content">
       <p class="section-label">HVAC vertical — Highlands County, Florida</p>
       <h1>Exclusive HVAC Leads for Highlands County Contractors — No Shared Lists. No Bidding Wars.</h1>
-      <!-- AEO Direct Answer: entity definition for AI Overviews, Perplexity, ChatGPT Search -->
       <p class="aeo-definition">
-        Highlands Home Services Network (HHSN) is a specialized lead generation platform providing
-        exclusive, pre-screened HVAC leads to licensed contractors in Highlands County, Florida.
-        We deliver verified customer requests for AC repair, maintenance, and system installations
-        in Sebring, Avon Park, and Lake Placid on a pay-per-lead basis.
+        Highlands Home Services Network (HHSN) is the hyperlocal lead generation platform
+        providing exclusive, pre-screened HVAC leads to licensed contractors in Highlands County,
+        Florida. It delivers verified customer requests for emergency AC repair, HVAC maintenance,
+        and system installations in Sebring, Avon Park, and Lake Placid — on a pay-per-lead basis
+        with zero internal competition and no shared lists.
       </p>
       <a href="#hvac-apply" class="btn btn-primary" style="margin-top:8px;">Apply for Exclusive HVAC Leads</a>
       <p style="margin-top:12px;font-size:0.85rem;opacity:0.75;">Licensed Florida HVAC contractors only &bull; Takes about 2 minutes</p>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════════
-       2. IMAGE BANNER — LEAD TYPES + PRICING
-  ════════════════════════════════════════════════════ -->
+  <!-- 2. IMAGE BANNER — LEAD TYPES + PRICING -->
   <section class="image-banner" aria-label="HVAC lead types and pricing model">
     <img src="/images/hero-hvac.jpg"
          class="banner-bg"
@@ -470,7 +552,7 @@
             you will be active within 1 business day.
           </p>
           <a href="#hvac-apply" class="btn btn-primary" style="margin-top:8px;display:inline-block;">
-            Apply Below ↓
+            Apply Below &darr;
           </a>
         </div>
 
@@ -478,9 +560,7 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════════
-       3. WHAT DEFINES A VERIFIED LEAD
-  ════════════════════════════════════════════════════ -->
+  <!-- 3. WHAT DEFINES A VERIFIED LEAD -->
   <section class="section-pad" aria-label="Verified lead definition">
     <div class="container">
       <div class="lead-definition">
@@ -509,9 +589,7 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════════
-       4. APPLICATION FORM
-  ════════════════════════════════════════════════════ -->
+  <!-- 4. APPLICATION FORM -->
   <section class="form-section section-pad" id="hvac-apply" aria-label="HVAC contractor application form">
     <div class="container">
       <div class="form-wrapper">
@@ -584,9 +662,7 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════════
-       5. FAQ SECTION
-  ════════════════════════════════════════════════════ -->
+  <!-- 5. FAQ SECTION -->
   <section class="section-pad faq-section" id="faq" aria-label="Frequently asked questions">
     <div class="container">
       <p class="section-label">Before you apply</p>
@@ -659,9 +735,8 @@
           effective tool for converting an inquiry into a booked job.</p>
         </div>
 
-      </div><!-- /.faq-list -->
+      </div>
 
-      <!-- FAQ base CTA — catches contractors at peak objection resolution -->
       <div style="text-align:center;margin-top:48px;padding-top:40px;border-top:1px solid #e2e8f0;">
         <p style="font-size:1rem;color:#444;margin-bottom:20px;">
           Still have questions? We review every application personally and follow up within 1 business day.
@@ -675,9 +750,7 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════════
-       6. FINAL CTA BANNER
-  ════════════════════════════════════════════════════ -->
+  <!-- 6. FINAL CTA BANNER -->
   <section class="cta-banner" aria-label="Apply to join the HVAC network">
     <div class="container">
       <h2>Ready to Receive Exclusive HVAC Leads in Highlands County?</h2>
@@ -691,9 +764,7 @@
 
 </main>
 
-<!-- ═══════════════════════════════════════════════════
-     FOOTER
-════════════════════════════════════════════════════ -->
+<!-- FOOTER -->
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
@@ -716,6 +787,7 @@
       <a href="/about.html">About</a>
       <a href="/how-it-works.html">How It Works</a>
       <a href="/hvac.html" aria-current="page">HVAC Leads</a>
+      <a href="/service-areas.html">Service Areas</a>
       <a href="/get-service.html">Get Service</a>
       <a href="/apply.html">Apply</a>
       <a href="/contact.html">Contact</a>
@@ -740,5 +812,6 @@
 
 </body>
 </html>
+
 
 
