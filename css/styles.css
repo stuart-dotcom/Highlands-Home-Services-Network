@@ -334,5 +334,17 @@ textarea { resize: vertical; min-height: 120px; }
 .footer-bottom { padding-top: 1.5rem; display: flex; flex-wrap: wrap; gap: .75rem; justify-content: space-between; font-size: .8rem; color: rgba(245,242,237,.45); }
 .footer-disclaimer { background: rgba(255,255,255,.04); border-radius: var(--radius); padding: .85rem 1.25rem; margin-top: 1.75rem; font-size: .8rem; text-align: center; color: rgba(245,242,237,.55); }
 
+.requirements-list li {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: .75rem;
+  color: var(--color-white);
+}
+
+.requirements-list li::marker {
+  color: var(--color-accent);
+  font-size: 1.2em;
+}
+
 :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
 @media (max-width: 480px) { .hero-ctas { flex-direction: column; } .btn { text-align: center; } }
