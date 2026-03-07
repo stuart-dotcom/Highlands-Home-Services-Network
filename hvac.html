@@ -71,7 +71,92 @@
     }
   }
   </script>
+
+  <style>
+    /* ─── HVAC IMAGE BANNER ─────────────────────────────────────────────── */
+    .image-banner {
+      position: relative;
+      width: 100%;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background-color: #1a2a3a;
+    }
+    .image-banner img.banner-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      z-index: 0;
+    }
+    .image-banner .banner-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(10,30,55,0.82) 0%, rgba(10,30,55,0.50) 100%);
+      z-index: 1;
+    }
+    .image-banner .banner-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 64px 24px;
+      color: #fff;
+    }
+    .image-banner .banner-content h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.45rem, 3.5vw, 2.1rem);
+      font-weight: 800;
+      color: #fff;
+      margin: 0 0 20px;
+      line-height: 1.2;
+    }
+    .image-banner .banner-content .banner-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .image-banner .banner-content .banner-col h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-accent, #e07b2a);
+      margin: 0 0 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .image-banner .banner-content .banner-col p {
+      font-size: 0.97rem;
+      color: rgba(255,255,255,0.90);
+      line-height: 1.7;
+      margin: 0 0 10px;
+    }
+    .image-banner .banner-content .banner-col ul {
+      margin: 0 0 0 1.1rem;
+      padding: 0;
+      list-style: disc;
+    }
+    .image-banner .banner-content .banner-col ul li {
+      font-size: 0.97rem;
+      color: rgba(255,255,255,0.90);
+      line-height: 1.7;
+      margin-bottom: 6px;
+    }
+    @media (max-width: 680px) {
+      .image-banner .banner-content .banner-cols {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .image-banner { min-height: auto; }
+    }
+  </style>
 </head>
+
 <body>
 
 <header class="site-header">
@@ -101,6 +186,9 @@
 
 <main>
 
+  <!-- ═══════════════════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════════════ -->
   <section class="page-hero" aria-label="HVAC leads page hero">
     <div class="page-hero-bg"
          style="background-image:url('/images/hvac-hero.jpg');"
@@ -108,48 +196,72 @@
          aria-hidden="true"></div>
     <div class="container page-hero-content">
       <p class="section-label">HVAC vertical</p>
-      <h1>Emergency repairs, tune-ups, installs. We qualify the leads. You close the jobs.</h1>
+      <h1>Exclusive HVAC Leads for Highlands County Contractors — No Shared Lists. No Junk.</h1>
       <p>
-        The HVAC vertical is the first active trade in the Highlands Home Services Network — built for licensed
-        Florida HVAC contractors who serve Highlands County.
+        Emergency repairs, tune-ups, and full installs. We screen every homeowner request
+        for location, intent, and contact quality — then route it exclusively to you.
       </p>
+      <a href="#hvac-apply" class="btn btn-primary" style="margin-top:24px;">Apply for HVAC Leads</a>
+      <p style="margin-top:12px;font-size:0.85rem;opacity:0.75;">Licensed Florida HVAC contractors only &bull; Takes about 2 minutes</p>
     </div>
   </section>
 
-  <section class="section-pad" aria-label="HVAC lead types and pricing model">
-    <div class="container two-col">
-      <div>
-        <h2>Types of Highlands County HVAC Leads We Deliver</h2>
-        <p>We focus on high-intent HVAC requests from Highlands County homeowners, including:</p>
-        <ul style="margin-left:1.2rem;list-style:disc;">
-          <li>Urgent AC-down calls with same-day intent.</li>
-          <li>Scheduled maintenance and seasonal tune-up requests.</li>
-          <li>Homeowners ready to replace aging systems or install new.</li>
-          <li>Filtration, UV system, and air quality improvement inquiries.</li>
-        </ul>
-        <p>
-          Before a lead reaches your phone it has been screened for location, intent, and contact quality.
-          You get real jobs, not random clicks.
-        </p>
-      </div>
-      <div>
-        <h2>Pay-Per-Lead HVAC Pricing Model</h2>
-        <p>
-          There is no monthly retainer and no ad spend to manage. You pay for verified leads received — nothing else.
-        </p>
-        <p>
-          Leads are delivered exclusively to you within your agreed coverage area. You are not bidding against
-          multiple contractors on the same job.
-        </p>
-        <p>
-          Fill out the form and we will review your license and coverage. If it is a fit, you will be active
-          within 1 business day.
-        </p>
+  <!-- ═══════════════════════════════════════════════════
+       IMAGE BANNER — LEAD TYPES + PRICING MODEL
+       Uses /images/hero-hvac.jpg as full-width banner bg
+  ════════════════════════════════════════════════════ -->
+  <section class="image-banner" aria-label="HVAC lead types and pricing model">
+    <img src="/images/hero-hvac.jpg"
+         class="banner-bg"
+         alt="Licensed HVAC technician servicing an air conditioning unit for a Highlands County homeowner"
+         loading="lazy">
+    <div class="banner-overlay" aria-hidden="true"></div>
+    <div class="banner-content">
+      <h2>What We Deliver — and How You Pay</h2>
+      <div class="banner-cols">
+
+        <div class="banner-col">
+          <h3>Types of HVAC Leads We Deliver</h3>
+          <p>We focus on high-intent HVAC requests from Highlands County homeowners, including:</p>
+          <ul>
+            <li>Urgent AC-down calls with same-day intent</li>
+            <li>Scheduled maintenance and seasonal tune-up requests</li>
+            <li>Homeowners ready to replace aging systems or install new</li>
+            <li>Filtration, UV system, and air quality improvement inquiries</li>
+          </ul>
+          <p style="margin-top:14px;">
+            Before a lead reaches your phone it has been screened for location, intent, and
+            contact quality. You get real jobs — not random clicks.
+          </p>
+        </div>
+
+        <div class="banner-col">
+          <h3>Pay-Per-Lead Pricing Model</h3>
+          <p>
+            There is no monthly retainer and no ad spend to manage. You pay only for
+            verified leads received — nothing else.
+          </p>
+          <p>
+            Leads are delivered exclusively to you within your agreed coverage area.
+            You are not bidding against multiple contractors on the same job.
+          </p>
+          <p>
+            Fill out the application below and we will review your license and coverage area.
+            If it is a fit, you will be active within 1 business day.
+          </p>
+          <a href="#hvac-apply" class="btn btn-primary" style="margin-top:8px;display:inline-block;">
+            Apply Below ↓
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="form-section section-pad" aria-label="HVAC contractor application form">
+  <!-- ═══════════════════════════════════════════════════
+       APPLICATION FORM
+  ════════════════════════════════════════════════════ -->
+  <section class="form-section section-pad" id="hvac-apply" aria-label="HVAC contractor application form">
     <div class="container">
       <div class="form-wrapper">
         <h2>Apply for Highlands County HVAC Leads.</h2>
@@ -268,3 +380,4 @@
 
 </body>
 </html>
+
