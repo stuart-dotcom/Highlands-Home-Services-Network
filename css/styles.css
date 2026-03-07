@@ -221,6 +221,16 @@ textarea { resize: vertical; min-height: 120px; }
 .lead-type-card h4  { color: var(--color-primary); margin-bottom: .35rem; }
 .lead-type-card p   { font-size: .88rem; color: #555; margin: 0; }
 
+.legal-disclaimer {
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(245,242,237,.88);
+  font-family: var(--font-body);
+  max-width: 600px;
+  margin: 1.5rem auto 0;
+  line-height: 1.6;
+}
+
 .promise-list { list-style: none; margin-top: 1.5rem; }
 .promise-list li { display: flex; gap: .75rem; align-items: flex-start; padding: .85rem 0; border-bottom: 1px solid var(--color-muted); font-size: .97rem; }
 .promise-list li:last-child { border-bottom: none; }
