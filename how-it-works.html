@@ -59,13 +59,17 @@
       "postalCode": "33870",
       "addressCountry": "US"
     },
-    "areaServed": [
-      {"@type": "City", "name": "Sebring"},
-      {"@type": "City", "name": "Avon Park"},
-      {"@type": "City", "name": "Lake Placid"},
-      {"@type": "City", "name": "Lorida"},
-      {"@type": "City", "name": "Venus"}
-    ],
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Highlands County",
+      "containsPlace": [
+        {"@type": "City", "name": "Sebring"},
+        {"@type": "City", "name": "Avon Park"},
+        {"@type": "City", "name": "Lake Placid"},
+        {"@type": "City", "name": "Lorida"},
+        {"@type": "City", "name": "Venus"}
+      ]
+    },
     "serviceArea": {
       "@type": "GeoCircle",
       "geoMidpoint": {
@@ -266,7 +270,7 @@
   </script>
 
   <style>
-    /* ─── AEO DEFINITION BLOCK ──────────────────────────────────────────── */
+    /* ─── AEO DEFINITION BLOCK ────────────────────────────────────────────── */
     .aeo-definition {
       font-size: 1rem;
       line-height: 1.7;
@@ -275,7 +279,7 @@
       margin: 0 auto 24px;
     }
 
-    /* ─── PROBLEM / AGITATE SECTION ─────────────────────────────────────── */
+    /* ─── PROBLEM / AGITATE SECTION ──────────────────────────────────────── */
     .problem-section {
       background: #0a1e37;
       padding: 56px 24px;
@@ -304,7 +308,7 @@
       font-weight: 700;
     }
 
-    /* ─── BANNER IMAGE SECTIONS ─────────────────────────────────────────── */
+    /* ─── BANNER IMAGE SECTIONS ──────────────────────────────────────────── */
     .image-banner {
       position: relative;
       width: 100%;
@@ -391,7 +395,7 @@
       margin-bottom: 4px;
     }
 
-    /* ─── QUALITY COMMITMENT BLOCK ──────────────────────────────────────── */
+    /* ─── QUALITY COMMITMENT BLOCK ────────────────────────────────────────── */
     .guarantee-block {
       background: #f3f7fb;
       border-left: 5px solid var(--color-accent, #e07b2a);
@@ -433,7 +437,7 @@
       font-size: 0.93rem;
     }
 
-    /* ─── FOUNDING CONTRACTOR TRUST BLOCK ──────────────────────────────── */
+    /* ─── FOUNDING CONTRACTOR TRUST BLOCK ───────────────────────────────────── */
     .founding-block {
       background: #fff;
       border: 2px dashed var(--color-accent, #e07b2a);
@@ -469,7 +473,7 @@
       margin: 0 0 8px;
     }
 
-    /* ─── INLINE CTA STRIP ──────────────────────────────────────────────── */
+    /* ─── INLINE CTA STRIP ────────────────────────────────────────────────── */
     .inline-cta {
       background: var(--color-primary, #0a1e37);
       padding: 36px 24px;
@@ -491,7 +495,7 @@
       text-decoration: underline;
     }
 
-    /* ─── LEAD DETAILS GRID ─────────────────────────────────────────────── */
+    /* ─── LEAD DETAILS GRID ────────────────────────────────────────────────── */
     .lead-details-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -519,7 +523,7 @@
       line-height: 1.6;
     }
 
-    /* ─── RESPONSIVE ────────────────────────────────────────────────────── */
+    /* ─── RESPONSIVE ────────────────────────────────────────────────────────── */
     @media (max-width: 640px) {
       .value-strip ul li {
         flex: 1 1 100%;
@@ -831,7 +835,8 @@
     </nav>
     <div class="footer-legal">
       <p class="legal-disclaimer">
-        Highlands Home Services Network is a referral and lead generation service. We do not perform trade services.
+        Highlands Home Services Network is a referral and lead generation service.
+        We do not perform trade services.
       </p>
       <p class="footer-copyright">
         &copy; <span id="footer-year"></span> Obsidian Peak Holdings LLC. All rights reserved.
@@ -846,6 +851,3 @@
 
 </body>
 </html>
-
-
-
