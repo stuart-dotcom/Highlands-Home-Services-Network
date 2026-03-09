@@ -259,16 +259,16 @@ textarea { resize: vertical; min-height: 120px; }
 .checkbox-group input[type="checkbox"] { width: auto; }
 .form-submit { margin-top:
 
-/* ============================================================
-   6-STEP PROCESS — how-it-works.html
-   ============================================================ */
+/* 6-STEP PROCESS — how-it-works.html */
 .process-list-container {
   list-style: none;
   padding: 0;
   margin: 0;
+  counter-reset: step-counter; /* optional, but safe */
 }
 
 .process-step {
+  list-style: none;  /* kill the built-in 1., 2., 3. */
   display: flex;
   gap: 1.75rem;
   align-items: flex-start;
@@ -277,11 +277,6 @@ textarea { resize: vertical; min-height: 120px; }
   border-bottom: 1px solid rgba(27,58,92,.1);
 }
 
-.process-step:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
 
 .process-step-num {
   flex-shrink: 0;
