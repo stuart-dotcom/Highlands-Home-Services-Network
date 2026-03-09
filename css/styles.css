@@ -337,3 +337,15 @@ textarea { resize: vertical; min-height: 120px; }
     font-size: 1.1rem;
   }
 }
+
+/* ============================================================
+   FAQ ACCORDION — details/summary pattern
+   ============================================================ */
+.faq-list { margin-top: 2rem; }
+.faq-item { border-bottom: 1px solid rgba(27,58,92,.12); padding: 1.25rem 0; }
+.faq-item:last-child { border-bottom: none; }
+.faq-item summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary h3 { color: var(--color-primary); margin: 0; font-size: clamp(1rem, 2vw, 1.15rem); }
+.faq-item[open] summary h3 { color: var(--color-accent); }
+.faq-item p { margin-top: .75rem; margin-bottom: 0; font-size: .97rem; color: #444; line-height: 1.7; }
