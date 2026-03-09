@@ -1,3 +1,4 @@
+<!-- ENTITY CLUSTER ROLE: TRUST -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +21,8 @@
   <meta property="og:description" content="How Highlands Home Services Network collects, uses, and protects your information.">
   <meta property="og:url" content="https://highlandshomeservicesnetwork.com/privacy.html">
   <meta property="og:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Highlands Home Services Network">
 
   <!-- Twitter Card -->
@@ -28,17 +31,17 @@
   <meta name="twitter:description" content="How Highlands Home Services Network collects, uses, and protects your information.">
   <meta name="twitter:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
 
-  <!-- JSON-LD: WebPage + Organization -->
+  <!-- JSON-LD BLOCK 1: WebPage — scoped to this policy page, linked to root org entity -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Privacy Policy | Highlands Home Services Network",
     "url": "https://highlandshomeservicesnetwork.com/privacy.html",
-    "isPartOf": {"@id": "https://highlandshomeservicesnetwork.com/#business"},
+    "isPartOf": { "@id": "https://highlandshomeservicesnetwork.com/business" },
     "publisher": {
       "@type": "Organization",
-      "@id": "https://highlandshomeservicesnetwork.com/#organization",
+      "@id": "https://highlandshomeservicesnetwork.com/organization",
       "name": "Highlands Home Services Network",
       "legalName": "Obsidian Peak Holdings LLC",
       "url": "https://highlandshomeservicesnetwork.com/",
@@ -57,6 +60,29 @@
     }
   }
   </script>
+
+  <!-- JSON-LD BLOCK 2: BreadcrumbList — 2-level chain for this inner page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Highlands Home Services Network",
+        "item": "https://highlandshomeservicesnetwork.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Privacy Policy",
+        "item": "https://highlandshomeservicesnetwork.com/privacy.html"
+      }
+    ]
+  }
+  </script>
+
 </head>
 <body>
 
@@ -64,7 +90,7 @@
   <div class="nav-inner">
     <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network — Home">
       <img src="/images/logo-light.png"
-           alt="Highlands Home Services Network — Privacy Policy"
+           alt="Highlands Home Services Network logo — connecting licensed Highlands County contractors with exclusive leads"
            class="site-logo"
            width="260" height="60"
            loading="eager">
@@ -77,6 +103,7 @@
         <li><a href="/about.html">About</a></li>
         <li><a href="/how-it-works.html">How It Works</a></li>
         <li><a href="/hvac.html">HVAC Leads</a></li>
+        <li><a href="/service-areas.html">Service Areas</a></li>
         <li><a href="/contact.html">Contact</a></li>
         <li><a href="/get-service.html" style="color:var(--color-accent);font-weight:700;">Get Service</a></li>
         <li><a href="/apply.html" class="nav-cta">Apply to Join</a></li>
@@ -87,16 +114,29 @@
 
 <main>
 
+  <!-- Breadcrumb nav — visible, matches BreadcrumbList schema above -->
+  <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <ol class="breadcrumb-list">
+      <li class="breadcrumb-item">
+        <a href="/">Highlands Home Services Network</a>
+      </li>
+      <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">
+        Privacy Policy
+      </li>
+    </ol>
+  </nav>
+
   <section class="page-hero" aria-label="Privacy policy page hero">
     <div class="page-hero-bg"
          style="background-image:url('/images/privacy-hero.jpg');"
          role="presentation"
          aria-hidden="true"></div>
     <div class="container page-hero-content">
-      <p class="section-label">Privacy policy</p>
-      <h1>How we handle your information.</h1>
+      <p class="section-label">Legal &amp; compliance</p>
+      <h1>Privacy Policy — Highlands Home Services Network</h1>
       <p>
-        This policy explains how we collect, use, and protect information submitted through this website.
+        This policy explains how we collect, use, and protect information submitted through this website
+        by Highlands County homeowners and licensed contractor applicants.
       </p>
     </div>
   </section>
@@ -104,65 +144,82 @@
   <section class="section-pad" aria-label="Privacy policy content">
     <div class="container">
 
-      <h2>Privacy Policy</h2>
       <p><strong>Last updated: March 6, 2026</strong></p>
 
       <p>
-        Highlands Home Services Network ("we," "us," or "our") operates highlandshomeservicesnetwork.com.
+        Highlands Home Services Network ("we," "us," or "our") operates
+        <a href="https://highlandshomeservicesnetwork.com">highlandshomeservicesnetwork.com</a>.
         This policy explains how we collect, use, and protect information submitted through this website.
+        Highlands Home Services Network is a digital lead generation and referral service — a registered
+        DBA of Obsidian Peak Holdings LLC, a Florida Limited Liability Company. We are not a licensed
+        contractor and do not perform trade services.
       </p>
 
-      <h3>Information we collect</h3>
+      <h2>Information we collect</h2>
       <p>
-        We collect information you voluntarily provide through our contractor application and contact forms:
-        name, business name, phone number, email address, Florida license number, and service area details.
-        For homeowners, we collect name, phone number, email address, service address, and details about
-        your home service request.
+        We collect information you voluntarily provide through our contractor application and homeowner
+        service request forms, including: name, business name, phone number, email address, Florida
+        license number, service area details, and home service request information. We do not collect
+        payment information directly — no credit card or billing data is transmitted through this site.
       </p>
 
-      <h3>How we use your information</h3>
+      <h2>How we use your information</h2>
       <p>
-        Information submitted through our homeowner service requests or contractor application forms is used
-        solely to facilitate local home service connections.
+        Information submitted through our forms is used solely to facilitate local home service
+        connections in Highlands County, Florida (Sebring, Avon Park, Lake Placid, Lorida, and Venus).
       </p>
       <p>
         <strong>We do not sell, rent, or trade your personal information to third-party data brokers or
-        marketing agencies.</strong> Homeowner information is only shared with the single, specific licensed
-        contractor assigned to your service request. It is never sold or distributed to any other party.
+        marketing agencies.</strong> Homeowner information is shared only with the single, specific
+        licensed contractor assigned to your service request. It is never sold or distributed to any
+        other party. Contractor applicant information is used solely to evaluate network fit and verify
+        Florida DBPR licensure.
       </p>
 
-      <h3>Analytics and cookies</h3>
+      <h2>Analytics and cookies</h2>
       <p>
-        This website may use basic analytics tools (such as Google Analytics) to understand aggregate traffic
-        patterns. These tools use cookies that collect anonymized data. You can disable cookies in your browser
-        settings at any time.
+        This website may use basic analytics tools (such as Google Analytics) to understand aggregate
+        traffic patterns. These tools use cookies that collect anonymized data about site usage. No
+        personally identifiable information is collected through analytics cookies. You can disable
+        cookies in your browser settings at any time without affecting your ability to use this site.
       </p>
 
-      <h3>Data security and retention</h3>
+      <h2>Data security and retention</h2>
       <p>
-        This site is served over HTTPS. Form submissions are transmitted securely to our form processing
-        provider. We retain application data only as long as necessary for business operations.
+        This site is served over HTTPS. All form submissions are transmitted securely to our form
+        processing provider. We retain application and service request data only as long as necessary
+        for legitimate business operations and do not maintain long-term databases of personal records.
       </p>
 
-      <h3>Your rights</h3>
+      <h2>Your rights (Florida FDUTPA &amp; CCPA)</h2>
       <p>
-        You may request access to, correction of, or deletion of your personal information at any time by
-        contacting us at
-        <a href="mailto:hello@highlandshomeservicesnetwork.com">hello@highlandshomeservicesnetwork.com</a>.
+        Regardless of where you are located, you may request access to, correction of, or deletion of
+        your personal information at any time. California residents have additional rights under the
+        California Consumer Privacy Act (CCPA), including the right to know what personal information
+        is collected and the right to request deletion. Florida residents are protected under the
+        Florida Deceptive and Unfair Trade Practices Act (FDUTPA). To exercise any of these rights,
+        contact us at the email address below.
       </p>
 
-      <h3>Contact &amp; Legal Entity</h3>
+      <h2>Third-party links</h2>
+      <p>
+        This site contains links to external websites including Florida DBPR, Sunbiz.org, and Google
+        Business Profile. We are not responsible for the privacy practices of any third-party site.
+        We recommend reviewing their policies independently.
+      </p>
+
+      <h2>Contact &amp; legal entity</h2>
       <p>
         <strong>Obsidian Peak Holdings LLC</strong><br>
         DBA: Highlands Home Services Network<br>
-        <a href="https://dos.sunbiz.org/scripts/ficidet.exe?action=DETREG&docnum=G26000029725&rdocnum=G26000029725"
-           target="_blank" rel="noopener noreferrer" class="verify-link">
-          Verify our Active Florida State Registration &#8599;
-        </a>
+        Service area: Highlands County, Florida (service area business — no public walk-in office)<br>
+        Email: <a href="mailto:hello@highlandshomeservicesnetwork.com">hello@highlandshomeservicesnetwork.com</a>
       </p>
       <p>
-        For privacy-related inquiries, please email us at
-        <a href="mailto:support@highlandshomeservicesnetwork.com">hello@highlandshomeservicesnetwork.com</a>.
+        <a href="https://dos.sunbiz.org/scripts/ficidet.exe?action=DETREG&docnum=G26000029725&rdocnum=G26000029725"
+           target="_blank" rel="noopener noreferrer" class="verify-link">
+          Verify our active Florida state registration &#8599;
+        </a>
       </p>
 
       <p class="legal-disclaimer">
@@ -197,6 +254,7 @@
       <a href="/about.html">About</a>
       <a href="/how-it-works.html">How It Works</a>
       <a href="/hvac.html">HVAC Leads</a>
+      <a href="/service-areas.html">Service Areas</a>
       <a href="/get-service.html">Get Service</a>
       <a href="/apply.html">Apply</a>
       <a href="/contact.html">Contact</a>
@@ -221,3 +279,5 @@
 
 </body>
 </html>
+
+
