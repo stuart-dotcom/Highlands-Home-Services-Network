@@ -106,7 +106,8 @@ p  { margin-bottom: 1rem; }
 
 .site-header { background: var(--color-primary); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 1.25rem; max-width: var(--max-width); margin: 0 auto; }
-.site-logo { height: 110px; width: auto; border-radius: 12px; }
+.site-logo { height: auto; width: 100%; border-radius: 0; display: block; }
+.site-logo-link { flex: 1; max-width: 380px; display: flex; align-items: center; }
 .nav-list { display: flex; gap: 2rem; list-style: none; }
 .nav-list a { color: var(--color-light); font-family: var(--font-heading); font-weight: 600; font-size: 1rem; letter-spacing: .04em; }
 .nav-list a:hover, .nav-list a.active { color: var(--color-accent); }
