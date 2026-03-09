@@ -133,6 +133,47 @@ p  { margin-bottom: 1rem; }
 .hero p   { color: rgba(245,242,237,.88); font-size: 1.15rem; margin-bottom: 2rem; max-width: 580px; }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
 
+/* ============================================================
+   PAGE HERO — inner pages (how-it-works, hvac, apply, etc.)
+   ============================================================ */
+.page-hero {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--color-primary); /* fallback if image fails */
+}
+
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: .38;
+  z-index: 0;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 4rem 1.25rem;
+  max-width: 720px;
+}
+
+.page-hero h1 { color: var(--color-white); margin-bottom: 1.25rem; }
+.page-hero h2 { color: var(--color-white); margin-bottom: 1rem; }
+.page-hero p  { color: rgba(245,242,237,.88); font-size: 1.15rem; margin-bottom: 2rem; max-width: 580px; }
+.page-hero .section-label { color: var(--color-accent); }
+.page-hero .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
+
+@media (max-width: 768px) {
+  .page-hero { min-height: 320px; }
+  .page-hero-content { padding: 3rem 1.25rem; }
+}
+
+
 .section-label { display: inline-block; font-family: var(--font-heading); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--color-accent); margin-bottom: .65rem; }
 
 .stats-bar { background: var(--color-secondary); padding: 2rem 1.25rem; }
