@@ -371,5 +371,12 @@ textarea { resize: vertical; min-height: 120px; }
   border-radius: var(--radius);
 }
 
+.section-pad .legal-disclaimer,
+.form-wrapper .legal-disclaimer,
+.highlands-promise + .legal-disclaimer {
+  color: #0a1e37;
+  font-style: italic;
+}
+
 
 
