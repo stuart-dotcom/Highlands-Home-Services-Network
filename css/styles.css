@@ -276,6 +276,11 @@ textarea { resize: vertical; min-height: 120px; }
   padding-bottom: 2.75rem;
   border-bottom: 1px solid rgba(27,58,92,.1);
 }
+              
+.process-step {
+  display: flex;
+  list-style-type: none;
+}
 
 
 .process-step-num {
