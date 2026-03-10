@@ -204,12 +204,18 @@ p  { margin-bottom: 1rem; }
 
 .page-hero-bg {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   z-index: 0;
 }
 
 .page-hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -231,14 +237,23 @@ p  { margin-bottom: 1rem; }
 .page-hero .section-label { color: var(--color-accent); }
 .page-hero .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
 
-.aeo-definition {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.88);
-  max-width: 780px;
-  margin: 0 auto 24px;
-}
+@media (max-width: 768px) {
+  .page-hero {
+    min-height: 100vw; /* square-ish on mobile — enough height to show the image */
+    max-height: 640px;
+  }
 
+  .page-hero-content {
+    padding: 2.5rem 1.25rem;
+  }
+
+  /* Do NOT re-declare .page-hero-img here — position:absolute handles fill */
+
+  /* Protect apply-hero opacity on mobile */
+  .apply-hero .page-hero-img {
+    opacity: 0.65;
+  }
+}
 /* ============================================================
    PAGE HERO — mobile fill fix
    ============================================================ */
@@ -268,12 +283,15 @@ p  { margin-bottom: 1rem; }
 .apply-hero .page-hero-bg::after {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     to right,
-    rgba(10, 20, 40, 0.78) 0%,
-    rgba(10, 20, 40, 0.60) 50%,
-    rgba(10, 20, 40, 0.30) 100%
+    rgba(10, 20, 40, 0.82) 0%,
+    rgba(10, 20, 40, 0.65) 55%,
+    rgba(10, 20, 40, 0.35) 100%
   );
   z-index: 1;
 }
@@ -289,10 +307,9 @@ p  { margin-bottom: 1rem; }
 
 @media (max-width: 768px) {
   .apply-hero .page-hero-bg::after {
-    background: rgba(10, 20, 40, 0.72);
+    background: rgba(10, 20, 40, 0.75);
   }
 }
-
 /* ============================================================
    STATS BAR
    ============================================================ */
