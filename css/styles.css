@@ -191,14 +191,15 @@ p  { margin-bottom: 1rem; }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
 
 /* ============================================================
-   PAGE HERO — inner pages
+   PAGE HERO — inner pages (FIXED)
    ============================================================ */
 .page-hero {
   position: relative;
   display: flex;
   align-items: flex-start;
-  overflow: visible;        /* never clip content */
+  overflow: hidden;             /* FIX: contain the image layer */
   background: var(--color-primary);
+  min-height: 420px;            /* FIX: give the absolute bg something to fill */
 }
 
 .page-hero-bg {
@@ -207,13 +208,12 @@ p  { margin-bottom: 1rem; }
   left: 0;
   width: 100%;
   height: 100%;
-  min-height: 420px;        /* image always has a frame even on short content */
   overflow: hidden;
   z-index: 0;
 }
 
 .page-hero-img {
-  position: absolute;
+  position: absolute;           /* FIX: always fill the bg frame */
   top: 0;
   left: 0;
   width: 100%;
@@ -227,7 +227,7 @@ p  { margin-bottom: 1rem; }
 .page-hero-content {
   position: relative;
   z-index: 2;
-  padding: 4rem 1.25rem 5rem;  /* generous bottom padding keeps text above fold */
+  padding: 4rem 1.25rem 5rem;
   max-width: 720px;
   width: 100%;
 }
@@ -246,25 +246,23 @@ p  { margin-bottom: 1rem; }
   margin: 0 0 24px;
 }
 
-/* PAGE HERO — mobile */
+/* PAGE HERO — mobile (FIXED) */
 @media (max-width: 768px) {
-  .page-hero-content {
-    padding: 2.5rem 1.25rem 4rem;
-  }
+  .page-hero { min-height: 360px; }
+  .page-hero-content { padding: 2.5rem 1.25rem 4rem; }
 
-  .page-hero h1 {
-    font-size: clamp(1.6rem, 6vw, 2.4rem);
-  }
+  .page-hero h1 { font-size: clamp(1.6rem, 6vw, 2.4rem); }
+  .page-hero p  { font-size: 1rem; max-width: 100%; }
 
-  .page-hero p {
-    font-size: 1rem;
-    max-width: 100%;
-  }
+  /* IMPORTANT: keep apply hero brightness on mobile too */
+  .apply-hero .page-hero-img { opacity: 0.65; }
 }
 
 /* ============================================================
-   APPLY PAGE HERO — stronger overlay for aerial image
+   APPLY PAGE HERO — stronger overlay for aerial image (FIXED)
    ============================================================ */
+.apply-hero { min-height: 520px; }  /* FIX: ensure hero always has a frame */
+
 .apply-hero .page-hero-bg::after {
   content: '';
   position: absolute;
@@ -285,13 +283,9 @@ p  { margin-bottom: 1rem; }
 .apply-hero .page-hero-content { position: relative; z-index: 2; }
 
 @media (max-width: 768px) {
-  .apply-hero .page-hero-bg::after {
-    background: rgba(10, 20, 40, 0.75);
-  }
-
-  .apply-hero .page-hero-img {
-    opacity: 0.65; /* keep protected on mobile */
-  }
+  .apply-hero { min-height: 400px; }
+  .apply-hero .page-hero-bg::after { background: rgba(10, 20, 40, 0.75); }
+  .apply-hero .page-hero-img { opacity: 0.65; }
 }
 
 /* ============================================================
@@ -636,7 +630,7 @@ textarea { resize: vertical; min-height: 120px; }
 .verify-link:hover { color: var(--color-primary); }
 
 /* ============================================================
-   FOOTER
+   FOOTER (FIXED — 3rd problem)
    ============================================================ */
 .site-footer { background: var(--color-primary); padding: 3rem 1.25rem 2rem; }
 
@@ -652,11 +646,12 @@ textarea { resize: vertical; min-height: 120px; }
 .footer-brand { display: flex; flex-direction: column; gap: 1rem; }
 
 .site-logo-footer {
-  height: 60px;
-  width: auto;
+  height: 60px !important;      /* force consistent size */
+  width: auto !important;       /* prevent stretching */
   max-width: 260px;
   object-fit: contain;
   display: block;
+  mix-blend-mode: lighten;      /* workaround for JPG white box on dark bg */
 }
 
 .footer-meta { font-size: .88rem; color: rgba(245,242,237,.75); line-height: 1.8; }
@@ -676,8 +671,9 @@ textarea { resize: vertical; min-height: 120px; }
 @media (max-width: 640px) {
   .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
   .footer-legal { grid-column: 1; }
-  .site-logo-footer { height: 48px; max-width: 220px; }
+  .site-logo-footer { height: 48px !important; max-width: 220px; }
 }
+
 
 
 
