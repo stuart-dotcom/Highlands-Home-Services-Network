@@ -513,3 +513,30 @@ textarea { resize: vertical; min-height: 120px; }
   .business-details { padding: 20px 18px; }
 }
 
+/* ============================================================
+   APPLY PAGE
+   ============================================================ */
+.requirements-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 24px;
+}
+.requirements-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.92);
+}
+.requirements-list li::before {
+  content: "✓";
+  color: var(--color-accent);
+  font-weight: 800;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.requirements-list li strong { color: var(--color-white); }
+
