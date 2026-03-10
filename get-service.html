@@ -10,8 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
-  <link rel="icon" type="image/png" href="/images/logo-icon.png">
-  <link rel="apple-touch-icon" href="/images/logo-apple-touch.png">
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon"              href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32"   href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"   href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180"      href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
   <script src="/js/main.js" defer></script>
 
   <!-- Open Graph -->
@@ -30,7 +35,7 @@
   <meta name="twitter:description" content="Submit your home service request and get connected to a DBPR-verified contractor in Highlands County. Free. No obligation to hire.">
   <meta name="twitter:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
 
-  <!-- JSON-LD BLOCK 1: LocalBusiness — identical root entity, matches all other pages exactly -->
+  <!-- JSON-LD BLOCK 1: LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -145,7 +150,7 @@
   }
   </script>
 
-  <!-- JSON-LD BLOCK 2: Service — page-specific homeowner referral entity -->
+  <!-- JSON-LD BLOCK 2: Service -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -178,7 +183,7 @@
   }
   </script>
 
-  <!-- JSON-LD BLOCK 3: BreadcrumbList — 2-level chain for this inner page -->
+  <!-- JSON-LD BLOCK 3: BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -200,7 +205,7 @@
   }
   </script>
 
-  <!-- JSON-LD BLOCK 4: FAQPage — homeowner-stage questions -->
+  <!-- JSON-LD BLOCK 4: FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -250,50 +255,6 @@
   }
   </script>
 
-  <style>
-    /* ─── AEO DEFINITION ────────────────────────────────────────────────── */
-    .aeo-definition {
-      font-size: 1rem;
-      line-height: 1.7;
-      color: rgba(255,255,255,0.88);
-      max-width: 780px;
-      margin: 0 auto 24px;
-    }
-
-    /* ─── LEGAL DISCLAIMER OVERRIDE for hero context ───────────────────── */
-.hero-legal-disclaimer {
-  font-size: 0.85rem;
-  color: var(--color-accent, #e07b2a);
-  font-weight: 600;
-  margin-top: 1rem;
-  font-style: italic;
-}
-
-
-    /* ─── HIGHLANDS PROMISE BLOCK ───────────────────────────────────────── */
-    .highlands-promise {
-      background: #f3f7fb;
-      border-left: 5px solid var(--color-accent, #e07b2a);
-      border-radius: 4px;
-      padding: 24px 28px;
-      margin-top: 8px;
-    }
-    .highlands-promise h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1rem;
-      font-weight: 800;
-      color: var(--color-primary, #0a1e37);
-      margin: 0 0 10px;
-    }
-    .highlands-promise p {
-      font-size: 0.95rem;
-      line-height: 1.7;
-      color: #444;
-      margin: 0 0 8px;
-    }
-    .highlands-promise p:last-child { margin-bottom: 0; }
-  </style>
-
 </head>
 
 <body>
@@ -303,7 +264,7 @@
   <div class="nav-inner">
     <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network — Home">
       <img src="/images/logo-light.jpg"
-           alt="Highlands Home Services Network logo — connecting licensed Highlands County contractors with exclusive leads"
+           alt="Highlands Home Services Network logo connecting licensed Highlands County contractors with exclusive leads"
            class="site-logo"
            width="260" height="60"
            loading="eager">
@@ -336,7 +297,6 @@
     <div class="container page-hero-content">
       <p class="section-label">For Highlands County homeowners</p>
       <h1>NEED SERVICE? Get a Fast Response from a Licensed Highlands County Pro.</h1>
-      <!-- AEO Direct Answer Block — visible to users and crawlers, matches pattern on all other pages -->
       <p class="aeo-definition">
         Highlands Home Services Network is a free digital referral service connecting
         Highlands County homeowners with licensed, DBPR-verified contractors in Sebring,
@@ -351,11 +311,11 @@
         the hour for emergencies.
       </p>
       <a href="#homeowner-form" class="btn btn-primary">Connect with a Licensed Pro Now</a>
-      <p style="font-size:0.85rem;color:#e07b2a;font-weight:600;font-style:italic;margin-top:1rem;">
-       Highlands Home Services Network is a referral and lead generation service.
-       We do not perform HVAC or any other trade services.
+      <p class="hero-legal-disclaimer">
+        Highlands Home Services Network is a referral and lead generation service.
+        We do not perform HVAC or any other trade services.
       </p>
-     </div>
+    </div>
   </section>
 
   <!-- HOW IT WORKS + HIGHLANDS PROMISE -->
@@ -540,4 +500,5 @@
 
 </body>
 </html>
+
 
