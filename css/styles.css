@@ -221,12 +221,19 @@ p  { margin-bottom: 1rem; }
 .page-hero-bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: .38;
+  overflow: hidden;
   z-index: 0;
 }
+
+.page-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  opacity: .38;
+}
+
 
 .page-hero-content {
   position: relative;
