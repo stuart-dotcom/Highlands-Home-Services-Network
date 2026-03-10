@@ -10,8 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
-  <link rel="icon" type="image/png" href="/images/logo-icon.png">
-  <link rel="apple-touch-icon" href="/images/logo-apple-touch.png">
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon"              href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32"   href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"   href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180"      href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
   <script src="/js/main.js" defer></script>
 
   <!-- Open Graph -->
@@ -30,7 +35,7 @@
   <meta name="twitter:description" content="Emergency repairs, tune-ups, installs — we qualify the leads, you close the jobs. No shared lists. No monthly fees.">
   <meta name="twitter:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
 
-  <!-- JSON-LD BLOCK 1: LocalBusiness — identical root entity, matches index.html exactly -->
+  <!-- JSON-LD BLOCK 1: LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -59,17 +64,17 @@
       "postalCode": "33870",
       "addressCountry": "US"
     },
-   "areaServed": {
-  "@type": "AdministrativeArea",
-  "name": "Highlands County",
-  "containsPlace": [
-    {"@type": "City", "name": "Sebring"},
-    {"@type": "City", "name": "Avon Park"},
-    {"@type": "City", "name": "Lake Placid"},
-    {"@type": "City", "name": "Lorida"},
-    {"@type": "City", "name": "Venus"}
-  ]
-},
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Highlands County",
+      "containsPlace": [
+        {"@type": "City", "name": "Sebring"},
+        {"@type": "City", "name": "Avon Park"},
+        {"@type": "City", "name": "Lake Placid"},
+        {"@type": "City", "name": "Lorida"},
+        {"@type": "City", "name": "Venus"}
+      ]
+    },
     "serviceArea": {
       "@type": "GeoCircle",
       "geoMidpoint": {
@@ -145,7 +150,7 @@
   }
   </script>
 
-  <!-- JSON-LD BLOCK 2: Service — HVAC-specific, references root LocalBusiness @id -->
+  <!-- JSON-LD BLOCK 2: Service -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -178,7 +183,7 @@
   }
   </script>
 
-  <!-- JSON-LD BLOCK 3: BreadcrumbList — 2-level chain for this inner page -->
+  <!-- JSON-LD BLOCK 3: BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -200,7 +205,7 @@
   }
   </script>
 
-  <!-- JSON-LD BLOCK 4: FAQPage — matches visible FAQ section below -->
+  <!-- JSON-LD BLOCK 4: FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -258,209 +263,6 @@
   }
   </script>
 
-  <style>
-    /* ─── IMAGE BANNER ──────────────────────────────────────────────────── */
-    .image-banner {
-      position: relative;
-      width: 100%;
-      min-height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      background-color: #1a2a3a;
-    }
-    .image-banner img.banner-bg {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      z-index: 0;
-    }
-    .image-banner .banner-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(10,30,55,0.82) 0%, rgba(10,30,55,0.50) 100%);
-      z-index: 1;
-    }
-    .image-banner .banner-content {
-      position: relative;
-      z-index: 2;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 64px 24px;
-      color: #fff;
-    }
-    .image-banner .banner-content h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(1.45rem, 3.5vw, 2.1rem);
-      font-weight: 800;
-      color: #fff;
-      margin: 0 0 20px;
-      line-height: 1.2;
-    }
-    .image-banner .banner-content .banner-cols {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: start;
-    }
-    .image-banner .banner-content .banner-col h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--color-accent, #e07b2a);
-      margin: 0 0 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .image-banner .banner-content .banner-col p {
-      font-size: 0.97rem;
-      color: rgba(255,255,255,0.90);
-      line-height: 1.7;
-      margin: 0 0 10px;
-    }
-    .image-banner .banner-content .banner-col ul {
-      margin: 0 0 0 1.1rem;
-      padding: 0;
-      list-style: disc;
-    }
-    .image-banner .banner-content .banner-col ul li {
-      font-size: 0.97rem;
-      color: rgba(255,255,255,0.90);
-      line-height: 1.7;
-      margin-bottom: 6px;
-    }
-
-    /* ─── AEO ENTITY DEFINITION ─────────────────────────────────────────── */
-    .aeo-definition {
-      font-size: 1rem;
-      line-height: 1.7;
-      color: rgba(255,255,255,0.88);
-      max-width: 780px;
-      margin: 0 auto 24px;
-    }
-
-    /* ─── LEAD DEFINITION BOX ───────────────────────────────────────────── */
-    .lead-definition {
-      background: #f3f7fb;
-      border-left: 5px solid var(--color-accent, #e07b2a);
-      border-radius: 4px;
-      padding: 28px 32px;
-      margin: 0 0 40px;
-    }
-    .lead-definition h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.05rem;
-      font-weight: 800;
-      margin: 0 0 14px;
-      color: var(--color-primary, #0a1e37);
-    }
-    .lead-definition ul {
-      margin: 0 0 14px 1.2rem;
-      padding: 0;
-      list-style: disc;
-    }
-    .lead-definition ul li {
-      font-size: 0.97rem;
-      line-height: 1.65;
-      margin-bottom: 6px;
-    }
-    .lead-definition .billing-note {
-      font-size: 0.88rem;
-      color: #555;
-      border-top: 1px solid #d0dce8;
-      padding-top: 14px;
-      margin-top: 14px;
-      line-height: 1.6;
-    }
-
-    /* ─── FAQ SECTION ───────────────────────────────────────────────────── */
-    .faq-section {
-      background: #fff;
-    }
-    .faq-list {
-      max-width: 760px;
-      margin: 0 auto;
-    }
-    .faq-item {
-      border-bottom: 1px solid #e2e8f0;
-      padding: 28px 0;
-    }
-    .faq-item:first-child { padding-top: 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-item h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--color-primary, #0a1e37);
-      margin: 0 0 10px;
-      line-height: 1.35;
-    }
-    .faq-item p {
-      font-size: 0.97rem;
-      color: #444;
-      line-height: 1.7;
-      margin: 0 0 8px;
-    }
-    .faq-item p:last-child { margin-bottom: 0; }
-    .faq-item ul {
-      margin: 8px 0 8px 1.2rem;
-      padding: 0;
-      list-style: disc;
-    }
-    .faq-item ul li {
-      font-size: 0.97rem;
-      color: #444;
-      line-height: 1.65;
-      margin-bottom: 5px;
-    }
-    .faq-billing-callout {
-      background: #fff8f2;
-      border: 1px solid #f0c89a;
-      border-radius: 4px;
-      padding: 12px 16px;
-      margin-top: 10px;
-      font-size: 0.88rem;
-      color: #7a4010;
-      line-height: 1.6;
-    }
-
-    /* ─── INLINE CTA STRIP ──────────────────────────────────────────────── */
-    .inline-cta {
-      background: var(--color-primary, #0a1e37);
-      padding: 36px 24px;
-      text-align: center;
-    }
-    .inline-cta p {
-      color: rgba(255,255,255,0.85);
-      font-size: 1rem;
-      margin: 0 0 20px;
-    }
-    .inline-cta .cta-sub {
-      display: block;
-      margin-top: 14px;
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.55);
-    }
-    .inline-cta .cta-sub a {
-      color: rgba(255,255,255,0.7);
-      text-decoration: underline;
-    }
-
-    /* ─── RESPONSIVE ────────────────────────────────────────────────────── */
-    @media (max-width: 680px) {
-      .image-banner .banner-content .banner-cols {
-        grid-template-columns: 1fr;
-        gap: 28px;
-      }
-      .image-banner { min-height: auto; }
-      .lead-definition { padding: 20px 18px; }
-    }
-  </style>
-
 </head>
 
 <body>
@@ -470,7 +272,7 @@
   <div class="nav-inner">
     <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network — Home">
       <img src="/images/logo-light.jpg"
-           alt="Highlands Home Services Network logo — connecting licensed Highlands County contractors with exclusive leads"
+           alt="Highlands Home Services Network logo connecting licensed Highlands County contractors with exclusive leads"
            class="site-logo"
            width="260" height="60"
            loading="eager">
@@ -816,6 +618,7 @@
 
 </body>
 </html>
+
 
 
 
