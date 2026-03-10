@@ -564,19 +564,31 @@ textarea { resize: vertical; min-height: 120px; }
 }
 
 /* ============================================================
-   APPLY PAGE
+   APPLY PAGE — FIXED requirements list layout
    ============================================================ */
 .requirements-list { list-style: none; padding: 0; margin: 20px 0 24px; }
+
 .requirements-list li {
   display: flex;
-  gap: 12px;
+  flex-direction: column;     /* FIX: stack label above description */
+  gap: 4px;
   align-items: flex-start;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   font-size: 1rem;
   line-height: 1.6;
   color: rgba(255,255,255,0.92);
 }
-.requirements-list li::before { content: "✓"; color: var(--color-accent); font-weight: 800; font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+
+.requirements-list li:last-child { margin-bottom: 0; }
+
+.requirements-list li::before {
+  content: "✓";
+  color: var(--color-accent);
+  font-weight: 800;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
 .requirements-list li strong { color: var(--color-white); }
 
 /* ============================================================
@@ -644,12 +656,6 @@ textarea { resize: vertical; min-height: 120px; }
 
 .footer-brand { display: flex; flex-direction: column; gap: 1rem; }
 
-/* ── FOOTER LOGO FIX ─────────────────────────────────────────
-   Removed fixed height + !important constraints that were
-   preventing the image from stretching to its natural width.
-   width: clamp() lets it breathe like the header logo does.
-   mix-blend-mode removed — it caused rendering inconsistency.
-   ──────────────────────────────────────────────────────────── */
 .site-logo-footer {
   display: block;
   width: clamp(220px, 35vw, 400px);
@@ -677,7 +683,6 @@ textarea { resize: vertical; min-height: 120px; }
   .footer-legal { grid-column: 1; }
   .site-logo-footer { width: min(300px, 100%); height: auto; }
 }
-
 
 
 
