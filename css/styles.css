@@ -568,3 +568,42 @@ textarea { resize: vertical; min-height: 120px; }
 }
 .hero-contact-email a { color: var(--color-accent); }
 
+/* ============================================================
+   GET-SERVICE PAGE
+   ============================================================ */
+.hero-legal-disclaimer {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.highlands-promise {
+  background: #f3f7fb;
+  border-left: 5px solid var(--color-accent);
+  border-radius: 4px;
+  padding: 24px 28px;
+  margin-top: 8px;
+}
+.highlands-promise h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin: 0 0 10px;
+}
+.highlands-promise p { font-size: 0.95rem; line-height: 1.7; color: #444; margin: 0 0 8px; }
+.highlands-promise p:last-child { margin-bottom: 0; }
+
+.process-list {
+  padding-left: 1.25rem;
+  margin: 1.25rem 0 0;
+}
+.process-list li {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: var(--color-dark);
+}
+.process-list li:last-child { margin-bottom: 0; }
+
