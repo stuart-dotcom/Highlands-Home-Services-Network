@@ -10,8 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
-  <link rel="icon" type="image/png" href="/images/logo-icon.png">
-  <link rel="apple-touch-icon" href="/images/logo-apple-touch.png">
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon"              href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32"   href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"   href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180"      href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
   <script src="/js/main.js" defer></script>
 
   <!-- Open Graph -->
@@ -59,18 +64,18 @@
       "postalCode": "33870",
       "addressCountry": "US"
     },
-"areaServed": {
-  "@type": "AdministrativeArea",
-  "name": "Highlands County",
-  "containsPlace": [
-    {"@type": "City", "name": "Sebring"},
-    {"@type": "City", "name": "Avon Park"},
-    {"@type": "City", "name": "Lake Placid"},
-    {"@type": "City", "name": "Lorida"},
-    {"@type": "City", "name": "Venus"}
-  ]
-},
-      "serviceArea": {
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Highlands County",
+      "containsPlace": [
+        {"@type": "City", "name": "Sebring"},
+        {"@type": "City", "name": "Avon Park"},
+        {"@type": "City", "name": "Lake Placid"},
+        {"@type": "City", "name": "Lorida"},
+        {"@type": "City", "name": "Venus"}
+      ]
+    },
+    "serviceArea": {
       "@type": "GeoCircle",
       "geoMidpoint": {
         "@type": "GeoCoordinates",
@@ -145,7 +150,7 @@
   }
   </script>
 
-  <!-- JSON-LD: BreadcrumbList — site hierarchy root -->
+  <!-- JSON-LD: BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -161,7 +166,7 @@
   }
   </script>
 
-  <!-- JSON-LD: FAQPage — AEO answer engine citation surface -->
+  <!-- JSON-LD: FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -210,6 +215,7 @@
     ]
   }
   </script>
+
 </head>
 <body>
 
@@ -218,7 +224,7 @@
   <div class="nav-inner">
     <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network — Home">
       <img src="/images/logo-light.jpg"
-           alt="Highlands Home Services Network logo — connecting licensed Highlands County contractors with exclusive leads"
+           alt="Highlands Home Services Network logo connecting licensed Highlands County contractors with exclusive leads"
            width="260" height="60"
            class="site-logo"
            loading="eager">
@@ -515,7 +521,7 @@
     </div>
   </section>
 
-  <!-- FAQ SECTION — AEO + trust reinforcement -->
+  <!-- FAQ SECTION -->
   <section class="faq-section section-pad" aria-label="Frequently asked questions">
     <div class="container">
       <p class="section-label">Common questions</p>
@@ -636,3 +642,4 @@
 
 </body>
 </html>
+
