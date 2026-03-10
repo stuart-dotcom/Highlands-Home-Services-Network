@@ -10,8 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
-  <link rel="icon" type="image/png" href="/images/logo-icon.png">
-  <link rel="apple-touch-icon" href="/images/logo-apple-touch.png">
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon"              href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32"   href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"   href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180"      href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
   <script src="/js/main.js" defer></script>
 
   <!-- Open Graph -->
@@ -30,8 +35,7 @@
   <meta name="twitter:description" content="Highlands County-only, DBPR-verified contractor lead network. Exclusive pay-per-lead. No shared lists. No national franchise.">
   <meta name="twitter:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
 
-  <!-- JSON-LD BLOCK 1: LocalBusiness — identical root entity, matches all other pages exactly -->
-  <!-- NOTE: areaServed updated sitewide to AdministrativeArea parent + containsPlace city children -->
+  <!-- JSON-LD BLOCK 1: LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -146,7 +150,7 @@
   }
   </script>
 
-  <!-- JSON-LD BLOCK 2: BreadcrumbList — 2-level chain for this inner page -->
+  <!-- JSON-LD BLOCK 2: BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -168,7 +172,7 @@
   }
   </script>
 
-  <!-- JSON-LD BLOCK 3: FAQPage — AEO answer surface for contractor vetting questions -->
+  <!-- JSON-LD BLOCK 3: FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -210,151 +214,6 @@
   }
   </script>
 
-  <style>
-    /* ─── PROBLEM / AGITATE SECTION ─────────────────────────────────────── */
-    .problem-section {
-      background: #0a1e37;
-      padding: 56px 24px;
-      text-align: center;
-    }
-    .problem-section h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(1.3rem, 3vw, 1.9rem);
-      font-weight: 800;
-      color: #fff;
-      margin: 0 0 18px;
-      line-height: 1.25;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .problem-section p {
-      color: rgba(255,255,255,0.85);
-      font-size: 1.05rem;
-      line-height: 1.7;
-      max-width: 620px;
-      margin: 0 auto 10px;
-    }
-    .problem-section .problem-accent {
-      color: var(--color-accent, #e07b2a);
-      font-weight: 700;
-    }
-
-    /* ─── VALUE STRIP ───────────────────────────────────────────────────── */
-    .value-strip {
-      background: var(--color-accent, #e07b2a);
-      padding: 0;
-    }
-    .value-strip ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      justify-content: center;
-    }
-    .value-strip ul li {
-      flex: 1 1 220px;
-      text-align: center;
-      padding: 16px 20px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 0.92rem;
-      color: #fff;
-      letter-spacing: 0.02em;
-      border-right: 1px solid rgba(255,255,255,0.25);
-    }
-    .value-strip ul li:last-child { border-right: none; }
-    .value-strip ul li span {
-      display: block;
-      font-size: 1.45rem;
-      margin-bottom: 4px;
-    }
-
-    /* ─── TWO-COL CONTENT ───────────────────────────────────────────────── */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 56px;
-      align-items: start;
-    }
-
-    /* ─── TRUST PILLARS ─────────────────────────────────────────────────── */
-    .trust-pillars-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-      margin-top: 32px;
-    }
-    .trust-pillar {
-      background: #fff;
-      border: 1px solid #e2e8f0;
-      border-top: 4px solid var(--color-accent, #e07b2a);
-      border-radius: 6px;
-      padding: 24px 22px;
-    }
-    .trust-pillar h4 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.97rem;
-      font-weight: 700;
-      margin: 0 0 10px;
-      color: var(--color-primary, #0a1e37);
-    }
-    .trust-pillar p {
-      font-size: 0.93rem;
-      color: #555;
-      line-height: 1.6;
-      margin: 0 0 10px;
-    }
-    .trust-verify-link {
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: var(--color-accent, #e07b2a);
-      text-decoration: none;
-    }
-    .trust-verify-link:hover { text-decoration: underline; }
-
-    /* ─── BUSINESS DETAILS BLOCK ────────────────────────────────────────── */
-    .business-details {
-      background: #f3f7fb;
-      border-left: 5px solid var(--color-accent, #e07b2a);
-      border-radius: 4px;
-      padding: 28px 32px;
-      font-size: 0.97rem;
-      line-height: 1.8;
-    }
-    .business-details strong {
-      display: block;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1rem;
-      font-weight: 800;
-      margin-bottom: 6px;
-      color: var(--color-primary, #0a1e37);
-    }
-
-    /* ─── AEO DEFINITION ────────────────────────────────────────────────── */
-    .aeo-definition {
-      font-size: 1rem;
-      line-height: 1.7;
-      color: rgba(255,255,255,0.88);
-      max-width: 780px;
-      margin: 0 auto 24px;
-    }
-
-    /* ─── RESPONSIVE ────────────────────────────────────────────────────── */
-    @media (max-width: 768px) {
-      .about-grid { grid-template-columns: 1fr; gap: 32px; }
-      .value-strip ul li {
-        flex: 1 1 100%;
-        border-right: none;
-        border-bottom: 1px solid rgba(255,255,255,0.2);
-      }
-      .value-strip ul li:last-child { border-bottom: none; }
-      .business-details { padding: 20px 18px; }
-    }
-  </style>
-
 </head>
 
 <body>
@@ -364,9 +223,9 @@
   <div class="nav-inner">
     <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network — Home">
       <img src="/images/logo-light.jpg"
-           alt="Highlands Home Services Network logo — connecting licensed Highlands County contractors with exclusive leads"
+           alt="Highlands Home Services Network logo connecting licensed Highlands County contractors with exclusive leads"
            class="site-logo"
-           width="260" height="60"
+           width="300" height="73"
            loading="eager">
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -397,7 +256,6 @@
     <div class="container page-hero-content">
       <p class="section-label">About Highlands Home Services Network</p>
       <h1>Stop Racing Four Other Trucks to the Same Door. There Is a Better Model.</h1>
-      <!-- AEO Direct Answer Block — visible to users and crawlers, matches pattern on all other pages -->
       <p class="aeo-definition">
         Highlands Home Services Network is a digital lead generation and referral service
         operating exclusively in Highlands County, Florida. It is a DBA of Obsidian Peak
@@ -639,5 +497,7 @@
 
 </body>
 </html>
+
+
 
 
