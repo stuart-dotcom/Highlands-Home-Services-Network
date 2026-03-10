@@ -540,3 +540,31 @@ textarea { resize: vertical; min-height: 120px; }
 }
 .requirements-list li strong { color: var(--color-white); }
 
+/* ============================================================
+   CONTACT PAGE — FAQ static layout (not accordion)
+   ============================================================ */
+.faq-section { background: var(--color-white); }
+
+.faq-item {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 28px 0;
+}
+.faq-item:first-child { padding-top: 0; }
+.faq-item:last-child  { border-bottom: none; }
+.faq-item h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+.faq-item p { font-size: 0.97rem; color: #444; line-height: 1.7; margin: 0 0 8px; }
+.faq-item p:last-child { margin-bottom: 0; }
+
+.hero-contact-email {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+.hero-contact-email a { color: var(--color-accent); }
+
