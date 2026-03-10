@@ -197,9 +197,9 @@ p  { margin-bottom: 1rem; }
   position: relative;
   display: flex;
   align-items: flex-start;
-  overflow: hidden;             /* FIX: contain the image layer */
+  overflow: hidden;
   background: var(--color-primary);
-  min-height: 420px;            /* FIX: give the absolute bg something to fill */
+  min-height: 420px;
 }
 
 .page-hero-bg {
@@ -213,7 +213,7 @@ p  { margin-bottom: 1rem; }
 }
 
 .page-hero-img {
-  position: absolute;           /* FIX: always fill the bg frame */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -254,14 +254,13 @@ p  { margin-bottom: 1rem; }
   .page-hero h1 { font-size: clamp(1.6rem, 6vw, 2.4rem); }
   .page-hero p  { font-size: 1rem; max-width: 100%; }
 
-  /* IMPORTANT: keep apply hero brightness on mobile too */
   .apply-hero .page-hero-img { opacity: 0.65; }
 }
 
 /* ============================================================
    APPLY PAGE HERO — stronger overlay for aerial image (FIXED)
    ============================================================ */
-.apply-hero { min-height: 520px; }  /* FIX: ensure hero always has a frame */
+.apply-hero { min-height: 520px; }
 
 .apply-hero .page-hero-bg::after {
   content: '';
@@ -630,7 +629,7 @@ textarea { resize: vertical; min-height: 120px; }
 .verify-link:hover { color: var(--color-primary); }
 
 /* ============================================================
-   FOOTER (FIXED — 3rd problem)
+   FOOTER
    ============================================================ */
 .site-footer { background: var(--color-primary); padding: 3rem 1.25rem 2rem; }
 
@@ -645,13 +644,18 @@ textarea { resize: vertical; min-height: 120px; }
 
 .footer-brand { display: flex; flex-direction: column; gap: 1rem; }
 
+/* ── FOOTER LOGO FIX ─────────────────────────────────────────
+   Removed fixed height + !important constraints that were
+   preventing the image from stretching to its natural width.
+   width: clamp() lets it breathe like the header logo does.
+   mix-blend-mode removed — it caused rendering inconsistency.
+   ──────────────────────────────────────────────────────────── */
 .site-logo-footer {
-  height: 60px !important;      /* force consistent size */
-  width: auto !important;       /* prevent stretching */
-  max-width: 260px;
-  object-fit: contain;
   display: block;
-  mix-blend-mode: lighten;      /* workaround for JPG white box on dark bg */
+  width: clamp(220px, 35vw, 400px);
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .footer-meta { font-size: .88rem; color: rgba(245,242,237,.75); line-height: 1.8; }
@@ -671,8 +675,9 @@ textarea { resize: vertical; min-height: 120px; }
 @media (max-width: 640px) {
   .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
   .footer-legal { grid-column: 1; }
-  .site-logo-footer { height: 48px !important; max-width: 220px; }
+  .site-logo-footer { width: min(300px, 100%); height: auto; }
 }
+
 
 
 
