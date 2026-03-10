@@ -402,3 +402,114 @@ textarea { resize: vertical; min-height: 120px; }
 .faq-item[open] summary h3 { color: var(--color-accent); }
 .faq-item p { margin-top: .75rem; margin-bottom: 0; font-size: .97rem; color: #444; line-height: 1.7; }
 
+/* ============================================================
+   ABOUT PAGE
+   ============================================================ */
+.problem-section {
+  background: #0a1e37;
+  padding: 56px 24px;
+  text-align: center;
+}
+.problem-section h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 3vw, 1.9rem);
+  font-weight: 800;
+  color: var(--color-white);
+  margin: 0 auto 18px;
+  line-height: 1.25;
+  max-width: 700px;
+}
+.problem-section p {
+  color: rgba(255,255,255,0.85);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 10px;
+}
+.problem-accent { color: var(--color-accent); font-weight: 700; }
+
+.value-strip { background: var(--color-accent); }
+.value-strip ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+.value-strip ul li {
+  flex: 1 1 220px;
+  text-align: center;
+  padding: 16px 20px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--color-white);
+  letter-spacing: 0.02em;
+  border-right: 1px solid rgba(255,255,255,0.25);
+}
+.value-strip ul li:last-child { border-right: none; }
+.value-strip ul li span { display: block; font-size: 1.45rem; margin-bottom: 4px; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.trust-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+.trust-pillar {
+  background: var(--color-white);
+  border: 1px solid #e2e8f0;
+  border-top: 4px solid var(--color-accent);
+  border-radius: var(--radius);
+  padding: 24px 22px;
+}
+.trust-pillar h4 { font-size: 0.97rem; font-weight: 700; margin: 0 0 10px; color: var(--color-primary); }
+.trust-pillar p  { font-size: 0.93rem; color: #555; line-height: 1.6; margin: 0 0 10px; }
+.trust-verify-link { font-size: 0.88rem; font-weight: 600; color: var(--color-accent); text-decoration: none; }
+.trust-verify-link:hover { text-decoration: underline; }
+
+.business-details {
+  background: #f3f7fb;
+  border-left: 5px solid var(--color-accent);
+  border-radius: 4px;
+  padding: 28px 32px;
+  font-size: 0.97rem;
+  line-height: 1.8;
+}
+.business-details strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: var(--color-primary);
+}
+
+.aeo-definition {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.88);
+  max-width: 780px;
+  margin: 0 auto 24px;
+}
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .value-strip ul li {
+    flex: 1 1 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  .value-strip ul li:last-child { border-bottom: none; }
+  .business-details { padding: 20px 18px; }
+}
+
