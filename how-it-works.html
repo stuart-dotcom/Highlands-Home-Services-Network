@@ -227,30 +227,49 @@
 </head>
 <body>
 
-  <!-- HEADER / NAV -->
-  <header class="site-header">
-    <div class="nav-inner">
-      <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network Home">
-        <img src="/images/logo-light.jpg"
-             alt="Highlands Home Services Network logo connecting licensed Highlands County contractors with exclusive leads"
-             class="site-logo" width="300" height="73" loading="eager">
-      </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav aria-label="Main navigation">
-        <ul class="nav-list">
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/how-it-works.html" aria-current="page">How It Works</a></li>
-          <li><a href="/hvac.html">HVAC Leads</a></li>
-          <li><a href="/service-areas.html">Service Areas</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/get-service.html" style="color:var(--color-accent);font-weight:700;">Get Service</a></li>
-          <li><a href="/apply.html" class="nav-cta">Apply to Join</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <!-- HEADER -->
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network — Home">
+      <img src="/images/logo-light.jpg"
+           alt="Highlands Home Services Network logo connecting licensed Highlands County contractors with exclusive leads"
+           class="site-logo"
+           loading="eager">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="/how-it-works.html" aria-current="page">How It Works</a></li>
+        <li><a href="/how-it-works.html">How It Works</a></li>
+        <li class="nav-item-dropdown">
+          <a href="/hvac.html">Contractor Leads</a>
+          <ul class="nav-dropdown" aria-label="Contractor lead verticals">
+            <li><a href="/hvac.html">HVAC Leads</a></li>
+            <li><a href="/#plumbing-waitlist">Plumbing Leads <span style="font-size:.75rem;opacity:.7;">(Coming Soon)</span></a></li>
+            <li><a href="/#electrical-waitlist">Electrical Leads <span style="font-size:.75rem;opacity:.7;">(Coming Soon)</span></a></li>
+            <li><a href="/#roofing-waitlist">Roofing Leads <span style="font-size:.75rem;opacity:.7;">(Coming Soon)</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="/service-areas.html">Service Areas</a>
+          <ul class="nav-dropdown" aria-label="Service area cities">
+            <li><a href="/service-areas/sebring-fl.html">Sebring</a></li>
+            <li><a href="/service-areas/avon-park-fl.html">Avon Park</a></li>
+            <li><a href="/service-areas/lake-placid-fl.html">Lake Placid</a></li>
+            <li><a href="/service-areas/lorida-fl.html">Lorida</a></li>
+            <li><a href="/service-areas/venus-fl.html">Venus</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/get-service.html" style="color:var(--color-accent);font-weight:700;">Get Service</a></li>
+        <li><a href="/apply.html" class="nav-cta">Apply to Join</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
   <main>
 
