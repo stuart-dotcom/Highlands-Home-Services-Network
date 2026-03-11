@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Exclusive HVAC Leads in Highlands County, FL | HHSN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get exclusive, pre-screened HVAC leads in Highlands County. Verified emergency repairs & installs for licensed FL contractors. Pay-per-lead, no monthly fees. Join HHSN.">
+  <link rel="canonical" href="https://highlandshomeservicesnetwork.com/hvac.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon"              href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32"   href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"   href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180"      href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+  <script src="/js/main.js" defer></script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Exclusive HVAC Leads in Highlands County, FL | HHSN">
+  <meta property="og:description" content="Exclusive Highlands County HVAC leads screened for location, intent, and contact quality. No retainers. Pay per verified lead. No shared lists.">
+  <meta property="og:url" content="https://highlandshomeservicesnetwork.com/hvac.html">
+  <meta property="og:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Highlands Home Services Network">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Exclusive HVAC Leads in Highlands County, FL | HHSN">
+  <meta name="twitter:description" content="Emergency repairs, tune-ups, installs — we qualify the leads, you close the jobs. No shared lists. No monthly fees.">
+  <meta name="twitter:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
+
+<!-- JSON-LD BLOCK 1: @graph — Organization + LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://highlandshomeservicesnetwork.com/#organization",
+      "name": "Obsidian Peak Holdings LLC",
+      "legalName": "Obsidian Peak Holdings LLC",
+      "url": "https://highlandshomeservicesnetwork.com/",
+      "sameAs": [
+        "https://dos.sunbiz.org/scripts/ficidet.exe?action=DETREG&docnum=G26000029725&rdocnum=G26000029725",
+        "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?inquirytype=EntityName&directionType=Initial&searchNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700&aggregateId=flal-l26000094970-e1abe3e8-814a-4352-9777-66d8f095e62f&searchTerm=Obsidian%20Peak%20Holdings%20LLC&listNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700",
+        "https://www.linkedin.com/in/stuart-o-716573306/"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Stuart Orton",
+        "sameAs": "https://www.linkedin.com/in/stuart-o-716573306/"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://highlandshomeservicesnetwork.com/#business",
+      "name": "Highlands Home Services Network",
+      "alternateName": "HHSN",
+      "url": "https://highlandshomeservicesnetwork.com/",
+      "logo": "https://highlandshomeservicesnetwork.com/images/logo-light.png",
+      "image": "https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg",
+      "legalName": "Obsidian Peak Holdings LLC",
+      "description": "Highlands Home Services Network is the hyperlocal lead generation and referral service for licensed contractors in Highlands County, Florida. It provides exclusive, DBPR-verified homeowner leads in Sebring, Avon Park, Lake Placid, Lorida, and Venus — on a pay-per-lead basis with zero internal competition. Each lead is routed to one qualified contractor only.",
+      "priceRange": "$$",
+      "publicAccess": false,
+      "parentOrganization": { "@id": "https://highlandshomeservicesnetwork.com/#organization" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sebring",
+        "addressRegion": "FL",
+        "postalCode": "33870",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Highlands County",
+        "containsPlace": [
+          { "@type": "City", "name": "Sebring" },
+          { "@type": "City", "name": "Avon Park" },
+          { "@type": "City", "name": "Lake Placid" },
+          { "@type": "City", "name": "Lorida" },
+          { "@type": "City", "name": "Venus" }
+        ]
+      },
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 27.3409,
+          "longitude": -81.3400
+        },
+        "geoRadius": 45000
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "availableLanguage": "English",
+        "areaServed": "Highlands County, Florida",
+        "email": "hello@highlandshomeservicesnetwork.com"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Contractor Lead Generation Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Exclusive HVAC Contractor Leads",
+              "description": "Emergency AC repair, HVAC tune-ups, and system replacements for licensed HVAC contractors serving Sebring, Avon Park, and Lake Placid, Florida.",
+              "areaServed": { "@type": "AdministrativeArea", "name": "Highlands County, Florida" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Plumbing Contractor Lead Waitlist",
+              "areaServed": { "@type": "AdministrativeArea", "name": "Highlands County, Florida" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Electrical Contractor Lead Waitlist",
+              "areaServed": { "@type": "AdministrativeArea", "name": "Highlands County, Florida" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roofing Contractor Lead Waitlist",
+              "areaServed": { "@type": "AdministrativeArea", "name": "Highlands County, Florida" }
+            }
+          }
+        ]
+      },
+      "knowsAbout": [
+        "contractor lead generation",
+        "home services marketing",
+        "HVAC lead generation",
+        "emergency AC repair Sebring FL",
+        "HVAC contractor leads Highlands County",
+        "Highlands County Florida",
+        "Sebring FL",
+        "Avon Park FL",
+        "Lake Placid FL",
+        "Lorida FL",
+        "Venus FL"
+      ],
+      "sameAs": [
+        "https://dos.sunbiz.org/scripts/ficidet.exe?action=DETREG&docnum=G26000029725&rdocnum=G26000029725",
+        "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?inquirytype=EntityName&directionType=Initial&searchNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700&aggregateId=flal-l26000094970-e1abe3e8-814a-4352-9777-66d8f095e62f&searchTerm=Obsidian%20Peak%20Holdings%20LLC&listNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700",
+        "https://www.linkedin.com/in/stuart-o-716573306/"
+      ]
+    }
+  ]
+}
+</script>
+
+  <!-- JSON-LD BLOCK 2: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Highlands Home Services Network",
+        "item": "https://highlandshomeservicesnetwork.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "HVAC Contractor Leads",
+        "item": "https://highlandshomeservicesnetwork.com/hvac.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD BLOCK 4: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do I have to pay for a lead if I don't close the job?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Our service is to provide you with a Verified Opportunity — a homeowner in your service area with a specific, current need and valid contact information. A lead is considered delivered and billable when verified contact information and a confirmed service request are transmitted to you, regardless of whether the job is quoted, scheduled, or completed. While we provide the exclusive connection, the responsibility for quoting, following up, and closing the contract remains with you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you define a Verified Lead?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A lead is considered verified when it meets three strict criteria: (1) Confirmed Location — the homeowner's address is within Highlands County; (2) Service Match — the request specifically matches your licensed trade; (3) Validated Contact Data — the submission includes a working phone number or email address. A lead is not evaluated on whether the homeowner ultimately hires a contractor, accepts a quote, or proceeds with the project."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is exclusive routing better for me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most lead generation platforms sell the same homeowner's name to 3 to 5 different contractors simultaneously, forcing you to compete on price alone. Highlands Home Services Network routes each lead to one contractor only. That homeowner's contact information is yours and yours alone — no other pro in the network receives it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When and how do I get billed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You are never billed in advance. Billing happens only after a verified lead has been delivered to you via your preferred method — SMS, email, or phone call. We invoice you at the per-lead rate agreed upon during your setup. There are no surprise charges and no billing before delivery."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a monthly membership or sign-up fee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. We operate on a pure pay-per-performance model. There are no monthly retainers, no hidden administrative fees, and no long-term contracts. If we don't send you leads, you don't pay us anything."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if the homeowner requests a quote before committing to hire?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every lead we deliver has passed our intent screening — confirmed Highlands County location, a specific trade request, and validated contact information. What happens after delivery is a sales conversation, not a lead quality issue. A homeowner requesting a quote is a normal part of the hiring process. Your response speed, professionalism, and pricing are the variables that determine the outcome from that point forward."
+        }
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network — Home">
+      <img src="/images/logo-light.jpg"
+           alt="Highlands Home Services Network logo connecting licensed Highlands County contractors with exclusive leads"
+           class="site-logo"
+           loading="eager">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/how-it-works.html">How It Works</a></li>
+        <li class="nav-item-dropdown">
+          <a href="/hvac.html">Contractor Leads</a>
+          <ul class="nav-dropdown" aria-label="Contractor lead verticals">
+          <li><a href="/hvac.html" aria-current="page">HVAC Leads</a></li>
+          <li><a href="/#plumbing-waitlist">Plumbing Leads <span style="font-size:.75rem;opacity:.7;">(Coming Soon)</span></a></li>
+            <li><a href="/#electrical-waitlist">Electrical Leads <span style="font-size:.75rem;opacity:.7;">(Coming Soon)</span></a></li>
+            <li><a href="/#roofing-waitlist">Roofing Leads <span style="font-size:.75rem;opacity:.7;">(Coming Soon)</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="/service-areas.html">Service Areas</a>
+          <ul class="nav-dropdown" aria-label="Service area cities">
+            <li><a href="/service-areas/sebring-fl.html">Sebring</a></li>
+            <li><a href="/service-areas/avon-park-fl.html">Avon Park</a></li>
+            <li><a href="/service-areas/lake-placid-fl.html">Lake Placid</a></li>
+            <li><a href="/service-areas/lorida-fl.html">Lorida</a></li>
+            <li><a href="/service-areas/venus-fl.html">Venus</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/get-service.html" style="color:var(--color-accent);font-weight:700;">Get Service</a></li>
+        <li><a href="/apply.html" class="nav-cta">Apply to Join</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+  <!-- Breadcrumb nav -->
+<nav class="breadcrumb-nav" aria-label="Breadcrumb">
+  <ol class="breadcrumb-list">
+    <li class="breadcrumb-item">
+      <a href="/">Highlands Home Services Network</a>
+    </li>
+    <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">
+      HVAC Leads
+    </li>
+  </ol>
+</nav>
+
+  <!-- 1. HERO + AEO ENTITY DEFINITION -->
+  <section class="page-hero" aria-label="HVAC leads page hero">
+    <div class="page-hero-bg" role="presentation" aria-hidden="true">
+      <img src="/images/hero-hvac.jpg"
+           alt="Outdoor HVAC condenser unit installed beside a stucco home in Highlands County, Florida, surrounded by pine trees and subtropical landscaping"
+           class="page-hero-img"
+           width="1200"
+           height="630"
+           loading="eager"
+           fetchpriority="high">
+    </div>
+    <div class="container page-hero-content">
+      <p class="section-label">HVAC vertical — Highlands County, Florida</p>
+      <h1>Exclusive HVAC Leads for Highlands County Contractors — No Shared Lists. No Bidding Wars.</h1>
+      <p class="aeo-definition">
+        Highlands Home Services Network (HHSN) is the hyperlocal lead generation platform
+        providing exclusive, pre-screened HVAC leads to licensed contractors in Highlands County,
+        Florida. It delivers verified customer requests for emergency AC repair, HVAC maintenance,
+        and system installations in Sebring, Avon Park, and Lake Placid — on a pay-per-lead basis
+        with zero internal competition and no shared lists.
+      </p>
+      <a href="#hvac-apply" class="btn btn-primary" style="margin-top:8px;">Apply for Exclusive HVAC Leads</a>
+      <p style="margin-top:12px;font-size:0.85rem;opacity:0.75;">Licensed Florida HVAC contractors only &bull; Takes about 2 minutes</p>
+    </div>
+  </section>
+
+  <!-- 2. IMAGE BANNER — LEAD TYPES + PRICING -->
+  <section class="image-banner" aria-label="HVAC lead types and pricing model">
+    <div class="banner-overlay" aria-hidden="true"></div>
+    <div class="banner-content">
+      <h2>What We Deliver — and How You Pay</h2>
+      <div class="banner-cols">
+
+        <div class="banner-col">
+          <h3>Types of HVAC Leads We Deliver</h3>
+          <p>We focus on high-intent HVAC requests from Highlands County homeowners, including:</p>
+          <ul>
+            <li>Urgent AC-down calls with same-day service intent</li>
+            <li>Scheduled maintenance and seasonal tune-up requests</li>
+            <li>System replacement and new installation inquiries</li>
+            <li>Filtration, UV system, and air quality improvement requests</li>
+          </ul>
+          <p style="margin-top:14px;">
+            Every request is screened for confirmed location, Active Service Intent, and
+            Validated Contact Data before it ever reaches your phone.
+          </p>
+        </div>
+
+        <div class="banner-col">
+          <h3>Pay-Per-Qualified-Lead Model</h3>
+          <p>
+            No monthly retainer. No ad spend to manage. You pay only for verified leads
+            received at the per-lead rate agreed during your setup — nothing else.
+          </p>
+          <p>
+            Leads are delivered exclusively to you within your agreed coverage area.
+            You are not bidding against multiple contractors on the same job.
+          </p>
+          <p>
+            Apply below and we will review your license and coverage area. If it is a fit,
+            you will be active within 1 business day.
+          </p>
+          <a href="#hvac-apply" class="btn btn-primary" style="margin-top:8px;display:inline-block;">
+            Apply Below &darr;
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. WHAT DEFINES A VERIFIED LEAD -->
+  <section class="section-pad" aria-label="Verified lead definition">
+    <div class="container">
+      <div class="lead-definition">
+        <h3>What Defines a "Verified Opportunity"</h3>
+        <p style="font-size:0.97rem;color:#333;margin:0 0 12px;line-height:1.65;">
+          Every lead delivered through our network must pass all three of the following criteria
+          before it is routed to you:
+        </p>
+        <ul>
+          <li><strong>Confirmed Location —</strong> The homeowner's address is verified within Highlands County (Sebring, Avon Park, Lake Placid, Lorida, or Venus) before routing.</li>
+          <li><strong>Active Service Intent —</strong> The homeowner has described a specific, current need for your trade. We screen for genuine requests — not general browsing.</li>
+          <li><strong>Validated Contact Data —</strong> The submission includes a working phone number or email address confirmed at the point of inquiry.</li>
+        </ul>
+        <p style="font-size:0.97rem;color:#333;margin:12px 0 0;line-height:1.65;">
+          A lead is not evaluated on whether the homeowner ultimately hires a contractor,
+          accepts a quote, or proceeds with the project. We deliver the verified connection —
+          you close the job.
+        </p>
+        <div class="billing-note">
+          <strong>Billing policy:</strong> A lead is considered delivered and billable when verified
+          contact information and a confirmed service request are transmitted to you — regardless of
+          whether the job is quoted, scheduled, or completed. Billing occurs after delivery, never
+          in advance.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. APPLICATION FORM -->
+  <section class="form-section section-pad" id="hvac-apply" aria-label="HVAC contractor application form">
+    <div class="container">
+      <div class="form-wrapper">
+        <h2>Apply for Highlands County HVAC Leads.</h2>
+        <p>
+          To protect homeowners and ensure lead exclusivity, we require all network partners to meet
+          strict eligibility standards. To receive HVAC leads, you must have:
+        </p>
+        <ul style="margin-left:1.2rem;list-style:disc;margin-bottom:1.5rem;">
+          <li><strong>A valid Florida HVAC contractor license</strong> (verifiable via <a href="https://www.myfloridalicense.com/wl11.asp" target="_blank" rel="noopener noreferrer" class="verify-link">DBPR &#8599;</a>)</li>
+          <li><strong>Active service coverage</strong> in Highlands County, FL</li>
+          <li><strong>The operational capacity</strong> to respond to urgent leads within 2 hours</li>
+        </ul>
+
+        <div class="form-success" aria-live="polite">
+          Thank you — your HVAC application has been received. We will follow up within 1 business day.
+        </div>
+
+        <form method="POST" action="[INSERT FORM ENDPOINT]" id="hvac-apply-form" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="hvac-first-name">First name</label>
+              <input type="text" id="hvac-first-name" name="first_name" autocomplete="given-name" required>
+            </div>
+            <div class="form-group">
+              <label for="hvac-last-name">Last name</label>
+              <input type="text" id="hvac-last-name" name="last_name" autocomplete="family-name" required>
+            </div>
+            <div class="form-group">
+              <label for="hvac-business-name">Business name</label>
+              <input type="text" id="hvac-business-name" name="business_name" autocomplete="organization" required>
+            </div>
+            <div class="form-group">
+              <label for="hvac-phone">Mobile phone</label>
+              <input type="tel" id="hvac-phone" name="phone" autocomplete="tel" required>
+            </div>
+            <div class="form-group">
+              <label for="hvac-email">Work email</label>
+              <input type="email" id="hvac-email" name="email" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+              <label for="hvac-license-number">Florida HVAC license number</label>
+              <input type="text" id="hvac-license-number" name="license_number" required>
+              <span class="field-hint">We verify all licenses against the Florida DBPR database.</span>
+            </div>
+            <div class="form-group full-width">
+              <label for="hvac-cities">Highlands County cities you cover</label>
+              <textarea id="hvac-cities" name="cities" rows="3"
+                        placeholder="Example: Sebring, Avon Park, Lake Placid, Lorida, Venus"></textarea>
+            </div>
+            <div class="form-group full-width">
+              <label for="hvac-details">Average response time &amp; service hours</label>
+              <textarea id="hvac-details" name="details" rows="4"
+                        placeholder="Share your typical response times, after-hours availability, and preferred job types."></textarea>
+            </div>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Submit HVAC Application</button>
+            <p class="form-note">
+              We review every HVAC application and follow up within 1 business day. Your information
+              is used solely to evaluate your fit for the HVAC vertical.
+            </p>
+          </div>
+        </form>
+        <p class="legal-disclaimer">
+          Highlands Home Services Network is a referral and lead generation service.
+          We do not perform trade services.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FAQ SECTION -->
+  <section class="section-pad faq-section" id="faq" aria-label="Frequently asked questions">
+    <div class="container">
+      <p class="section-label">Before you apply</p>
+      <h2 style="max-width:560px;margin-bottom:40px;">Frequently Asked Questions</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <h3>Do I have to pay for a lead if I don't close the job?</h3>
+          <p>Yes. Our service is to provide you with a <strong>Verified Opportunity</strong> — a homeowner
+          in your service area with a specific, current need and validated contact information.</p>
+          <p>A lead is considered delivered and billable when verified contact information and a confirmed
+          service request are transmitted to you — regardless of whether the job is quoted, scheduled,
+          or completed.</p>
+          <p>While we provide the exclusive connection, the responsibility for quoting, following up,
+          and closing the contract remains with you.</p>
+          <div class="faq-billing-callout">
+            This policy is stated at setup and reflected in your contractor agreement. By submitting
+            your application, you acknowledge that billing is based on verified lead delivery,
+            not job outcome.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do you define a "Verified Lead"?</h3>
+          <p>A lead is considered verified when it meets all three of the following criteria:</p>
+          <ul>
+            <li><strong>Confirmed Location —</strong> The homeowner's address is within Highlands County.</li>
+            <li><strong>Service Match —</strong> The request specifically matches your licensed trade.</li>
+            <li><strong>Validated Contact Data —</strong> The submission includes a working phone number or email address.</li>
+          </ul>
+          <p>A lead is <em>not</em> evaluated on whether the homeowner ultimately hires a contractor,
+          accepts a quote, or proceeds with the project. We deliver the verified connection —
+          the sale is yours to close.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why is exclusive routing better for me?</h3>
+          <p>Most lead generation platforms sell the same homeowner's name to 3–5 different contractors
+          simultaneously, forcing you to compete on price alone and race to the phone.</p>
+          <p>Highlands Home Services Network routes each lead to <strong>one contractor only</strong>.
+          That homeowner's contact information is yours and yours alone — no other pro in the network
+          receives it. This gives you the highest possible chance of closing the job at your full
+          professional rate, without a bidding war.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>When and how do I get billed?</h3>
+          <p>You are <strong>never billed in advance.</strong> Billing happens only after a verified
+          lead has been delivered to you via your preferred method — SMS, email, or phone call.</p>
+          <p>We invoice you at the per-lead rate agreed upon during your setup. There are no surprise
+          charges, no tiered fees applied retroactively, and no billing before delivery.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is there a monthly membership or sign-up fee?</h3>
+          <p>No. We operate on a pure pay-per-performance model. There are no monthly retainers,
+          no hidden administrative fees, and no long-term contracts.</p>
+          <p><strong>If we don't send you leads, you don't pay us anything.</strong></p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What if the homeowner requests a quote before committing to hire?</h3>
+          <p>Every lead we deliver has passed our intent screening — confirmed Highlands County
+          location, a specific trade request, and validated contact information. What happens
+          after delivery is a sales conversation, not a lead quality issue.</p>
+          <p>A homeowner requesting a quote is a normal, healthy part of the hiring process.
+          Your response speed, professionalism, and pricing are the variables that determine
+          the outcome from that point forward. A prompt, professional estimate is your most
+          effective tool for converting an inquiry into a booked job.</p>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:48px;padding-top:40px;border-top:1px solid #e2e8f0;">
+        <p style="font-size:1rem;color:#444;margin-bottom:20px;">
+          Still have questions? We review every application personally and follow up within 1 business day.
+        </p>
+        <a href="#hvac-apply" class="btn btn-primary">Apply for Exclusive HVAC Leads</a>
+        <p style="margin-top:12px;font-size:0.85rem;color:#888;">
+          No commitment until you receive your first lead &bull; Licensed Florida contractors only
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. FINAL CTA BANNER -->
+  <section class="cta-banner" aria-label="Apply to join the HVAC network">
+    <div class="container">
+      <h2>Ready to Receive Exclusive HVAC Leads in Highlands County?</h2>
+      <p>No retainers. No shared lists. No long-term contracts. Just exclusive, verified service requests from local homeowners.</p>
+      <a href="#hvac-apply" class="btn btn-primary">Apply to Join the Network</a>
+      <p style="margin-top:14px;font-size:0.85rem;opacity:0.7;">
+        Not a contractor? <a href="/get-service.html" style="color:inherit;text-decoration:underline;">Request HVAC service here.</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <strong style="font-family:var(--font-heading); color:var(--color-primary); font-size:1rem;">Highlands Home Services Network</strong>
+      <div class="footer-meta">
+        Obsidian Peak Holdings LLC &middot; Digital lead generation &amp; referral service<br>
+        Highlands County, Florida &middot; Service area business — no public office
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="/about.html">About</a>
+      <a href="/how-it-works.html">How It Works</a>
+      <a href="/hvac.html">HVAC Leads</a>
+      <a href="/get-service.html">For Homeowners</a>
+      <a href="/apply.html">Apply</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms</a>
+    </nav>
+
+  </div>
+
+  <div class="footer-legal">
+    <div class="container">
+      <p class="legal-disclaimer">Highlands Home Services Network is a digital lead generation and referral service operated by Obsidian Peak Holdings LLC. We are not a licensed contractor. All work is performed by independent licensed professionals. Leads are exclusive and billed per verified contact.</p>
+      <p class="footer-copyright">&copy; <span id="footer-year">2026</span> Obsidian Peak Holdings LLC. All rights reserved.</p>
+   </div>
+  </div>
+
+</footer>
+
+<script>
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
+
+
+
