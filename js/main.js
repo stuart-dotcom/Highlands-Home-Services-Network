@@ -57,15 +57,23 @@
     });
 
     // Click/tap toggle
-    trigger.addEventListener('click', function (e) {
-      var isMobile = window.innerWidth <= 767;
-      var isOpen   = item.classList.contains('is-open');
-      if (isMobile || isOpen) {
-        e.preventDefault();
-        isOpen ? closeItem() : openItem();
-      }
-      // Desktop + closed: let href navigate normally
-    });
+trigger.addEventListener('click', function (e) {
+  // Never intercept clicks on dropdown child links
+  if (e.target.closest('.nav-dropdown')) return;
+
+  var isMobile = window.innerWidth <= 767;
+  var isOpen   = item.classList.contains('is-open');
+
+  if (isMobile) {
+    // Mobile: always toggle, never navigate the parent
+    e.preventDefault();
+    isOpen ? closeItem() : openItem();
+  } else if (isOpen) {
+    // Desktop + already open: close and let the href navigate
+    closeItem();
+  }
+  // Desktop + closed: hover already handles open, click navigates
+});
 
     // Keyboard: Enter/Space toggle, Escape close
     trigger.addEventListener('keydown', function (e) {
