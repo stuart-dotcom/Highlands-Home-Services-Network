@@ -2,74 +2,101 @@
 (function () {
   'use strict';
 
-  // Mobile nav toggle
-  var toggle = document.querySelector('.nav-toggle');
+  // ── Mobile nav toggle ──────────────────────────────────────
+  var toggle  = document.querySelector('.nav-toggle');
   var navList = document.querySelector('.nav-list');
 
   if (toggle && navList) {
     toggle.addEventListener('click', function () {
-      var open = navList.classList.toggle('open');
-      toggle.classList.toggle('open', open);
+      var open = navList.classList.toggle('nav-open');
+      toggle.classList.toggle('nav-open', open);
       toggle.setAttribute('aria-expanded', String(open));
     });
 
     document.addEventListener('click', function (e) {
       if (!e.target.closest('.site-header')) {
-        navList.classList.remove('open');
-        toggle.classList.remove('open');
+        navList.classList.remove('nav-open');
+        toggle.classList.remove('nav-open');
         toggle.setAttribute('aria-expanded', 'false');
       }
     });
   }
 
-    // Service Areas dropdown — hover (desktop) + click/tap (all)
-  var dropdownItem = document.querySelector('.nav-item-dropdown');
+  // ── Multi-dropdown (hover + click/tap + keyboard) ──────────
+  // Handles ANY number of .nav-item-dropdown elements — e.g.
+  // "Contractor Leads" AND "Service Areas" simultaneously.
+  var dropdownItems = document.querySelectorAll('.nav-item-dropdown');
 
-  if (dropdownItem) {
-    // Click/tap toggle
-    var dropdownTrigger = dropdownItem.querySelector('a');
-    dropdownTrigger.addEventListener('click', function (e) {
-      // Only intercept if it's acting as a toggle (mobile or keyboard nav)
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        dropdownItem.classList.toggle('open');
-      }
-    });
+  dropdownItems.forEach(function (item) {
+    var trigger  = item.querySelector('a');
+    var dropdown = item.querySelector('.nav-dropdown');
+    if (!trigger || !dropdown) return;
+
+    // Unique id for aria-controls
+    var uid = 'dd-' + Math.random().toString(36).slice(2, 7);
+    dropdown.id = uid;
+    trigger.setAttribute('aria-haspopup', 'true');
+    trigger.setAttribute('aria-expanded', 'false');
+    trigger.setAttribute('aria-controls', uid);
+
+    function openItem()  {
+      item.classList.add('is-open');
+      trigger.setAttribute('aria-expanded', 'true');
+    }
+    function closeItem() {
+      item.classList.remove('is-open');
+      trigger.setAttribute('aria-expanded', 'false');
+    }
 
     // Desktop hover
-    dropdownItem.addEventListener('mouseenter', function () {
-      if (window.innerWidth > 768) {
-        dropdownItem.classList.add('open');
-      }
+    item.addEventListener('mouseenter', function () {
+      if (window.innerWidth > 767) openItem();
+    });
+    item.addEventListener('mouseleave', function () {
+      if (window.innerWidth > 767) closeItem();
     });
 
-    dropdownItem.addEventListener('mouseleave', function () {
-      if (window.innerWidth > 768) {
-        dropdownItem.classList.remove('open');
+    // Click/tap toggle
+    trigger.addEventListener('click', function (e) {
+      var isMobile = window.innerWidth <= 767;
+      var isOpen   = item.classList.contains('is-open');
+      if (isMobile || isOpen) {
+        e.preventDefault();
+        isOpen ? closeItem() : openItem();
       }
+      // Desktop + closed: let href navigate normally
     });
 
-    // Keyboard: open on Enter/Space, close on Escape
-    dropdownTrigger.addEventListener('keydown', function (e) {
+    // Keyboard: Enter/Space toggle, Escape close
+    trigger.addEventListener('keydown', function (e) {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        dropdownItem.classList.toggle('open');
+        item.classList.contains('is-open') ? closeItem() : openItem();
       }
       if (e.key === 'Escape') {
-        dropdownItem.classList.remove('open');
+        closeItem();
+        trigger.focus();
       }
     });
 
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function (e) {
-      if (!dropdownItem.contains(e.target)) {
-        dropdownItem.classList.remove('open');
+    // Close when focus leaves the dropdown group
+    item.addEventListener('focusout', function (e) {
+      if (!item.contains(e.relatedTarget)) closeItem();
+    });
+  });
+
+  // Close all dropdowns on outside click
+  document.addEventListener('click', function (e) {
+    dropdownItems.forEach(function (item) {
+      if (!item.contains(e.target)) {
+        item.classList.remove('is-open');
+        var t = item.querySelector('a');
+        if (t) t.setAttribute('aria-expanded', 'false');
       }
     });
-  }
+  });
 
-
-  // Mark active nav link (simple match by pathname)
+  // ── Mark active nav link by pathname ──────────────────────
   var currentPath = window.location.pathname.replace(/\/+$/, '');
   document.querySelectorAll('.nav-list a').forEach(function (link) {
     var linkPath = link.pathname.replace(/\/+$/, '');
@@ -78,7 +105,7 @@
     }
   });
 
-  // FAQ accordion
+  // ── FAQ accordion ──────────────────────────────────────────
   document.querySelectorAll('.faq-question').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var answer = this.nextElementSibling;
@@ -98,7 +125,7 @@
     });
   });
 
-  // Waitlist inline confirmation (for plumbing/electrical/roofing cards)
+  // ── Waitlist inline confirmation ───────────────────────────
   document.querySelectorAll('.waitlist-form').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -108,14 +135,14 @@
 
       var msg = document.createElement('p');
       msg.style.cssText = 'font-size:.85rem;color:#2D6A4F;font-weight:600;margin-top:.5rem;';
-      msg.textContent = 'You’re on the list! We’ll notify you when this vertical opens.';
+      msg.textContent = 'You\u2019re on the list! We\u2019ll notify you when this vertical opens.';
 
       form.innerHTML = '';
       form.appendChild(msg);
     });
   });
 
-  // Handle simple ?submitted=true success state
+  // ── ?submitted=true success state ─────────────────────────
   if (window.location.search.indexOf('submitted=true') !== -1) {
     document.querySelectorAll('.form-success').forEach(function (el) {
       el.style.display = 'block';
@@ -124,7 +151,7 @@
     if (firstForm) firstForm.style.display = 'none';
   }
 
-  // Smooth scroll for same-page anchor links
+  // ── Smooth scroll for anchor links ────────────────────────
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
       var target = document.querySelector(this.getAttribute('href'));
@@ -132,18 +159,20 @@
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         if (navList && toggle) {
-          navList.classList.remove('open');
-          toggle.classList.remove('open');
+          navList.classList.remove('nav-open');
+          toggle.classList.remove('nav-open');
           toggle.setAttribute('aria-expanded', 'false');
         }
       }
     });
   });
 
-  // Lazy load fallback for browsers without native loading="lazy"
+  // ── Lazy load fallback ─────────────────────────────────────
   if (!('loading' in HTMLImageElement.prototype)) {
     document.querySelectorAll('img[loading="lazy"]').forEach(function (img) {
       img.src = img.dataset.src || img.src;
     });
   }
+
 })();
+
