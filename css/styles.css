@@ -152,9 +152,9 @@ p  { margin-bottom: 1rem; }
 
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: .4rem; }
 .nav-toggle span { display: block; width: 26px; height: 2px; background: var(--color-light); margin: 5px 0; transition: transform var(--transition), opacity var(--transition); }
-.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-toggle.open span:nth-child(2) { opacity: 0; }
-.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.nav-toggle.nav-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.nav-open span:nth-child(2) { opacity: 0; }
+.nav-toggle.nav-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 @media (max-width: 768px) {
   .nav-toggle { display: block; }
@@ -172,7 +172,7 @@ p  { margin-bottom: 1rem; }
     box-shadow: 0 4px 16px rgba(0,0,0,.3);
   }
 
-  .nav-list.open { display: flex; }
+  .nav-list.nav-open { display: flex; }
   .nav-list li   { border-bottom: 1px solid rgba(255,255,255,.08); }
   .nav-list a    { display: block; padding: .75rem 0; }
 
@@ -181,7 +181,7 @@ p  { margin-bottom: 1rem; }
 }
 
 /* ============================================================
-   NAV DROPDOWN — Service Areas
+   NAV DROPDOWN — Contractor Leads + Service Areas
    ============================================================ */
 .nav-item-dropdown {
   position: relative;
@@ -199,7 +199,7 @@ p  { margin-bottom: 1rem; }
   transition: transform var(--transition);
 }
 
-.nav-item-dropdown.open > a::after {
+.nav-item-dropdown.is-open > a::after {
   transform: rotate(180deg);
 }
 
@@ -218,7 +218,7 @@ p  { margin-bottom: 1rem; }
   list-style: none;
 }
 
-.nav-item-dropdown.open .nav-dropdown {
+.nav-item-dropdown.is-open .nav-dropdown {
   display: block;
 }
 
@@ -252,7 +252,7 @@ p  { margin-bottom: 1rem; }
     margin: .25rem 0 .5rem 1rem;
   }
 
-  .nav-item-dropdown.open .nav-dropdown {
+  .nav-item-dropdown.is-open .nav-dropdown {
     display: block;
   }
 
@@ -267,6 +267,7 @@ p  { margin-bottom: 1rem; }
     color: var(--color-accent) !important;
   }
 }
+
 
 
 /* ============================================================
