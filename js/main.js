@@ -22,6 +22,53 @@
     });
   }
 
+    // Service Areas dropdown — hover (desktop) + click/tap (all)
+  var dropdownItem = document.querySelector('.nav-item-dropdown');
+
+  if (dropdownItem) {
+    // Click/tap toggle
+    var dropdownTrigger = dropdownItem.querySelector('a');
+    dropdownTrigger.addEventListener('click', function (e) {
+      // Only intercept if it's acting as a toggle (mobile or keyboard nav)
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        dropdownItem.classList.toggle('open');
+      }
+    });
+
+    // Desktop hover
+    dropdownItem.addEventListener('mouseenter', function () {
+      if (window.innerWidth > 768) {
+        dropdownItem.classList.add('open');
+      }
+    });
+
+    dropdownItem.addEventListener('mouseleave', function () {
+      if (window.innerWidth > 768) {
+        dropdownItem.classList.remove('open');
+      }
+    });
+
+    // Keyboard: open on Enter/Space, close on Escape
+    dropdownTrigger.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        dropdownItem.classList.toggle('open');
+      }
+      if (e.key === 'Escape') {
+        dropdownItem.classList.remove('open');
+      }
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function (e) {
+      if (!dropdownItem.contains(e.target)) {
+        dropdownItem.classList.remove('open');
+      }
+    });
+  }
+
+
   // Mark active nav link (simple match by pathname)
   var currentPath = window.location.pathname.replace(/\/+$/, '');
   document.querySelectorAll('.nav-list a').forEach(function (link) {
