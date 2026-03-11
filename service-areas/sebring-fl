@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home Services in Sebring, FL | Highlands Home Services Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Highlands Home Services Network connects Sebring, FL homeowners with licensed, local contractors for HVAC, plumbing, electrical, and roofing. Fast response. Exclusive leads. Serving zip codes 33870 and 33871.">
+  <link rel="canonical" href="https://highlandshomeservicesnetwork.com/service-areas/sebring-fl.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon"              href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32"   href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"   href="/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180"      href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/android-chrome-512x512.png">
+
+  <script src="/js/main.js" defer></script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Home Services in Sebring, FL | Highlands Home Services Network">
+  <meta property="og:description" content="Highlands Home Services Network connects Sebring, FL homeowners with licensed, local contractors for HVAC, plumbing, electrical, and roofing. Fast response. Exclusive leads. Serving zip codes 33870 and 33871.">
+  <meta property="og:url" content="https://highlandshomeservicesnetwork.com/service-areas/sebring-fl.html">
+  <meta property="og:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Highlands Home Services Network">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Home Services in Sebring, FL | Highlands Home Services Network">
+  <meta name="twitter:description" content="Highlands Home Services Network connects Sebring, FL homeowners with licensed, local contractors for HVAC, plumbing, electrical, and roofing. Fast response. Exclusive leads. Serving zip codes 33870 and 33871.">
+  <meta name="twitter:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
+
+<!-- JSON-LD BLOCK 1: @graph — Organization + LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://highlandshomeservicesnetwork.com/#organization",
+      "name": "Obsidian Peak Holdings LLC",
+      "legalName": "Obsidian Peak Holdings LLC",
+      "url": "https://highlandshomeservicesnetwork.com/",
+      "sameAs": [
+        "https://dos.sunbiz.org/scripts/ficidet.exe?action=DETREG&docnum=G26000029725&rdocnum=G26000029725",
+        "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?inquirytype=EntityName&directionType=Initial&searchNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700&aggregateId=flal-l26000094970-e1abe3e8-814a-4352-9777-66d8f095e62f&searchTerm=Obsidian%20Peak%20Holdings%20LLC&listNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700",
+        "https://www.linkedin.com/in/stuart-o-716573306/"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Stuart Orton",
+        "sameAs": "https://www.linkedin.com/in/stuart-o-716573306/"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://highlandshomeservicesnetwork.com/#business",
+      "name": "Highlands Home Services Network",
+      "alternateName": "HHSN",
+      "url": "https://highlandshomeservicesnetwork.com/",
+      "logo": "https://highlandshomeservicesnetwork.com/images/logo-light.png",
+      "image": "https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg",
+      "legalName": "Obsidian Peak Holdings LLC",
+      "description": "Highlands Home Services Network is the hyperlocal lead generation and referral service for licensed contractors in Highlands County, Florida. It provides exclusive, DBPR-verified homeowner leads in Sebring, Avon Park, Lake Placid, Lorida, and Venus — on a pay-per-lead basis with zero internal competition. Each lead is routed to one qualified contractor only.",
+      "priceRange": "$$",
+      "publicAccess": false,
+      "parentOrganization": { "@id": "https://highlandshomeservicesnetwork.com/#organization" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sebring",
+        "addressRegion": "FL",
+        "postalCode": "33870",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Highlands County",
+        "containsPlace": [
+          { "@type": "City", "name": "Sebring" },
+          { "@type": "City", "name": "Avon Park" },
+          { "@type": "City", "name": "Lake Placid" },
+          { "@type": "City", "name": "Lorida" },
+          { "@type": "City", "name": "Venus" }
+        ]
+      },
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 27.3409,
+          "longitude": -81.3400
+        },
+        "geoRadius": 45000
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "availableLanguage": "English",
+        "areaServed": "Highlands County, Florida",
+        "email": "hello@highlandshomeservicesnetwork.com"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Contractor Lead Generation Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Exclusive HVAC Contractor Leads",
+              "description": "Emergency AC repair, HVAC tune-ups, and system replacements for licensed HVAC contractors serving Sebring, Avon Park, and Lake Placid, Florida.",
+              "areaServed": { "@type": "AdministrativeArea", "name": "Highlands County, Florida" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Plumbing Contractor Lead Waitlist",
+              "areaServed": { "@type": "AdministrativeArea", "name": "Highlands County, Florida" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Electrical Contractor Lead Waitlist",
+              "areaServed": { "@type": "AdministrativeArea", "name": "Highlands County, Florida" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roofing Contractor Lead Waitlist",
+              "areaServed": { "@type": "AdministrativeArea", "name": "Highlands County, Florida" }
+            }
+          }
+        ]
+      },
+      "knowsAbout": [
+        "contractor lead generation",
+        "home services marketing",
+        "HVAC lead generation",
+        "emergency AC repair Sebring FL",
+        "HVAC contractor leads Highlands County",
+        "Highlands County Florida",
+        "Sebring FL",
+        "Avon Park FL",
+        "Lake Placid FL",
+        "Lorida FL",
+        "Venus FL"
+      ],
+      "sameAs": [
+        "https://dos.sunbiz.org/scripts/ficidet.exe?action=DETREG&docnum=G26000029725&rdocnum=G26000029725",
+        "https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?inquirytype=EntityName&directionType=Initial&searchNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700&aggregateId=flal-l26000094970-e1abe3e8-814a-4352-9777-66d8f095e62f&searchTerm=Obsidian%20Peak%20Holdings%20LLC&listNameOrder=OBSIDIANPEAKHOLDINGS%20L260000949700",
+        "https://www.linkedin.com/in/stuart-o-716573306/"
+      ]
+    }
+  ]
+}
+</script>
+
+  <!-- JSON-LD BLOCK 2: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Highlands Home Services Network",
+        "item": "https://highlandshomeservicesnetwork.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Service Areas",
+        "item": "https://highlandshomeservicesnetwork.com/service-areas.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Sebring, FL",
+        "item": "https://highlandshomeservicesnetwork.com/service-areas/sebring-fl.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD BLOCK 3: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does Highlands Home Services Network cover Sebring, FL?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Highlands Home Services Network serves Sebring, FL and surrounding Highlands County areas including zip codes 33870 and 33871. We connect homeowners with licensed local contractors for HVAC, plumbing, electrical, and roofing services."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a 24/7 HVAC contractor available in Sebring, FL?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Highlands Home Services Network provides access to HVAC contractors serving Sebring on a 24/7 basis for emergency AC repair, heating failures, and urgent HVAC issues. Call our emergency line for same-day response."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How fast can I get a contractor in Sebring?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For emergency requests in Sebring, FL, our contractor network targets same-day response. Standard service requests are typically matched within one business day. Emergency calls are prioritized and routed immediately to an available licensed contractor."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What zip codes does Highlands Home Services Network cover near Sebring?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We serve Sebring zip codes 33870 and 33871, along with the broader Highlands County service area including Avon Park (33825), Lake Placid (33852), Lorida (33857), and Venus (33960)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does AC repair cost in Sebring, FL?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AC repair in Sebring, FL typically costs between $150 and $600 depending on the issue. Minor refrigerant recharges or capacitor replacements tend to fall on the lower end, while compressor or coil repairs cost more. Emergency after-hours calls may carry an additional service fee. Request a free estimate through Highlands Home Services Network."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are the contractors referred by Highlands Home Services Network licensed in Florida?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All contractors in the Highlands Home Services Network are verified as licensed professionals in the state of Florida through DBPR verification before being accepted into the network."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What home services are available in Sebring, FL through Highlands Home Services Network?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Currently, HVAC services are actively available in Sebring, FL including emergency AC repair, HVAC tune-ups, and system replacements. Plumbing, electrical, and roofing contractor slots are currently in waitlist status and will be available soon."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD BLOCK 4: LocalBusiness — openingHours + city areaServed (service area pages only) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://highlandshomeservicesnetwork.com/#business",
+    "name": "Highlands Home Services Network",
+    "openingHours": "Mo-Su 00:00-23:59",
+    "areaServed": {
+      "@type": "City",
+      "name": "Sebring",
+      "containsPlace": [
+        { "@type": "PostalAddress", "addressRegion": "FL", "postalCode": "33870" },
+        { "@type": "PostalAddress", "addressRegion": "FL", "postalCode": "33871" }
+      ]
+    }
+  }
+  </script>
+
+</head>
+<body>
+
+<!-- HEADER — paste 1I here — set aria-current="page" on Service Areas parent -->
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network — Home">
+      <img src="/images/logo-light.jpg"
+           alt="Highlands Home Services Network logo connecting licensed Highlands County contractors with exclusive leads"
+           class="site-logo"
+           loading="eager">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/how-it-works.html">How It Works</a></li>
+        <li class="nav-item-dropdown">
+          <a href="/hvac.html">Contractor Leads</a>
+          <ul class="nav-dropdown" aria-label="Contractor lead verticals">
+            <li><a href="/hvac.html">HVAC Leads</a></li>
+            <li><a href="/#plumbing-waitlist">Plumbing Leads <span style="font-size:.75rem;opacity:.7;">(Coming Soon)</span></a></li>
+            <li><a href="/#electrical-waitlist">Electrical Leads <span style="font-size:.75rem;opacity:.7;">(Coming Soon)</span></a></li>
+            <li><a href="/#roofing-waitlist">Roofing Leads <span style="font-size:.75rem;opacity:.7;">(Coming Soon)</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="/service-areas.html" aria-current="page">Service Areas</a>
+          <ul class="nav-dropdown" aria-label="Service area cities">
+            <li><a href="/service-areas/sebring-fl.html">Sebring</a></li>
+            <li><a href="/service-areas/avon-park-fl.html">Avon Park</a></li>
+            <li><a href="/service-areas/lake-placid-fl.html">Lake Placid</a></li>
+            <li><a href="/service-areas/lorida-fl.html">Lorida</a></li>
+            <li><a href="/service-areas/venus-fl.html">Venus</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/get-service.html" style="color:var(--color-accent);font-weight:700;">Get Service</a></li>
+        <li><a href="/apply.html" class="nav-cta">Apply to Join</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <ol class="breadcrumb-list">
+      <li class="breadcrumb-item">
+        <a href="/">Highlands Home Services Network</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="/service-areas.html">Service Areas</a>
+      </li>
+      <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">
+        Sebring, FL
+      </li>
+    </ol>
+  </nav>
+
+  <!-- SECTION 1: HERO + AEO OPENING ANSWER -->
+  <section class="page-hero" aria-label="Sebring FL service area hero">
+    <div class="page-hero-bg" role="presentation" aria-hidden="true">
+      <img src="/images/hero-sebring-fl.jpg"
+           alt="Aerial view of downtown Sebring, Florida, featuring the City Pier and Lake Jackson under a cloudy blue sky."
+           class="page-hero-img"
+           width="1200"
+           height="630"
+           loading="eager"
+           fetchpriority="high">
+    </div>
+    <div class="container page-hero-content">
+      <p class="section-label">Service area — Sebring, FL &bull; Highlands County</p>
+      <h1>Licensed Home Service Contractors in Sebring, FL — HVAC, Plumbing, Electrical &amp; Roofing</h1>
+      <p class="aeo-definition">
+        Highlands Home Services Network connects Sebring, FL homeowners with pre-screened,
+        licensed contractors for HVAC repair, plumbing, electrical, and roofing services.
+        We serve zip codes 33870 and 33871 with exclusive, locally-matched leads —
+        one contractor per job, no shared lists, no bidding wars.
+      </p>
+      <a href="/get-service.html" class="btn btn-primary" style="margin-top:8px;">Request a Contractor in Sebring</a>
+      <p style="margin-top:12px;font-size:0.85rem;opacity:0.75;">Free to homeowners &bull; Takes about 2 minutes</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: SERVICES AVAILABLE IN SEBRING -->
+  <section class="content-section" aria-labelledby="services-heading">
+    <div class="container">
+      <h2 id="services-heading">Home Services Available in Sebring, FL</h2>
+      <p>The following contractor categories are currently available or coming soon through Highlands Home Services Network in Sebring and the surrounding 33870 / 33871 zip code area.</p>
+
+      <table class="service-table" style="width:100%;border-collapse:collapse;margin-top:1.5rem;">
+        <thead>
+          <tr>
+            <th style="text-align:left;padding:.75rem 1rem;background:var(--color-primary);color:#fff;font-family:var(--font-heading);">Service</th>
+            <th style="text-align:left;padding:.75rem 1rem;background:var(--color-primary);color:#fff;font-family:var(--font-heading);">Status</th>
+            <th style="text-align:left;padding:.75rem 1rem;background:var(--color-primary);color:#fff;font-family:var(--font-heading);">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--color-light);">
+            <td style="padding:.75rem 1rem;font-weight:700;"><a href="/hvac/sebring-fl.html">HVAC — AC Repair &amp; Installation</a></td>
+            <td style="padding:.75rem 1rem;"><span style="color:#2e7d32;font-weight:700;">✅ Active</span></td>
+            <td style="padding:.75rem 1rem;">Emergency AC repair, HVAC tune-ups, system replacements. Same-day available.</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--color-light);background:var(--color-light);">
+            <td style="padding:.75rem 1rem;font-weight:700;">Plumbing</td>
+            <td style="padding:.75rem 1rem;"><span style="opacity:.7;font-weight:700;">⏳ Coming Soon</span></td>
+            <td style="padding:.75rem 1rem;">Leak repair, water heater, drain service. <a href="/apply.html">Join the waitlist →</a></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--color-light);">
+            <td style="padding:.75rem 1rem;font-weight:700;">Electrical</td>
+            <td style="padding:.75rem 1rem;"><span style="opacity:.7;font-weight:700;">⏳ Coming Soon</span></td>
+            <td style="padding:.75rem 1rem;">Panel upgrades, outlet repair, safety inspections. <a href="/apply.html">Join the waitlist →</a></td>
+          </tr>
+          <tr style="background:var(--color-light);">
+            <td style="padding:.75rem 1rem;font-weight:700;">Roofing</td>
+            <td style="padding:.75rem 1rem;"><span style="opacity:.7;font-weight:700;">⏳ Coming Soon</span></td>
+            <td style="padding:.75rem 1rem;">Repair, replacement, storm damage. <a href="/apply.html">Join the waitlist →</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SECTION 3: EMERGENCY MODULE -->
+  <section class="emergency-section" id="emergency" aria-labelledby="emergency-heading" style="background:var(--color-primary);color:#fff;padding:3rem 0;">
+    <div class="container" style="text-align:center;">
+      <p class="section-label" style="color:var(--color-accent);">24/7 Emergency Response — Sebring, FL</p>
+      <h2 id="emergency-heading" style="color:#fff;">Need Emergency Home Services in Sebring Right Now?</h2>
+      <p style="max-width:600px;margin:1rem auto 1.5rem;opacity:.9;">
+        Our contractor network is available 24 hours a day, 7 days a week for emergency HVAC,
+        plumbing, and home service calls in Sebring and Highlands County.
+        AC not working? Pipe leaking? Call now — same-day response targeted for all emergency requests.
+      </p>
+      <a href="tel:[GHL-PHONE-NUMBER]"
+         class="btn btn-primary"
+         style="font-size:1.2rem;padding:1rem 2.5rem;display:inline-block;margin-bottom:1rem;"
+         data-city="sebring"
+         data-trade="general"
+         data-page_type="city-hub"
+         data-urgency="emergency">
+        📞 Call Now — 24/7 Emergency Line
+      </a>
+      <p style="opacity:.75;font-size:0.85rem;">
+        [GHL-PHONE-NUMBER] &bull; Licensed contractors &bull; Serving 33870 &amp; 33871
+      </p>
+      <p style="margin-top:1rem;opacity:.85;font-size:0.9rem;">
+        Not an emergency? <a href="/get-service.html" style="color:var(--color-accent);font-weight:700;">Request a contractor online →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 4: LOCAL TRUST SIGNALS -->
+  <section class="content-section" aria-labelledby="local-heading">
+    <div class="container">
+      <h2 id="local-heading">Serving Sebring, FL and Surrounding Areas</h2>
+      <p>
+        Sebring is the county seat of Highlands County, Florida — home to approximately 10,000 residents
+        and the commercial and civic center of the county. Situated on the western shore of Lake Jackson
+        near the Highlands Hammock State Park, Sebring's subtropical climate means year-round heat and
+        humidity that puts continuous demand on HVAC systems, plumbing, and home infrastructure.
+      </p>
+      <p>
+        Highlands Home Services Network was built specifically for this market. We are not a national
+        directory routing your call to Tampa or Orlando — every contractor in our network is local,
+        DBPR-verified, and services the Sebring area directly.
+      </p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:1.5rem;margin-top:2rem;">
+        <div style="flex:1;min-width:220px;background:var(--color-light);border-radius:var(--radius);padding:1.25rem;">
+          <strong style="font-family:var(--font-heading);display:block;margin-bottom:.5rem;">📍 Zip Codes Served</strong>
+          33870 (Sebring)<br>33871 (Sebring)
+        </div>
+        <div style="flex:1;min-width:220px;background:var(--color-light);border-radius:var(--radius);padding:1.25rem;">
+          <strong style="font-family:var(--font-heading);display:block;margin-bottom:.5rem;">🏙️ Local Landmarks</strong>
+          Lake Jackson · Highlands Hammock State Park · Sebring International Raceway · Downtown Circle
+        </div>
+        <div style="flex:1;min-width:220px;background:var(--color-light);border-radius:var(--radius);padding:1.25rem;">
+          <strong style="font-family:var(--font-heading);display:block;margin-bottom:.5rem;">🗺️ Neighborhoods &amp; Areas</strong>
+          Sun 'n Lake · Spring Lake · Harder Hall · Lake Sebring Estates · Lakeview
+        </div>
+        <div style="flex:1;min-width:220px;background:var(--color-light);border-radius:var(--radius);padding:1.25rem;">
+          <strong style="font-family:var(--font-heading);display:block;margin-bottom:.5rem;">✅ Contractor Standards</strong>
+          Florida DBPR-verified · Licensed &amp; insured · Local to Highlands County
+        </div>
+      </div>
+
+      <!-- Internal links to other city hubs -->
+      <div style="margin-top:2.5rem;">
+        <p style="font-family:var(--font-heading);font-weight:700;">Also Serving Highlands County:</p>
+        <ul style="display:flex;flex-wrap:wrap;gap:.75rem;list-style:none;padding:0;margin-top:.75rem;">
+          <li><a href="/service-areas/avon-park-fl.html" class="btn btn-secondary" style="padding:.5rem 1.1rem;font-size:.9rem;">Avon Park →</a></li>
+          <li><a href="/service-areas/lake-placid-fl.html" class="btn btn-secondary" style="padding:.5rem 1.1rem;font-size:.9rem;">Lake Placid →</a></li>
+          <li><a href="/service-areas/lorida-fl.html" class="btn btn-secondary" style="padding:.5rem 1.1rem;font-size:.9rem;">Lorida →</a></li>
+          <li><a href="/service-areas/venus-fl.html" class="btn btn-secondary" style="padding:.5rem 1.1rem;font-size:.9rem;">Venus →</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: COST CONTEXT -->
+  <section class="content-section" style="background:var(--color-light);" aria-labelledby="cost-heading">
+    <div class="container">
+      <h2 id="cost-heading">What Does Home Services Cost in Sebring, FL?</h2>
+      <p>
+        Service costs in Sebring are generally consistent with the broader Highlands County market —
+        slightly lower than coastal Florida metros due to lower labor overhead, but driven by the same
+        material and equipment costs. Here are typical ranges homeowners in Sebring can expect:
+      </p>
+      <ul style="margin-top:1rem;line-height:2;">
+        <li><strong>AC Repair (Sebring, FL):</strong> $150 – $600 depending on the fault. Capacitor replacements and refrigerant recharges are on the lower end. Compressor or evaporator coil repairs run higher.</li>
+        <li><strong>AC System Replacement:</strong> $3,500 – $7,500 installed for a standard residential split system. High-efficiency units and larger homes push toward the upper range.</li>
+        <li><strong>Emergency HVAC Call (after hours):</strong> $85 – $150 diagnostic fee in addition to repair costs. Summers in Highlands County make after-hours calls common — know what to expect before you call.</li>
+        <li><strong>Plumbing (when available):</strong> $100 – $350 for standard leak repairs. Water heater replacements typically run $800 – $1,800 installed.</li>
+        <li><strong>Roofing Repair (when available):</strong> $250 – $1,200 for patch repairs. Full replacement estimates vary widely by roof size and material.</li>
+      </ul>
+      <p style="margin-top:1rem;">
+        <strong>Get a free, no-obligation estimate</strong> from a licensed Sebring contractor through our network —
+        <a href="/get-service.html">request service here</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 6: FAQ BLOCK -->
+  <section class="content-section" aria-labelledby="faq-heading">
+    <div class="container">
+      <h2 id="faq-heading">Frequently Asked Questions — Sebring, FL Home Services</h2>
+
+      <details class="faq-item" style="margin-bottom:1rem;border:1px solid var(--color-light);border-radius:var(--radius);padding:1rem 1.25rem;">
+        <summary style="font-family:var(--font-heading);font-weight:700;cursor:pointer;">Does Highlands Home Services Network cover Sebring, FL?</summary>
+        <p style="margin-top:.75rem;">Yes. Highlands Home Services Network serves Sebring, FL and surrounding Highlands County areas including zip codes 33870 and 33871. We connect homeowners with licensed local contractors for HVAC, plumbing, electrical, and roofing services.</p>
+      </details>
+
+      <details class="faq-item" style="margin-bottom:1rem;border:1px solid var(--color-light);border-radius:var(--radius);padding:1rem 1.25rem;">
+        <summary style="font-family:var(--font-heading);font-weight:700;cursor:pointer;">Is there a 24/7 HVAC contractor available in Sebring, FL?</summary>
+        <p style="margin-top:.75rem;">Yes. Highlands Home Services Network provides access to HVAC contractors serving Sebring on a 24/7 basis for emergency AC repair, heating failures, and urgent HVAC issues. Call our emergency line for same-day response.</p>
+      </details>
+
+      <details class="faq-item" style="margin-bottom:1rem;border:1px solid var(--color-light);border-radius:var(--radius);padding:1rem 1.25rem;">
+        <summary style="font-family:var(--font-heading);font-weight:700;cursor:pointer;">How fast can I get a contractor in Sebring?</summary>
+        <p style="margin-top:.75rem;">For emergency requests in Sebring, FL, our contractor network targets same-day response. Standard service requests are typically matched within one business day. Emergency calls are prioritized and routed immediately to an available licensed contractor.</p>
+      </details>
+
+      <details class="faq-item" style="margin-bottom:1rem;border:1px solid var(--color-light);border-radius:var(--radius);padding:1rem 1.25rem;">
+        <summary style="font-family:var(--font-heading);font-weight:700;cursor:pointer;">What zip codes does Highlands Home Services Network cover near Sebring?</summary>
+        <p style="margin-top:.75rem;">We serve Sebring zip codes 33870 and 33871, along with the broader Highlands County service area including Avon Park (33825), Lake Placid (33852), Lorida (33857), and Venus (33960).</p>
+      </details>
+
+      <details class="faq-item" style="margin-bottom:1rem;border:1px solid var(--color-light);border-radius:var(--radius);padding:1rem 1.25rem;">
+        <summary style="font-family:var(--font-heading);font-weight:700;cursor:pointer;">How much does AC repair cost in Sebring, FL?</summary>
+        <p style="margin-top:.75rem;">AC repair in Sebring, FL typically costs between $150 and $600 depending on the issue. Minor refrigerant recharges or capacitor replacements tend to fall on the lower end, while compressor or coil repairs cost more. Emergency after-hours calls may carry an additional service fee. Request a free estimate through Highlands Home Services Network.</p>
+      </details>
+
+      <details class="faq-item" style="margin-bottom:1rem;border:1px solid var(--color-light);border-radius:var(--radius);padding:1rem 1.25rem;">
+        <summary style="font-family:var(--font-heading);font-weight:700;cursor:pointer;">Are the contractors referred by Highlands Home Services Network licensed in Florida?</summary>
+        <p style="margin-top:.75rem;">Yes. All contractors in the Highlands Home Services Network are verified as licensed professionals in the state of Florida through DBPR verification before being accepted into the network.</p>
+      </details>
+
+      <details class="faq-item" style="margin-bottom:0;border:1px solid var(--color-light);border-radius:var(--radius);padding:1rem 1.25rem;">
+        <summary style="font-family:var(--font-heading);font-weight:700;cursor:pointer;">What home services are available in Sebring, FL through Highlands Home Services Network?</summary>
+        <p style="margin-top:.75rem;">Currently, HVAC services are actively available in Sebring, FL including emergency AC repair, HVAC tune-ups, and system replacements. Plumbing, electrical, and roofing contractor slots are currently in waitlist status and will be available soon.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- SECONDARY CTA — Get Service -->
+  <section class="content-section" style="background:var(--color-primary);color:#fff;text-align:center;padding:3rem 0;" aria-labelledby="cta-heading">
+    <div class="container">
+      <h2 id="cta-heading" style="color:#fff;">Ready to Request a Contractor in Sebring?</h2>
+      <p style="max-width:540px;margin:.75rem auto 1.5rem;opacity:.9;">
+        Tell us what you need — we'll match you with a licensed, local Sebring contractor.
+        Free for homeowners. No obligation.
+      </p>
+      <a href="/get-service.html" class="btn btn-primary" style="font-size:1.1rem;padding:.9rem 2.25rem;">
+        Request a Home Service Contractor →
+      </a>
+      <p style="margin-top:1rem;font-size:0.85rem;opacity:.7;">Or call 24/7: <a href="tel:[GHL-PHONE-NUMBER]" style="color:var(--color-accent);font-weight:700;">[GHL-PHONE-NUMBER]</a></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER — paste 1J here, unchanged -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <strong style="font-family:var(--font-heading); color:var(--color-primary); font-size:1rem;">Highlands Home Services Network</strong>
+      <div class="footer-meta">
+        Obsidian Peak Holdings LLC &middot; Digital lead generation &amp; referral service<br>
+        Highlands County, Florida &middot; Service area business — no public office
+      </div>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="/about.html">About</a>
+      <a href="/how-it-works.html">How It Works</a>
+      <a href="/hvac.html">HVAC Leads</a>
+      <a href="/get-service.html">For Homeowners</a>
+      <a href="/apply.html">Apply</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms</a>
+    </nav>
+  </div>
+  <div class="footer-legal">
+    <div class="container">
+      <p class="legal-disclaimer">Highlands Home Services Network is a digital lead generation and referral service operated by Obsidian Peak Holdings LLC. We are not a licensed contractor. All work is performed by independent licensed professionals. Leads are exclusive and billed per verified contact.</p>
+      <p class="footer-copyright">&copy; <span id="footer-year">2026</span> Obsidian Peak Holdings LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
