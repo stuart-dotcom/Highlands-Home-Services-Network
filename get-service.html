@@ -35,7 +35,7 @@
 <meta name="twitter:description" content="Submit your home service request and get connected to a DBPR-verified contractor in Highlands County. Free. No obligation to hire.">
 <meta name="twitter:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
 
- <!-- JSON-LD BLOCK 1: @graph — Organization + LocalBusiness -->
+<!-- JSON-LD BLOCK 1: @graph — Organization + LocalBusiness -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -166,7 +166,7 @@
 }
 </script>
 
-<!-- JSON-LD BLOCK 2: BreadcrumbList (EDIT per page) -->
+<!-- JSON-LD BLOCK 2: BreadcrumbList -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -188,6 +188,20 @@
 }
 </script>
 
+<!-- GHL iFrame styles -->
+<style>
+  .ghl-form-iframe-wrapper {
+    width: 100%;
+    min-height: 850px;
+  }
+  .ghl-form-iframe-wrapper iframe {
+    width: 100%;
+    min-height: 850px;
+    border: none;
+    border-radius: 3px;
+    display: block;
+  }
+</style>
 
 </head>
 
@@ -207,8 +221,8 @@
     </button>
     <nav aria-label="Main navigation">
       <ul class="nav-list">
-       <li><a href="/about.html">About</a></li>
-       <li><a href="/how-it-works.html">How It Works</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/how-it-works.html">How It Works</a></li>
         <li class="nav-item-dropdown">
           <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Contractor Leads</a>
           <ul class="nav-dropdown" aria-label="Contractor lead verticals">
@@ -229,6 +243,7 @@
           </ul>
         </li>
         <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/emergency-services.html" style="color:var(--color-accent);font-weight:700;">⚡ Emergency</a></li>
         <li><a href="/get-service.html" aria-current="page" style="color:var(--color-accent);font-weight:700;">Get Service</a></li>
         <li><a href="/apply.html" class="nav-cta">Apply to Join</a></li>
       </ul>
@@ -236,186 +251,166 @@
   </div>
 </header>
 
-
 <main>
 
- <!-- Breadcrumb nav -->
-<nav class="breadcrumb-nav" aria-label="Breadcrumb">
-  <ol class="breadcrumb-list">
-    <li class="breadcrumb-item">
-      <a href="/">Highlands Home Services Network</a>
-    </li>
-    <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">
-      Get Service
-    </li>
-  </ol>
-</nav>
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <ol class="breadcrumb-list">
+      <li class="breadcrumb-item">
+        <a href="/">Highlands Home Services Network</a>
+      </li>
+      <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">
+        Get Service
+      </li>
+    </ol>
+  </nav>
 
-<!-- HERO -->
-<section class="page-hero" aria-label="Homeowner service request">
-<div class="page-hero-bg" role="presentation" aria-hidden="true">
-<img src="/images/bg-hero-get-service.jpg"
-alt=""
-class="page-hero-img"
-loading="eager"
-fetchpriority="high">
-</div>
-<div class="container page-hero-content">
-<p class="section-label">For Highlands County homeowners</p>
-<h1>NEED SERVICE? Get a Fast Response from a Licensed Highlands County Pro.</h1>
-<p class="aeo-definition">
-Highlands Home Services Network is a free digital referral service connecting
-Highlands County homeowners with licensed, DBPR-verified contractors in Sebring,
-Avon Park, Lake Placid, Lorida, and Venus. Homeowners submit a short request form
-and are matched with one qualified local contractor — at no cost and with no
-obligation to hire.
-</p>
-<p style="color:rgba(255,255,255,0.92);font-size:1rem;margin-bottom:20px;">
-Submit your request in 60 seconds. We route your issue to a DBPR-verified local
-expert in Sebring, Avon Park, Lake Placid, Lorida, or Venus — usually within
-the hour for emergencies.
-</p>
-<a href="#homeowner-form" class="btn btn-primary">Connect with a Licensed Pro Now</a>
-<p class="hero-legal-disclaimer">
-Highlands Home Services Network is a referral and lead generation service.
-We do not perform HVAC or any other trade services.
-</p>
-</div>
-</section>
+  <!-- HERO -->
+  <section class="page-hero" aria-label="Homeowner service request">
+    <div class="page-hero-bg" role="presentation" aria-hidden="true">
+      <img src="/images/bg-hero-get-service.jpg"
+           alt=""
+           class="page-hero-img"
+           loading="eager"
+           fetchpriority="high">
+    </div>
+    <div class="container page-hero-content">
+      <p class="section-label">For Highlands County homeowners</p>
+      <h1>NEED SERVICE? Get a Fast Response from a Licensed Highlands County Pro.</h1>
+      <p class="aeo-definition">
+        Highlands Home Services Network is a free digital referral service connecting
+        Highlands County homeowners with licensed, DBPR-verified contractors in Sebring,
+        Avon Park, Lake Placid, Lorida, and Venus. Homeowners submit a short request form
+        and are matched with one qualified local contractor — at no cost and with no
+        obligation to hire.
+      </p>
+      <p style="color:rgba(255,255,255,0.92);font-size:1rem;margin-bottom:20px;">
+        Submit your request in 60 seconds. We route your issue to a DBPR-verified local
+        expert — usually within the hour for emergencies.
+      </p>
+      <a href="#homeowner-form" class="btn btn-primary">Connect with a Licensed Pro Now</a>
+      <p class="hero-legal-disclaimer">
+        Highlands Home Services Network is a referral and lead generation service.
+        We do not perform HVAC or any other trade services.
+      </p>
+    </div>
+  </section>
 
-<!-- HOW IT WORKS + HIGHLANDS PROMISE -->
-<section class="section-pad" aria-label="How the homeowner referral works">
-<div class="container two-col">
-<div>
-<h2>How your request works.</h2>
-<ol class="process-list">
-<li><strong>Describe your issue:</strong> Fill out the quick form below. Tell us what is wrong and how fast you need it fixed.</li>
-<li><strong>Local verification:</strong> We confirm your address is within our Highlands County service area — Sebring, Avon Park, Lake Placid, Lorida, or Venus.</li>
-<li><strong>Direct connection:</strong> Your request is routed to a DBPR-verified, licensed contractor who covers your city and trade.</li>
-<li><strong>Fast relief:</strong> A local pro contacts you via your preferred method — usually within the hour for emergencies. Zero obligation to hire.</li>
-</ol>
-</div>
-<div>
-<h2>The Highlands Home Services Network Promise.</h2>
-<div class="highlands-promise">
-<h3>A contractor network built for Highlands County homeowners.</h3>
-<p>Highlands Home Services Network is a free referral service dedicated exclusively to Highlands County homeowners. We do not dispatch trucks or perform trade work. What we do is maintain a vetted network of independent, DBPR-licensed contractors and route your request to the right one — fast.</p>
-<p>You always have the final say on the work and the price.</p>
-</div>
-<p class="legal-disclaimer" style="margin-top:16px;font-size:0.88rem;">Highlands Home Services Network is a referral and lead generation service. We do not perform HVAC or any other trade services.</p>
-</div>
-</div>
-</section>
+  <!-- HOW IT WORKS + HIGHLANDS PROMISE -->
+  <section class="section-pad" aria-label="How the homeowner referral works">
+    <div class="container two-col">
+      <div>
+        <h2>How your request works.</h2>
+        <ol class="process-list">
+          <li><strong>Describe your issue:</strong> Fill out the quick form below. Tell us what is wrong and how fast you need it fixed.</li>
+          <li><strong>Local verification:</strong> We confirm your address is within our Highlands County service area — Sebring, Avon Park, Lake Placid, Lorida, or Venus.</li>
+          <li><strong>Direct connection:</strong> Your request is routed to a DBPR-verified, licensed contractor who covers your city and trade.</li>
+          <li><strong>Fast relief:</strong> A local pro contacts you — usually within the hour for emergencies. Zero obligation to hire.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>The Highlands Home Services Network Promise.</h2>
+        <div class="highlands-promise">
+          <h3>A contractor network built for Highlands County homeowners.</h3>
+          <p>Highlands Home Services Network is a free referral service dedicated exclusively to Highlands County homeowners. We do not dispatch trucks or perform trade work. What we do is maintain a vetted network of independent, DBPR-licensed contractors and route your request to the right one — fast.</p>
+          <p>You always have the final say on the work and the price.</p>
+        </div>
+        <p class="legal-disclaimer" style="margin-top:16px;font-size:0.88rem;">Highlands Home Services Network is a referral and lead generation service. We do not perform HVAC or any other trade services.</p>
+      </div>
+    </div>
+  </section>
 
-<!-- HOMEOWNER FORM -->
-<section class="form-section section-pad" style="background:#f8fafc;" aria-label="Homeowner service request form" id="homeowner-form">
-<div class="container">
-<div class="form-wrapper">
-<h2>Tell us about your issue.</h2>
-<p>The more details you share, the faster the contractor can understand what you need and how urgent it is.</p>
-<div class="form-success" aria-live="polite">Thank you — your request has been received. A licensed Highlands County contractor will contact you shortly.</div>
-<form method="POST" action="[INSERT FORM ENDPOINT]" id="homeowner-request-form" enctype="multipart/form-data" novalidate>
-<div class="form-grid">
-<div class="form-group">
-<label for="homeowner-name">Your name</label>
-<input type="text" id="homeowner-name" name="name" autocomplete="name" required>
-</div>
-<div class="form-group">
-<label for="homeowner-phone">Phone number</label>
-<input type="tel" id="homeowner-phone" name="phone" autocomplete="tel" required>
-</div>
-<div class="form-group">
-<label for="homeowner-email">Email</label>
-<input type="email" id="homeowner-email" name="email" autocomplete="email">
-</div>
-<div class="form-group">
-<label for="homeowner-city">City in Highlands County</label>
-<input type="text" id="homeowner-city" name="city" placeholder="Sebring, Avon Park, Lake Placid, Lorida, or Venus" required>
-</div>
-<div class="form-group full-width">
-<label for="homeowner-address">Street address</label>
-<input type="text" id="homeowner-address" name="address" autocomplete="street-address" required>
-</div>
-<div class="form-group">
-<label for="service-type">What do you need help with?</label>
-<select id="service-type" name="service_type" required>
-<option value="">Select one</option>
-<option value="hvac_cooling">HVAC – AC not cooling / system down</option>
-<option value="hvac_heating">HVAC – no heat</option>
-<option value="hvac_maintenance">HVAC – maintenance / tune-up</option>
-<option value="hvac_replacement">HVAC – system replacement / new install</option>
-<option value="hvac_air_quality">HVAC – filtration / UV / air quality</option>
-<option value="other">Something else (describe below)</option>
-</select>
-</div>
-<div class="form-group">
-<label for="urgency">How urgent is this?</label>
-<select id="urgency" name="urgency" required>
-<option value="">Select one</option>
-<option value="emergency">Emergency – system down now</option>
-<option value="soon">Within 24–48 hours</option>
-<option value="planning">Planning ahead / flexible timing</option>
-</select>
-</div>
-<div class="form-group full-width">
-<label for="details">Describe the issue</label>
-<textarea id="details" name="details" rows="4" placeholder="Example: AC not cooling, system making loud noise or smells, how long this has been happening, any recent work done."></textarea>
-</div>
-<div class="form-group full-width">
-<label for="preferred-contact">How should the contractor contact you?</label>
-<select id="preferred-contact" name="preferred_contact" required>
-<option value="">Select one</option>
-<option value="phone">Phone call</option>
-<option value="text">Text message</option>
-<option value="email">Email</option>
-</select>
-</div>
-</div>
-<div class="form-submit">
-<button type="submit" class="btn btn-primary">Submit Request</button>
-<p class="form-note">By submitting this form, you agree to be contacted by a licensed Highlands County contractor about your request. There is no obligation to hire.</p>
-</div>
-</form>
-</div>
-</div>
-</section>
+  <!-- GHL HOMEOWNER FORM -->
+  <section class="form-section section-pad" style="background:#f8fafc;" aria-labelledby="get-service-form-heading" id="homeowner-form">
+    <div class="container">
+      <div class="form-wrapper">
+        <h2 id="get-service-form-heading">Tell us about your issue.</h2>
+        <p>The more details you share, the faster the contractor can understand what you need and how urgent it is.</p>
+
+        <!-- GHL EMBED START -->
+        <div class="ghl-form-iframe-wrapper">
+          <iframe
+            src="https://links.highlandshomeservicesnetwork.com/widget/form/z2KZmJDknVPWffrgDfe8"
+            style="width:100%;height:100%;border:none;border-radius:3px"
+            id="inline-z2KZmJDknVPWffrgDfe8"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="HHSN - Get Service"
+            data-height="1677"
+            data-layout-iframe-id="inline-z2KZmJDknVPWffrgDfe8"
+            data-form-id="z2KZmJDknVPWffrgDfe8"
+            title="HHSN - Get Service">
+          </iframe>
+        </div>
+        <script src="https://links.highlandshomeservicesnetwork.com/js/form_embed.js"></script>
+        <!-- GHL EMBED END -->
+
+        <p class="legal-disclaimer" style="margin-top:1.5rem;">Highlands Home Services Network is a referral and lead generation service. We do not perform trade services. By submitting this form you agree to be contacted by a licensed Highlands County contractor. No obligation to hire.</p>
+      </div>
+    </div>
+  </section>
 
 </main>
 
 <!-- FOOTER -->
 <footer class="site-footer">
-<div class="footer-inner">
-
-<div class="footer-brand">
-<strong style="font-family:var(--font-heading); color:var(--color-primary); font-size:1rem;">Highlands Home Services Network</strong>
-<div class="footer-meta">
-Obsidian Peak Holdings LLC &middot; Digital lead generation &amp; referral service<br>
-Highlands County, Florida &middot; Service area business — no public office
-</div>
-</div>
-
-<nav class="footer-nav" aria-label="Footer navigation">
-<a href="/about.html">About</a>
-<a href="/how-it-works.html">How It Works</a>
-<a href="/contractor-leads/hvac.html">HVAC Leads</a>
-<a href="/get-service.html">For Homeowners</a>
-<a href="/apply.html">Apply</a>
-<a href="/contact.html">Contact</a>
-<a href="/privacy.html">Privacy Policy</a>
-<a href="/terms.html">Terms</a>
-</nav>
-
-</div>
-
-<div class="footer-legal">
-<div class="container">
-<p class="legal-disclaimer">Highlands Home Services Network is a digital lead generation and referral service operated by Obsidian Peak Holdings LLC. We are not a licensed contractor. All work is performed by independent licensed professionals. Leads are exclusive and billed per verified contact.</p>
- <p class="footer-copyright">&copy; <span id="footer-year">2026</span> Obsidian Peak Holdings LLC. All rights reserved.</p>
- </div>
-</div>
-
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <strong style="font-family:var(--font-heading); color:var(--color-primary); font-size:1rem;">Highlands Home Services Network</strong>
+      <div class="footer-meta">
+        Obsidian Peak Holdings LLC &middot; Digital lead generation &amp; referral service<br>
+        Highlands County, Florida &middot; Service area business — no public office
+      </div>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="/about.html">About</a>
+      <a href="/how-it-works.html">How It Works</a>
+      <a href="/contractor-leads/hvac.html">HVAC Leads</a>
+      <a href="/get-service.html">For Homeowners</a>
+      <a href="/apply.html">Apply</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms</a>
+    </nav>
+  </div>
+  <div class="footer-legal">
+    <div class="container">
+      <p class="legal-disclaimer">Highlands Home Services Network is a digital lead generation and referral service operated by Obsidian Peak Holdings LLC. We are not a licensed contractor. All work is performed by independent licensed professionals. Leads are exclusive and billed per verified contact.</p>
+      <p class="footer-copyright">&copy; <span id="footer-year">2026</span> Obsidian Peak Holdings LLC. All rights reserved.</p>
+    </div>
+  </div>
 </footer>
 
-<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script>
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+
+<!-- source_page hidden field auto-populate -->
+<script>
+  (function() {
+    function setSourcePage() {
+      var iframe = document.getElementById('inline-z2KZmJDknVPWffrgDfe8');
+      if (!iframe) return;
+      try {
+        var iDoc = iframe.contentDocument || iframe.contentWindow.document;
+        var field = iDoc.querySelector('input[name="source_page"], input[data-field-key="source_page"]');
+        if (field) field.value = window.location.pathname;
+      } catch(e) {}
+    }
+    var attempts = 0;
+    var interval = setInterval(function() {
+      setSourcePage();
+      attempts++;
+      if (attempts > 20) clearInterval(interval);
+    }, 500);
+  })();
+</script>
+
 </body>
 </html>
+
