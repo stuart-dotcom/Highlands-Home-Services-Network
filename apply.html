@@ -453,6 +453,14 @@ document.addEventListener('DOMContentLoaded', function() {
     e.preventDefault();
     var valid = true;
 
+    // Disable nameless hidden fields before submit
+form.querySelectorAll('input[name=""]').forEach(function(f) {
+  f.disabled = true;
+});
+
+form.submit();
+
+
     // Required text/select/email/tel fields
     form.querySelectorAll('input[required], select[required]').forEach(function(field) {
       if (field.type === 'checkbox') {
