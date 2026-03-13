@@ -174,30 +174,6 @@
   }
 </style>
 
-<script>
-(function() {
-  window.addEventListener('load', function() {
-    var iframe = document.getElementById('inline-n9ROMopcvAwmvgF6SZJw');
-    if (!iframe) return;
-
-    if (window.innerWidth <= 768) {
-      // Remove fixed width so GHL recalculates height for mobile
-      iframe.style.setProperty('width', '100%', 'important');
-
-      // Wait for GHL to finish rendering then read its natural height
-      setTimeout(function() {
-        var naturalHeight = iframe.contentDocument
-          ? iframe.contentDocument.body.scrollHeight
-          : null;
-        if (naturalHeight) {
-          iframe.style.setProperty('height', naturalHeight + 'px', 'important');
-        }
-      }, 2000);
-    }
-  });
-})();
-</script>
-
 </head>
 
 <body>
