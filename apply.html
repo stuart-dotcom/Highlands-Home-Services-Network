@@ -164,11 +164,10 @@
 <style>
   .ghl-form-iframe-wrapper {
     width: 100%;
-    min-height: 900px;
+    overflow: hidden;
   }
   .ghl-form-iframe-wrapper iframe {
     width: 100%;
-    min-height: 900px;
     border: none;
     border-radius: 3px;
     display: block;
@@ -177,31 +176,27 @@
 
 <script>
 (function() {
-  function fixIframeHeight() {
+  function scaleIframe() {
+    var wrapper = document.querySelector('.ghl-form-iframe-wrapper');
     var iframe = document.getElementById('inline-n9ROMopcvAwmvgF6SZJw');
-    if (!iframe) return;
+    if (!wrapper || !iframe) return;
+
     if (window.innerWidth <= 768) {
-      iframe.style.setProperty('height', '1400px', 'important');
+      var scale = wrapper.offsetWidth / 800;
+      iframe.style.setProperty('transform', 'scale(' + scale + ')', 'important');
+      iframe.style.setProperty('transform-origin', 'top left', 'important');
+      iframe.style.setProperty('width', '800px', 'important');
+      wrapper.style.setProperty('height', (iframe.offsetHeight * scale) + 'px', 'important');
+    } else {
+      iframe.style.removeProperty('transform');
+      iframe.style.removeProperty('transform-origin');
+      iframe.style.removeProperty('width');
+      wrapper.style.removeProperty('height');
     }
   }
 
-  var observer = new MutationObserver(function(mutations) {
-    mutations.forEach(function(mutation) {
-      if (mutation.attributeName === 'style') {
-        fixIframeHeight();
-      }
-    });
-  });
-
-  window.addEventListener('load', function() {
-    fixIframeHeight();
-    var iframe = document.getElementById('inline-n9ROMopcvAwmvgF6SZJw');
-    if (iframe) {
-      observer.observe(iframe, { attributes: true });
-    }
-  });
-
-  window.addEventListener('resize', fixIframeHeight);
+  window.addEventListener('load', scaleIframe);
+  window.addEventListener('resize', scaleIframe);
 })();
 </script>
 
