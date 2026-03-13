@@ -519,10 +519,18 @@ p  { font-size: 1.1rem; margin-bottom: 1.25rem; }
 
 .badge-icon { font-size: 3.5rem; line-height: 1; margin: 0 auto 1.25rem; display: block; text-align: center; } /* ↑ WS */
 
-@media (max-width: 480px) {
-  .badge-icon { font-size: 2.8rem; }
-  .badges-grid { grid-template-columns: 1fr 1fr; gap: 1.25rem; } /* ↑ WS */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-wrapper {
+    padding: 1rem !important;
+    box-shadow: none;
+    border-radius: 0;
+  }
 }
+
 
 /* ============================================================
    TESTIMONIALS
