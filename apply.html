@@ -18,6 +18,7 @@
   <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
   <script src="/js/main.js" defer></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
@@ -160,25 +161,9 @@
   }
   </script>
 
-<!-- GHL iFrame resize helper -->
-<style>
-  .ghl-form-iframe-wrapper {
-    width: 100%;
-    overflow: hidden;
-  }
-  .ghl-form-iframe-wrapper iframe {
-    width: 100%;
-    border: none;
-    border-radius: 3px;
-    display: block;
-  }
-</style>
-
 </head>
 
 <body>
-
-
 
 <!-- HEADER -->
 <header class="site-header">
@@ -267,37 +252,156 @@
     </div>
   </section>
 
-  <!-- GHL CONTRACTOR APPLICATION FORM -->
+  <!-- NATIVE CONTRACTOR APPLICATION FORM -->
   <section class="form-section section-pad" aria-labelledby="apply-form-heading">
     <div class="container">
       <div class="form-wrapper">
         <h2 id="apply-form-heading">Tell us about your business.</h2>
         <p>We use this information to verify your Florida license, confirm Highlands County coverage, and determine fit for the network.</p>
 
-        <!-- GHL EMBED START -->
-        <div class="ghl-form-iframe-wrapper">
-          <iframe
-            src="https://links.highlandshomeservicesnetwork.com/widget/form/n9ROMopcvAwmvgF6SZJw"
-            style="width:100%;height:100%;border:none;border-radius:3px"
-            id="inline-n9ROMopcvAwmvgF6SZJw"
-            data-layout="{'id':'INLINE'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="HHSN - Contractor Application"
-            data-height="1792"
-            data-layout-iframe-id="inline-n9ROMopcvAwmvgF6SZJw"
-            data-form-id="n9ROMopcvAwmvgF6SZJw"
-            title="HHSN - Contractor Application">
-          </iframe>
+        <div id="form-success" class="form-success" style="display:none;">
+          Thank you! Your application has been received. We will be in touch within 1 business day.
         </div>
-        <script src="https://links.highlandshomeservicesnetwork.com/js/form_embed.js"></script>
-        <!-- GHL EMBED END -->
+        <div id="form-error" class="form-error" style="display:none;">
+          Something went wrong. Please try again or email us at hello@highlandshomeservicesnetwork.com.
+        </div>
+
+        <form id="contractor-app-form" novalidate>
+          <input type="hidden" name="formId" value="n9ROMopcvAwmvgF6SZJw">
+          <input type="hidden" name="location_id" value="kOnLZshuRTBYXy4SVP2W">
+          <input type="hidden" name="utm_source" id="utm_source" value="">
+
+          <!-- First / Last Name -->
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="first_name">First Name <span style="color:var(--color-accent)">*</span></label>
+              <input type="text" id="first_name" name="first_name" autocomplete="given-name" required>
+            </div>
+            <div class="form-group">
+              <label for="last_name">Last Name <span style="color:var(--color-accent)">*</span></label>
+              <input type="text" id="last_name" name="last_name" autocomplete="family-name" required>
+            </div>
+          </div>
+
+          <!-- Business Name -->
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="business_name">Business / Company Name <span style="color:var(--color-accent)">*</span></label>
+              <input type="text" id="business_name" name="business_name" autocomplete="organization" required>
+            </div>
+          </div>
+
+          <!-- Phone / Email -->
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="phone">Phone <span style="color:var(--color-accent)">*</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span style="color:var(--color-accent)">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+          </div>
+
+          <!-- Primary Trade -->
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="primary_trade">Primary Trade <span style="color:var(--color-accent)">*</span></label>
+              <select id="primary_trade" name="primary_trade" required>
+                <option value="" disabled selected>Select your trade</option>
+                <option value="HVAC / Air Conditioning">HVAC / Air Conditioning</option>
+                <option value="Plumbing">Plumbing</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Roofing">Roofing</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Florida License Number -->
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="license_number">Florida License Number <span style="color:var(--color-accent)">*</span></label>
+              <input type="text" id="license_number" name="license_number" placeholder="e.g. CAC1234567" required>
+            </div>
+          </div>
+
+          <!-- Cities You Service -->
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label>Cities You Service <span style="color:var(--color-accent)">*</span></label>
+              <div class="checkbox-group" id="cities-group">
+                <label><input type="checkbox" name="cities_serviced" value="Sebring"> Sebring</label>
+                <label><input type="checkbox" name="cities_serviced" value="Avon Park"> Avon Park</label>
+                <label><input type="checkbox" name="cities_serviced" value="Lake Placid"> Lake Placid</label>
+                <label><input type="checkbox" name="cities_serviced" value="Lorida"> Lorida</label>
+                <label><input type="checkbox" name="cities_serviced" value="Venus"> Venus</label>
+                <label><input type="checkbox" name="cities_serviced" value="All of Highlands County"> All of Highlands County</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Years in Business -->
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="years_in_business">Years in Business <span style="color:var(--color-accent)">*</span></label>
+              <select id="years_in_business" name="years_in_business" required>
+                <option value="" disabled selected>Select years in business</option>
+                <option value="Under 1 Year">Under 1 Year</option>
+                <option value="1-3 Years">1-3 Years</option>
+                <option value="3-5 Years">3-5 Years</option>
+                <option value="10+ Years">10+ Years</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Leads Per Month -->
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="leads_per_month">How Many Leads Per Month Do You Need? <span style="color:var(--color-accent)">*</span></label>
+              <select id="leads_per_month" name="leads_per_month" required>
+                <option value="" disabled selected>Select lead volume</option>
+                <option value="5-10 Leads">5-10 Leads</option>
+                <option value="10-20 Leads">10-20 Leads</option>
+                <option value="20+ Leads">20+ Leads</option>
+                <option value="Not Sure Yet">Not Sure Yet</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- T&C Consent -->
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <div class="checkbox-group">
+                <label id="tc-label" style="align-items:flex-start;gap:.75rem;">
+                  <input type="checkbox" id="tcpa_consent" name="tcpa_consent" value="yes" required style="margin-top:3px;flex-shrink:0;">
+                  <span style="font-size:.85rem;line-height:1.6;font-weight:400;color:#444;">By submitting this form, I provide my electronic signature and express written consent authorizing Highlands Home Services Network (Obsidian Peak Holdings LLC) to contact me at the phone number provided using SMS text messages and phone calls, including through automated technology. I understand this consent is not a condition of any purchase or service. Message &amp; data rates may apply. You can opt out at any time by replying STOP. View our <a href="/privacy.html" target="_blank">Privacy Policy</a> and <a href="/terms.html" target="_blank">Terms of Service</a> by clicking the links at the bottom of this form.</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- reCAPTCHA -->
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <div class="g-recaptcha" data-sitekey="6LchXYksAAAAAF2TNv8ga3jBfc8RadtzScE-24Dx"></div>
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary" id="submit-btn">Submit Application</button>
+          </div>
+
+          <!-- Footer links -->
+          <p class="form-note text-center" style="margin-top:1.5rem;">
+            <a href="/privacy.html" target="_blank">Privacy Policy</a> &nbsp;|&nbsp;
+            <a href="/terms.html" target="_blank">Terms of Service</a>
+          </p>
+
+        </form>
 
         <p class="legal-disclaimer" style="margin-top:1.5rem;">Highlands Home Services Network is a referral and lead generation service. We do not perform trade services.</p>
+
       </div>
     </div>
   </section>
@@ -337,29 +441,95 @@
   document.getElementById('footer-year').textContent = new Date().getFullYear();
 </script>
 
-<!-- source_page hidden field auto-populate -->
 <script>
-  (function() {
-    function setSourcePage() {
-      var iframe = document.getElementById('inline-n9ROMopcvAwmvgF6SZJw');
-      if (!iframe) return;
-      try {
-        var iDoc = iframe.contentDocument || iframe.contentWindow.document;
-        var field = iDoc.querySelector('input[name="source_page"], input[data-field-key="source_page"]');
-        if (field) field.value = window.location.pathname;
-      } catch(e) {}
+// Auto-populate utm_source
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  document.getElementById('utm_source').value = params.get('utm_source') || document.referrer || 'direct';
+})();
+
+// Form submission handler
+document.getElementById('contractor-app-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  var form = this;
+  var btn = document.getElementById('submit-btn');
+  var successMsg = document.getElementById('form-success');
+  var errorMsg = document.getElementById('form-error');
+
+  errorMsg.style.display = 'none';
+
+  // Validate required text/select fields
+  var valid = true;
+  form.querySelectorAll('input[required], select[required]').forEach(function(field) {
+    if (field.type === 'checkbox') {
+      if (!field.checked) {
+        valid = false;
+        document.getElementById('tc-label').style.color = '#c00';
+      } else {
+        document.getElementById('tc-label').style.color = '';
+      }
+    } else {
+      if (!field.value.trim()) {
+        valid = false;
+        field.style.borderColor = '#c00';
+      } else {
+        field.style.borderColor = '';
+      }
     }
-    // Poll until iframe is ready
-    var attempts = 0;
-    var interval = setInterval(function() {
-      setSourcePage();
-      attempts++;
-      if (attempts > 20) clearInterval(interval);
-    }, 500);
-  })();
+  });
+
+  // At least one city required
+  var cities = form.querySelectorAll('input[name="cities_serviced"]:checked');
+  if (cities.length === 0) {
+    valid = false;
+    document.getElementById('cities-group').style.outline = '2px solid #c00';
+    document.getElementById('cities-group').style.borderRadius = '4px';
+  } else {
+    document.getElementById('cities-group').style.outline = '';
+  }
+
+  // reCAPTCHA
+  var recaptchaResponse = grecaptcha.getResponse();
+  if (!recaptchaResponse) {
+    valid = false;
+    alert('Please complete the reCAPTCHA verification.');
+  }
+
+  if (!valid) return;
+
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+
+  var data = new FormData(form);
+  data.delete('cities_serviced');
+  data.append('cities_serviced', Array.from(cities).map(function(c) { return c.value; }).join(', '));
+  data.append('g-recaptcha-response', recaptchaResponse);
+
+  fetch('https://backend.leadconnectorhq.com/forms/submit', {
+    method: 'POST',
+    body: data
+  })
+  .then(function(res) {
+    if (res.ok || res.status === 200 || res.status === 201) {
+      successMsg.style.display = 'block';
+      form.style.display = 'none';
+      window.scrollTo({ top: document.getElementById('apply-form-heading').offsetTop - 100, behavior: 'smooth' });
+    } else {
+      throw new Error('Status: ' + res.status);
+    }
+  })
+  .catch(function() {
+    errorMsg.style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = 'Submit Application';
+    grecaptcha.reset();
+  });
+});
 </script>
 
 </body>
 </html>
+
 
 
