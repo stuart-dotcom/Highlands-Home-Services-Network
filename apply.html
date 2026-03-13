@@ -269,7 +269,7 @@
        <form id="contractor-app-form" action="https://backend.leadconnectorhq.com/forms/submit" method="POST" novalidate>
           <input type="hidden" name="formId" value="n9ROMopcvAwmvgF6SZJw">
           <input type="hidden" name="location_id" value="kOnLZshuRTBYXy4SVP2W">
-          <input type="hidden" name="utm_source" id="utm_source" value="">
+       
 
           <!-- First / Last Name -->
           <div class="form-grid">
@@ -444,13 +444,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 
-  // UTM source
-  (function() {
-    var params = new URLSearchParams(window.location.search);
-    var utmField = document.getElementById('utm_source');
-    if (utmField) utmField.value = params.get('utm_source') || document.referrer || 'direct';
-  })();
-
+  
   // Form submit
   var form = document.getElementById('contractor-app-form');
   if (!form) return;
