@@ -176,33 +176,32 @@
 
 <script>
 (function() {
-  function scaleIframe() {
-    var wrapper = document.querySelector('.ghl-form-iframe-wrapper');
+  window.addEventListener('load', function() {
     var iframe = document.getElementById('inline-n9ROMopcvAwmvgF6SZJw');
-    if (!wrapper || !iframe) return;
+    if (!iframe) return;
 
     if (window.innerWidth <= 768) {
-      var scale = wrapper.offsetWidth / 800;
-      iframe.style.setProperty('transform', 'scale(' + scale + ')', 'important');
-      iframe.style.setProperty('transform-origin', 'top left', 'important');
-      iframe.style.setProperty('width', '800px', 'important');
-      wrapper.style.setProperty('height', (iframe.offsetHeight * scale) + 'px', 'important');
-    } else {
-      iframe.style.removeProperty('transform');
-      iframe.style.removeProperty('transform-origin');
-      iframe.style.removeProperty('width');
-      wrapper.style.removeProperty('height');
-    }
-  }
+      // Remove fixed width so GHL recalculates height for mobile
+      iframe.style.setProperty('width', '100%', 'important');
 
-  window.addEventListener('load', scaleIframe);
-  window.addEventListener('resize', scaleIframe);
+      // Wait for GHL to finish rendering then read its natural height
+      setTimeout(function() {
+        var naturalHeight = iframe.contentDocument
+          ? iframe.contentDocument.body.scrollHeight
+          : null;
+        if (naturalHeight) {
+          iframe.style.setProperty('height', naturalHeight + 'px', 'important');
+        }
+      }, 2000);
+    }
+  });
 })();
 </script>
 
 </head>
 
 <body>
+
 
 
 <!-- HEADER -->
