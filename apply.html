@@ -442,43 +442,65 @@
 </script>
 
 <script>
-(function() {
-  var params = new URLSearchParams(window.location.search);
-  document.getElementById('utm_source').value = params.get('utm_source') || document.referrer || 'direct';
-})();
+document.addEventListener('DOMContentLoaded', function() {
 
-document.getElementById('contractor-app-form').addEventListener('submit', function(e) {
-  e.preventDefault();
+  // UTM source
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var utmField = document.getElementById('utm_source');
+    if (utmField) utmField.value = params.get('utm_source') || document.referrer || 'direct';
+  })();
 
-  var form = this;
-  var valid = true;
+  // Form submit
+  var form = document.getElementById('contractor-app-form');
+  if (!form) return;
 
-  form.querySelectorAll('input[required], select[required]').forEach(function(field) {
-    if (field.type === 'checkbox') {
-      if (!field.checked) { valid = false; document.getElementById('tc-label').style.color = '#c00'; }
-      else { document.getElementById('tc-label').style.color = ''; }
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var valid = true;
+
+    // Required text/select/email/tel fields
+    form.querySelectorAll('input[required], select[required]').forEach(function(field) {
+      if (field.type === 'checkbox') {
+        if (!field.checked) {
+          valid = false;
+          var lbl = document.getElementById('tc-label');
+          if (lbl) lbl.style.color = '#c00';
+        } else {
+          var lbl = document.getElementById('tc-label');
+          if (lbl) lbl.style.color = '';
+        }
+      } else {
+        if (!field.value.trim()) {
+          valid = false;
+          field.style.borderColor = '#c00';
+        } else {
+          field.style.borderColor = '';
+        }
+      }
+    });
+
+    // Cities checkboxes
+    var cities = form.querySelectorAll('input[name="UoBDmsyqoAqFA7dXuqYt"]:checked');
+    var citiesGroup = document.getElementById('cities-group');
+    if (cities.length === 0) {
+      valid = false;
+      if (citiesGroup) citiesGroup.style.outline = '2px solid #c00';
     } else {
-      if (!field.value.trim()) { valid = false; field.style.borderColor = '#c00'; }
-      else { field.style.borderColor = ''; }
+      if (citiesGroup) citiesGroup.style.outline = '';
     }
+
+    // reCAPTCHA
+    if (typeof grecaptcha !== 'undefined' && !grecaptcha.getResponse()) {
+      valid = false;
+      alert('Please complete the reCAPTCHA verification.');
+    }
+
+    if (!valid) return;
+
+    form.submit();
   });
 
-  var cities = form.querySelectorAll('input[name="UoBDmsyqoAqFA7dXuqYt"]:checked');
-  if (cities.length === 0) {
-    valid = false;
-    document.getElementById('cities-group').style.outline = '2px solid #c00';
-  } else {
-    document.getElementById('cities-group').style.outline = '';
-  }
-
-  if (!grecaptcha.getResponse()) {
-    valid = false;
-    alert('Please complete the reCAPTCHA verification.');
-  }
-
-  if (!valid) return;
-
-  form.submit();
 });
 </script>
 
@@ -486,8 +508,7 @@ document.getElementById('contractor-app-form').addEventListener('submit', functi
 </html>
 
 
-</body>
-</html>
+
 
 
 
