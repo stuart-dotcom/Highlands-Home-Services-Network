@@ -266,7 +266,7 @@
           Something went wrong. Please try again or email us at hello@highlandshomeservicesnetwork.com.
         </div>
 
-        <form id="contractor-app-form" novalidate>
+       <form id="contractor-app-form" action="https://backend.leadconnectorhq.com/forms/submit" method="POST" novalidate>
           <input type="hidden" name="formId" value="n9ROMopcvAwmvgF6SZJw">
           <input type="hidden" name="location_id" value="kOnLZshuRTBYXy4SVP2W">
           <input type="hidden" name="utm_source" id="utm_source" value="">
@@ -442,91 +442,46 @@
 </script>
 
 <script>
-// Auto-populate utm_source
 (function() {
   var params = new URLSearchParams(window.location.search);
   document.getElementById('utm_source').value = params.get('utm_source') || document.referrer || 'direct';
 })();
 
-// Form submission handler
 document.getElementById('contractor-app-form').addEventListener('submit', function(e) {
   e.preventDefault();
 
   var form = this;
-  var btn = document.getElementById('submit-btn');
-  var successMsg = document.getElementById('form-success');
-  var errorMsg = document.getElementById('form-error');
-
-  errorMsg.style.display = 'none';
-
-  // Validate required text/select fields
   var valid = true;
+
   form.querySelectorAll('input[required], select[required]').forEach(function(field) {
     if (field.type === 'checkbox') {
-      if (!field.checked) {
-        valid = false;
-        document.getElementById('tc-label').style.color = '#c00';
-      } else {
-        document.getElementById('tc-label').style.color = '';
-      }
+      if (!field.checked) { valid = false; document.getElementById('tc-label').style.color = '#c00'; }
+      else { document.getElementById('tc-label').style.color = ''; }
     } else {
-      if (!field.value.trim()) {
-        valid = false;
-        field.style.borderColor = '#c00';
-      } else {
-        field.style.borderColor = '';
-      }
+      if (!field.value.trim()) { valid = false; field.style.borderColor = '#c00'; }
+      else { field.style.borderColor = ''; }
     }
   });
 
-  // At least one city required
   var cities = form.querySelectorAll('input[name="cities_serviced"]:checked');
   if (cities.length === 0) {
     valid = false;
     document.getElementById('cities-group').style.outline = '2px solid #c00';
-    document.getElementById('cities-group').style.borderRadius = '4px';
   } else {
     document.getElementById('cities-group').style.outline = '';
   }
 
-  // reCAPTCHA
-  var recaptchaResponse = grecaptcha.getResponse();
-  if (!recaptchaResponse) {
+  if (!grecaptcha.getResponse()) {
     valid = false;
     alert('Please complete the reCAPTCHA verification.');
   }
 
   if (!valid) return;
 
-  btn.disabled = true;
-  btn.textContent = 'Submitting...';
-
-  var data = new FormData(form);
-  data.delete('cities_serviced');
-  data.append('cities_serviced', Array.from(cities).map(function(c) { return c.value; }).join(', '));
-  data.append('g-recaptcha-response', recaptchaResponse);
-
-  fetch('https://backend.leadconnectorhq.com/forms/submit', {
-    method: 'POST',
-    body: data
-  })
-  .then(function(res) {
-    if (res.ok || res.status === 200 || res.status === 201) {
-      successMsg.style.display = 'block';
-      form.style.display = 'none';
-      window.scrollTo({ top: document.getElementById('apply-form-heading').offsetTop - 100, behavior: 'smooth' });
-    } else {
-      throw new Error('Status: ' + res.status);
-    }
-  })
-  .catch(function() {
-    errorMsg.style.display = 'block';
-    btn.disabled = false;
-    btn.textContent = 'Submit Application';
-    grecaptcha.reset();
-  });
+  form.submit();
 });
 </script>
+
 
 </body>
 </html>
