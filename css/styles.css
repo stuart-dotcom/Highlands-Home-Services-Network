@@ -884,6 +884,15 @@ details p {
   }
 }
 
+#contractor-app-iframe {
+  width: 100%;
+  min-height: 900px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+}
+
+
 
 
 
