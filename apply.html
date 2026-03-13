@@ -160,24 +160,39 @@
   }
   </script>
 
-  <!-- GHL iFrame resize helper -->
-  <style>
-    .ghl-form-iframe-wrapper {
-      width: 100%;
-      min-height: 900px;
+ <!-- GHL iFrame resize helper -->
+<style>
+  .ghl-form-iframe-wrapper {
+    width: 100%;
+    min-height: 900px;
+  }
+  .ghl-form-iframe-wrapper iframe {
+    width: 100%;
+    min-height: 900px;
+    border: none;
+    border-radius: 3px;
+    display: block;
+  }
+</style>
+
+<script>
+(function() {
+  function fixIframeHeight() {
+    var iframe = document.getElementById('inline-n9ROMopcvAwmvgF6SZJw');
+    if (!iframe) return;
+    if (window.innerWidth <= 768) {
+      iframe.style.setProperty('height', '1400px', 'important');
     }
-    .ghl-form-iframe-wrapper iframe {
-      width: 100%;
-      min-height: 900px;
-      border: none;
-      border-radius: 3px;
-      display: block;
-    }
-  </style>
+  }
+  window.addEventListener('load', fixIframeHeight);
+  window.addEventListener('resize', fixIframeHeight);
+})();
+</script>
 
 </head>
 
 <body>
+
 
 <!-- HEADER -->
 <header class="site-header">
