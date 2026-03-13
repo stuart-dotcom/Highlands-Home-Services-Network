@@ -160,7 +160,7 @@
   }
   </script>
 
- <!-- GHL iFrame resize helper -->
+<!-- GHL iFrame resize helper -->
 <style>
   .ghl-form-iframe-wrapper {
     width: 100%;
@@ -184,7 +184,23 @@
       iframe.style.setProperty('height', '1400px', 'important');
     }
   }
-  window.addEventListener('load', fixIframeHeight);
+
+  var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.attributeName === 'style') {
+        fixIframeHeight();
+      }
+    });
+  });
+
+  window.addEventListener('load', function() {
+    fixIframeHeight();
+    var iframe = document.getElementById('inline-n9ROMopcvAwmvgF6SZJw');
+    if (iframe) {
+      observer.observe(iframe, { attributes: true });
+    }
+  });
+
   window.addEventListener('resize', fixIframeHeight);
 })();
 </script>
