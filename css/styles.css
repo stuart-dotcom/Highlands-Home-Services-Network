@@ -845,6 +845,26 @@ details p {
   .section-pad { padding: 3.5rem 0; }
 }
 
+/* ============================================
+   GHL FORM IFRAME OVERRIDES
+   ============================================ */
+
+/* Wrapper — let GHL script control height dynamically */
+.ghl-form-iframe-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ghl-form-iframe-wrapper iframe {
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+  border: none;
+  border-radius: 3px;
+  display: block;
+}
+
 
 
 
