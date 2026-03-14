@@ -892,8 +892,22 @@ details p {
   background: transparent;
 }
 
+/* Trade Verticals 2x2 Grid */
+.verticals-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
 
+@media (max-width: 768px) {
+  .verticals-grid-2col {
+    grid-template-columns: 1fr;
+  }
 
+  .verticals-grid-2col iframe {
+    height: 850px !important;
+  }
+}
 
 
 
