@@ -892,12 +892,18 @@ details p {
   background: transparent;
 }
 
-/* Trade Verticals 2x2 Grid */
+/* Trade Verticals 4-column Grid */
 .verticals-grid-2col {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .verticals-grid-2col {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -909,8 +915,5 @@ details p {
     height: 850px !important;
   }
 }
-
-
-
 
 
