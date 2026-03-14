@@ -376,7 +376,7 @@
       <!-- Plumbing Waitlist -->
       <div id="plumbing-waitlist">
         <iframe src="https://links.highlandshomeservicesnetwork.com/widget/form/AY9erBQNYr6IJb2OE5sc"
-                style="width:100%; height:1159px; border:none; border-radius:8px;"data-height="1159"
+                style="width:100%; height:500px; border:none; border-radius:8px;"
                 data-layout="{'id':'INLINE'}"
                 data-activation-type="alwaysActivated"
                 data-deactivation-type="neverDeactivate"
@@ -390,7 +390,7 @@
       <!-- Electrical Waitlist -->
       <div id="electrical-waitlist">
         <iframe src="https://links.highlandshomeservicesnetwork.com/widget/form/SpUUTQb6Jg3TJ0lQFqYn"
-                style="width:100%; height:1159px; border:none; border-radius:8px;"data-height="1159"
+                style="width:100%; height:500px; border:none; border-radius:8px;"
                 data-layout="{'id':'INLINE'}"
                 data-activation-type="alwaysActivated"
                 data-deactivation-type="neverDeactivate"
@@ -404,7 +404,7 @@
       <!-- Roofing Waitlist -->
       <div id="roofing-waitlist">
         <iframe src="https://links.highlandshomeservicesnetwork.com/widget/form/CLSl6vTsw1dn5vUbAWmf"
-                style="width:100%; height:1159px; border:none; border-radius:8px;"data-height="1159"
+                style="width:100%; height:500px; border:none; border-radius:8px;"
                 data-layout="{'id':'INLINE'}"
                 data-activation-type="alwaysActivated"
                 data-deactivation-type="neverDeactivate"
@@ -418,7 +418,19 @@
     </div>
 
   </div>
-  <script src="https://links.highlandshomeservicesnetwork.com/js/form_embed.js"></script>
+ <script src="https://links.highlandshomeservicesnetwork.com/js/form_embed.js"></script>
+<script>
+  // Auto-resize all GHL iframes to match their content height
+  window.addEventListener('message', function(e) {
+    if (e.data && e.data.type === 'SET_HEIGHT') {
+      var iframe = document.querySelector('iframe[data-form-id="' + e.data.formId + '"]');
+      if (iframe) {
+        iframe.style.height = e.data.height + 'px';
+      }
+    }
+  });
+</script>
+
 </section>
 
 
