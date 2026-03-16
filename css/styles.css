@@ -87,6 +87,16 @@ p  { font-size: 1.1rem; margin-bottom: 1.25rem; }
 .btn-primary:hover   { background: #c96b2a; color: var(--color-white); }
 .btn-outline         { background: transparent; color: var(--color-white); border-color: var(--color-white); }
 .btn-outline:hover   { background: var(--color-white); color: var(--color-primary); }
+.trade-card-body .btn-outline {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.trade-card-body .btn-outline:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
 .btn-secondary       { background: var(--color-primary); color: var(--color-white); }
 .btn-secondary:hover { background: #142d47; color: var(--color-white); }
 
