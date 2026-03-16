@@ -902,12 +902,11 @@ details p {
 @media (max-width: 768px) {
   .verticals-grid-2col {
     grid-template-columns: 1fr;
-    gap: 0.5rem;
+    gap: 0;
   }
 
   .verticals-grid-2col iframe {
-    height: 650px !important;
+    height: 592px !important;
     display: block;
-    margin-bottom: -60px;
   }
 }
