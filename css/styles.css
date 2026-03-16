@@ -1064,14 +1064,14 @@ details p {
   .thankyou-ctas { flex-direction: column; align-items: center; }
 }
 
-/* ── CTA Section ───────────────────────────── */
-.cta-section .btn-primary {
+/* ── CTA Banner ───────────────────────────── */
+.cta-banner .btn-primary {
   background: var(--color-white);
   color: var(--color-accent);
   border: 2px solid var(--color-white);
 }
 
-.cta-section .btn-primary:hover {
+.cta-banner .btn-primary:hover {
   background: transparent;
   color: var(--color-white);
   border-color: var(--color-white);
