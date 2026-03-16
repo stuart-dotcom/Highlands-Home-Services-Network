@@ -997,3 +997,60 @@ details p {
   }
 }
 
+/* ── Breadcrumb ─────────────────────────── */
+.breadcrumb-nav {
+  background: transparent;
+  padding: 0.75rem 0 0;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0 1.5rem;
+  font-size: 0.8rem;
+  opacity: 0.65;
+}
+
+.breadcrumb-list li::after {
+  content: '›';
+  margin-left: 0.35rem;
+}
+
+.breadcrumb-list li:last-child::after {
+  content: '';
+}
+
+.breadcrumb-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumb-list a:hover {
+  text-decoration: underline;
+}
+
+/* ── Thank You Page ─────────────────────────── */
+.thankyou-hero { text-align: center; }
+.thankyou-content { max-width: 680px; margin: 0 auto; }
+.thankyou-icon { font-size: 3.5rem; margin-bottom: 1rem; }
+.thankyou-subhead { font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem; opacity: 0.85; }
+.thankyou-what-next { background: #ffffff; border-radius: 10px; padding: 2rem; box-shadow: 0 2px 16px rgba(0,0,0,0.07); text-align: left; margin-bottom: 2rem; }
+.thankyou-what-next h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.thankyou-steps { padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.thankyou-steps li { font-size: 0.95rem; line-height: 1.6; }
+.thankyou-ctas { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 1rem; }
+.thankyou-links-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 2rem; }
+.thankyou-link-card { background: #ffffff; border-radius: 10px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.07); text-decoration: none; color: inherit; transition: box-shadow 0.2s ease, transform 0.2s ease; display: flex; flex-direction: column; gap: 0.5rem; }
+.thankyou-link-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.12); transform: translateY(-2px); }
+.tlc-icon { font-size: 1.75rem; }
+.thankyou-link-card h3 { font-size: 1rem; margin: 0; }
+.thankyou-link-card p { font-size: 0.875rem; line-height: 1.55; margin: 0; opacity: 0.8; }
+
+@media (max-width: 600px) {
+  .thankyou-links-grid { grid-template-columns: 1fr; }
+  .thankyou-ctas { flex-direction: column; align-items: center; }
+}
+
