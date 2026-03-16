@@ -971,7 +971,7 @@ details p {
 }
 
 .trade-badge--soon {
-  background: rgba(0,0,0,0.55);
+  background: var(--color-accent);
   color: ##1a3c5e;
 }
 
