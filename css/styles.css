@@ -908,6 +908,6 @@ details p {
   .verticals-grid-2col iframe {
     height: 650px !important;
     display: block;
-    margin-bottom: -80px;
+    margin-bottom: -60px;
   }
 }
