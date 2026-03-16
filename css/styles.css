@@ -905,6 +905,14 @@ details p {
     gap: 0;
   }
 
+  .verticals-grid-2col > div {
+    margin-bottom: -40px;
+  }
+
+  .verticals-grid-2col > div:last-child {
+    margin-bottom: 0;
+  }
+
   .verticals-grid-2col iframe {
     height: 592px !important;
     display: block;
