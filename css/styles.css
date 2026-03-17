@@ -487,9 +487,13 @@ p  { font-size: 1.1rem; margin-bottom: 1.25rem; }
 .trust-section h2 { color: var(--color-white); }
 .trust-section p,
 .trust-section .trust-intro,
-.trust-section .legal-disclaimer { color: rgba(245,242,237,.88); }
+.trust-section .legal-disclaimer { 
+  color: rgba(245,242,237,.88); 
+}
+.trust-section .legal-disclaimer { text-align: center; }
 .trust-section a       { color: var(--color-accent); }
 .trust-section a:hover { color: var(--color-white); }
+
 
 /* ============================================================
    TWO-COLUMN LAYOUT
