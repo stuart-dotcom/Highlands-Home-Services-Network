@@ -11,6 +11,7 @@ Allow: /
 Disallow: /cgi-bin/
 Disallow: /api/
 Disallow: /thank-you.html
+Disallow: /cdn-cgi/
 
 # ---------------------------------------------------------------
 # AEO — AI Crawler Directives
