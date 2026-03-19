@@ -101,14 +101,6 @@ Create an `/images/` folder in the root and populate with the following assets:
 | `sebring-aerial.jpg`   | 800 × 600px   | Apply page sidebar + About page    |
 | `lead-delivery.jpg`    | 800 × 600px   | HVAC page content image            |
 
-### Content Graphics (PNG)
-| Filename               | Dimensions    | Usage                              |
-|------------------------|---------------|------------------------------------|
-| `process-steps.png`    | 1200 × 400px  | How It Works 3-panel illustration  |
-| `icon-emergency.png`   | 120 × 120px   | HVAC lead type — Emergency Repair  |
-| `icon-tuneup.png`      | 120 × 120px   | HVAC lead type — Tune-Up           |
-| `icon-install.png`     | 120 × 120px   | HVAC lead type — New Install       |
-| `icon-airquality.png`  | 120 × 120px   | HVAC lead type — Air Quality       |
 
 ---
 
