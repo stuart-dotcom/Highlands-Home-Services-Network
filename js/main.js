@@ -184,3 +184,66 @@ trigger.addEventListener('click', function (e) {
 
 })();
 
+
+
+// ── HomeFix Check Floating Button ────────────────────────
+(function () {
+  // Don't show the button on the home-check page itself
+  if (window.location.pathname.indexOf('/home-check') !== -1) return;
+
+  // Inject styles
+  var style = document.createElement('style');
+  style.textContent = [
+    '.hfc-fab {',
+    '  position: fixed;',
+    '  bottom: 1.5rem;',
+    '  right: 1.5rem;',
+    '  z-index: 9999;',
+    '  display: flex;',
+    '  align-items: center;',
+    '  gap: .5rem;',
+    '  background: #1B3A5C;',
+    '  color: #fff;',
+    '  font-family: Montserrat, sans-serif;',
+    '  font-weight: 700;',
+    '  font-size: .85rem;',
+    '  padding: .7rem 1.1rem .7rem .9rem;',
+    '  border-radius: 50px;',
+    '  box-shadow: 0 4px 18px rgba(27,58,92,.35);',
+    '  text-decoration: none;',
+    '  transition: background .2s, transform .15s, box-shadow .2s;',
+    '  border: 2px solid #C8972B;',
+    '}',
+    '.hfc-fab:hover {',
+    '  background: #C8972B;',
+    '  transform: translateY(-2px);',
+    '  box-shadow: 0 6px 24px rgba(200,151,43,.45);',
+    '}',
+    '.hfc-fab-icon {',
+    '  font-size: 1.1rem;',
+    '  line-height: 1;',
+    '}',
+    '@media (max-width: 480px) {',
+    '  .hfc-fab { font-size: 0; padding: .8rem; border-radius: 50%; bottom: 1rem; right: 1rem; }',
+    '  .hfc-fab-icon { font-size: 1.4rem; }',
+    '}'
+  ].join('');
+  document.head.appendChild(style);
+
+  // Create button
+  var fab = document.createElement('a');
+  fab.href = '/home-check';
+  fab.className = 'hfc-fab';
+  fab.setAttribute('aria-label', 'HomeFix Check — Free home diagnosis tool');
+  fab.setAttribute('title', 'HomeFix Check — Diagnose your home problem free');
+  fab.innerHTML = '<span class="hfc-fab-icon" aria-hidden="true">🔧</span><span class="hfc-fab-label">HomeFix Check</span>';
+
+  // Wait for DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      document.body.appendChild(fab);
+    });
+  } else {
+    document.body.appendChild(fab);
+  }
+}());
