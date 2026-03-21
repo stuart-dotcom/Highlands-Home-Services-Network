@@ -600,6 +600,102 @@ gtag('config', 'G-XWZFLZ803K');
     </div>
   </section>
 
+
+  <!-- HOMEFIX CHECK CALLOUT BANNER -->
+  <section class="homefix-callout" aria-label="HomeFix Check free home diagnosis tool">
+    <div class="homefix-callout-bg" role="presentation" aria-hidden="true"></div>
+    <div class="container homefix-callout-inner">
+      <div class="homefix-callout-text">
+        <p class="section-label">Free Homeowner Tool</p>
+        <h2>Not sure what's wrong with your home?</h2>
+        <p class="homefix-callout-sub">Use our free HomeFix Check tool to get an instant diagnosis, a real cost estimate, and a direct connection to a licensed Highlands County contractor — in under 2 minutes.</p>
+        <div class="homefix-callout-trust">
+          <span>✓ Free to use</span>
+          <span>✓ No account needed</span>
+          <span>✓ Licensed contractors only</span>
+        </div>
+      </div>
+      <div class="homefix-callout-cta">
+        <a href="/home-check" class="btn btn-primary homefix-callout-btn">Check My Home Now →</a>
+        <p class="homefix-callout-hint">Works on iPhone, Android &amp; desktop</p>
+      </div>
+    </div>
+  </section>
+  <style>
+    .homefix-callout {
+      position: relative;
+      background: linear-gradient(135deg, #1B3A5C 60%, #0f2236 100%);
+      padding: 3.5rem 1.5rem;
+      overflow: hidden;
+    }
+    .homefix-callout-bg {
+      position: absolute;
+      inset: 0;
+      background: url('/images/bg-how-it-works.jpg') center/cover no-repeat;
+      opacity: .07;
+      pointer-events: none;
+    }
+    .homefix-callout-inner {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .homefix-callout-text {
+      flex: 1 1 320px;
+    }
+    .homefix-callout-text .section-label {
+      color: #C8972B;
+    }
+    .homefix-callout-text h2 {
+      color: #fff;
+      font-family: var(--font-heading, 'Montserrat', sans-serif);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      margin-bottom: .75rem;
+      line-height: 1.2;
+    }
+    .homefix-callout-sub {
+      color: rgba(255,255,255,.82);
+      font-size: .95rem;
+      line-height: 1.65;
+      margin-bottom: 1rem;
+      max-width: 520px;
+    }
+    .homefix-callout-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem 1.25rem;
+      font-size: .8rem;
+      color: rgba(255,255,255,.65);
+    }
+    .homefix-callout-trust span {
+      font-weight: 600;
+      color: #C8972B;
+    }
+    .homefix-callout-cta {
+      flex: 0 0 auto;
+      text-align: center;
+    }
+    .homefix-callout-btn {
+      display: inline-block;
+      font-size: 1rem;
+      padding: .9rem 2rem;
+      white-space: nowrap;
+    }
+    .homefix-callout-hint {
+      color: rgba(255,255,255,.5);
+      font-size: .75rem;
+      margin-top: .6rem;
+    }
+    @media (max-width: 640px) {
+      .homefix-callout-inner { flex-direction: column; text-align: center; }
+      .homefix-callout-trust { justify-content: center; }
+      .homefix-callout-sub { max-width: 100%; }
+    }
+  </style>
 </main>
 
 <!-- FOOTER -->
