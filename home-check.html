@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XWZFLZ803K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XWZFLZ803K');
+  </script>
+
+  <meta charset="utf-8">
+  <title>HomeFix Check — Free Home Diagnosis Tool | HHSN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="Describe your home problem and get an instant diagnosis, cost estimate, and licensed Highlands County contractor match — free, in under 2 minutes.">
+  <link rel="canonical" href="https://highlandshomeservicesnetwork.com/home-check">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <script src="/js/main.js" defer></script>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HomeFix Check — Free Home Diagnosis Tool | HHSN">
+  <meta property="og:description" content="Describe your home problem and get an instant diagnosis, cost estimate, and licensed Highlands County contractor match — free, in under 2 minutes.">
+  <meta property="og:url" content="https://highlandshomeservicesnetwork.com/home-check">
+  <meta property="og:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
+  <meta property="og:site_name" content="Highlands Home Services Network">
+
+  <style>
+    /* ── HomeFix Check Page Styles ── */
+    .homefix-hero {
+      background: var(--color-primary, #1B3A5C);
+      padding: 3rem 1.5rem 2rem;
+      text-align: center;
+      color: #fff;
+    }
+    .homefix-hero .section-label {
+      color: var(--color-accent, #C8972B);
+      font-family: var(--font-heading, 'Montserrat', sans-serif);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+    }
+    .homefix-hero h1 {
+      font-family: var(--font-heading, 'Montserrat', sans-serif);
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      color: #fff;
+      margin: 0 auto .75rem;
+      max-width: 680px;
+      line-height: 1.2;
+    }
+    .homefix-hero p {
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-size: 1rem;
+      color: rgba(255,255,255,.85);
+      max-width: 560px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.6;
+    }
+    .homefix-trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .5rem 1.25rem;
+      font-size: .8rem;
+      color: rgba(255,255,255,.7);
+      margin-top: .5rem;
+    }
+    .homefix-trust-row span::before {
+      content: '✓ ';
+      color: var(--color-accent, #C8972B);
+      font-weight: 700;
+    }
+    /* App frame */
+    .homefix-app-section {
+      background: #F5F2ED;
+      padding: 0;
+    }
+    .homefix-app-wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 4px 32px rgba(27,58,92,.10);
+    }
+    .homefix-iframe {
+      width: 100%;
+      min-height: 700px;
+      border: none;
+      display: block;
+    }
+    /* Install banner */
+    .pwa-install-banner {
+      background: var(--color-primary, #1B3A5C);
+      color: #fff;
+      text-align: center;
+      padding: .75rem 1rem;
+      font-size: .85rem;
+      font-family: var(--font-body, 'Inter', sans-serif);
+      display: none;
+    }
+    .pwa-install-banner.visible { display: block; }
+    .pwa-install-banner button {
+      background: var(--color-accent, #C8972B);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: .35rem .9rem;
+      font-weight: 700;
+      font-size: .85rem;
+      cursor: pointer;
+      margin-left: .75rem;
+      vertical-align: middle;
+    }
+    /* How it works strip */
+    .homefix-how {
+      background: #fff;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    .homefix-how .section-label {
+      color: var(--color-accent, #C8972B);
+      font-family: var(--font-heading, 'Montserrat', sans-serif);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+    }
+    .homefix-how h2 {
+      font-family: var(--font-heading, 'Montserrat', sans-serif);
+      font-size: clamp(1.3rem, 3vw, 1.8rem);
+      font-weight: 800;
+      color: var(--color-primary, #1B3A5C);
+      margin-bottom: 2rem;
+    }
+    .homefix-steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .homefix-step {
+      flex: 1 1 200px;
+      max-width: 240px;
+      text-align: center;
+    }
+    .homefix-step-num {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--color-primary, #1B3A5C);
+      color: #fff;
+      font-family: var(--font-heading, 'Montserrat', sans-serif);
+      font-weight: 800;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .homefix-step h3 {
+      font-family: var(--font-heading, 'Montserrat', sans-serif);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-primary, #1B3A5C);
+      margin-bottom: .4rem;
+    }
+    .homefix-step p {
+      font-size: .9rem;
+      color: #555;
+      line-height: 1.5;
+    }
+    /* Bottom CTA */
+    .homefix-cta {
+      background: var(--color-primary, #1B3A5C);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: #fff;
+    }
+    .homefix-cta h2 {
+      font-family: var(--font-heading, 'Montserrat', sans-serif);
+      font-size: clamp(1.2rem, 3vw, 1.7rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: .75rem;
+    }
+    .homefix-cta p {
+      font-size: .95rem;
+      color: rgba(255,255,255,.8);
+      margin-bottom: 1.25rem;
+    }
+    @media (max-width: 600px) {
+      .homefix-iframe { min-height: 600px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="/" class="site-logo-link" aria-label="Highlands Home Services Network — Home">
+      <img src="/images/logo-light.jpg"
+           alt="Highlands Home Services Network logo"
+           class="site-logo"
+           loading="eager">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/how-it-works.html">How It Works</a></li>
+        <li class="nav-item-dropdown">
+          <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Contractor Leads</a>
+          <ul class="nav-dropdown" aria-label="Contractor lead verticals">
+            <li><a href="/contractor-leads/hvac.html">HVAC Leads</a></li>
+            <li><a href="/#plumbing-waitlist">Plumbing Leads <span style="font-size:.75rem;opacity:.7;">(Coming Soon)</span></a></li>
+            <li><a href="/#electrical-waitlist">Electrical Leads <span style="font-size:.75rem;opacity:.7;">(Coming Soon)</span></a></li>
+            <li><a href="/#roofing-waitlist">Roofing Leads <span style="font-size:.75rem;opacity:.7;">(Coming Soon)</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Service Areas</a>
+          <ul class="nav-dropdown" aria-label="Service area cities">
+            <li><a href="/service-areas/sebring-fl.html">Sebring</a></li>
+            <li><a href="/service-areas/avon-park-fl.html">Avon Park</a></li>
+            <li><a href="/service-areas/lake-placid-fl.html">Lake Placid</a></li>
+            <li><a href="/service-areas/lorida-fl.html">Lorida</a></li>
+            <li><a href="/service-areas/venus-fl.html">Venus</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/home-check" style="color:var(--color-accent);font-weight:700;">HomeFix Check</a></li>
+        <li><a href="/get-service.html" style="color:var(--color-accent);font-weight:700;">Get Service</a></li>
+        <li><a href="/apply.html" class="nav-cta">Apply to Join</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="homefix-hero" aria-label="HomeFix Check home diagnosis tool">
+    <p class="section-label">Free Homeowner Tool — Highlands County</p>
+    <h1>What's wrong with your home? Get an instant answer.</h1>
+    <p>Describe the problem, upload a photo, and we'll tell you exactly what it is, what it costs to fix, and connect you with a licensed local contractor — in under 2 minutes.</p>
+    <div class="homefix-trust-row">
+      <span>Free to use</span>
+      <span>No account required</span>
+      <span>Licensed contractors only</span>
+      <span>Highlands County, FL</span>
+    </div>
+  </section>
+
+  <!-- PWA INSTALL BANNER -->
+  <div class="pwa-install-banner" id="pwaInstallBanner" role="alert" aria-live="polite">
+    Add HomeFix Check to your home screen for one-tap access anytime.
+    <button id="pwaInstallBtn" aria-label="Install HomeFix Check app">Add to Home Screen</button>
+  </div>
+
+  <!-- APP EMBED -->
+  <section class="homefix-app-section" aria-label="HomeFix Check app">
+    <div class="homefix-app-wrapper">
+      <iframe
+        src="https://check.highlandshomeservicesnetwork.com"
+        class="homefix-iframe"
+        title="HomeFix Check — Home Diagnosis Tool"
+        loading="eager"
+        allow="camera; microphone"
+        id="homefixFrame"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="homefix-how" aria-label="How HomeFix Check works">
+    <p class="section-label">Three steps, under 2 minutes</p>
+    <h2>How HomeFix Check Works</h2>
+    <div class="homefix-steps">
+      <div class="homefix-step">
+        <div class="homefix-step-num" aria-hidden="true">1</div>
+        <h3>Describe the Problem</h3>
+        <p>Tell us what's happening — a noise, a leak, a smell, something broken. Select your category and describe it in your own words.</p>
+      </div>
+      <div class="homefix-step">
+        <div class="homefix-step-num" aria-hidden="true">2</div>
+        <h3>Upload a Photo</h3>
+        <p>A quick photo helps us give you a more accurate diagnosis and cost estimate. Optional, but recommended.</p>
+      </div>
+      <div class="homefix-step">
+        <div class="homefix-step-num" aria-hidden="true">3</div>
+        <h3>Get Your Answer</h3>
+        <p>Receive an instant diagnosis, a real cost range for Highlands County, and a direct connection to a licensed local contractor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="homefix-cta" aria-label="Get service from a licensed contractor">
+    <h2>Need a licensed contractor right now?</h2>
+    <p>Skip the diagnosis tool and request service directly. A licensed Highlands County contractor will follow up fast.</p>
+    <a href="/get-service.html" class="btn btn-primary">Request Service Now</a>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <strong style="font-family:var(--font-heading); color:var(--color-primary); font-size:1rem;">Highlands Home Services Network</strong>
+      <div class="footer-meta">
+        Obsidian Peak Holdings LLC · Digital lead generation &amp; referral service<br>
+        Highlands County, Florida · Service area business — no public office
+      </div>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="/about.html">About</a>
+      <a href="/how-it-works.html">How It Works</a>
+      <a href="/contractor-leads/hvac.html">HVAC Leads</a>
+      <a href="/get-service.html">For Homeowners</a>
+      <a href="/home-check">HomeFix Check</a>
+      <a href="/apply.html">Apply</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms</a>
+    </nav>
+  </div>
+  <div class="footer-legal">
+    <div class="container">
+      <p class="legal-disclaimer">Highlands Home Services Network is a digital lead generation and referral service operated by Obsidian Peak Holdings LLC. We are not a licensed contractor. All work is performed by independent licensed professionals.</p>
+      <p class="footer-copyright">&copy; <span id="footer-year">2026</span> Obsidian Peak Holdings LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Dynamic iframe height -->
+<script>
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  // Auto-resize iframe to fit PWA content
+  var frame = document.getElementById('homefixFrame');
+  window.addEventListener('message', function(e) {
+    if (e.origin !== 'https://check.highlandshomeservicesnetwork.com') return;
+    if (e.data && e.data.type === 'resize' && e.data.height) {
+      frame.style.minHeight = e.data.height + 'px';
+    }
+  });
+
+  // PWA install prompt
+  var deferredPrompt;
+  var installBanner = document.getElementById('pwaInstallBanner');
+  var installBtn = document.getElementById('pwaInstallBtn');
+
+  window.addEventListener('beforeinstallprompt', function(e) {
+    e.preventDefault();
+    deferredPrompt = e;
+    installBanner.classList.add('visible');
+  });
+
+  installBtn.addEventListener('click', function() {
+    installBanner.classList.remove('visible');
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(function() {
+      deferredPrompt = null;
+    });
+  });
+
+  window.addEventListener('appinstalled', function() {
+    installBanner.classList.remove('visible');
+  });
+</script>
+
+<script src="https://widgets.leadconnectorhq.com/loader.js"
+  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+  data-widget-id="69b95c10fda8697448df8e56"></script>
+
+</body>
+</html>
