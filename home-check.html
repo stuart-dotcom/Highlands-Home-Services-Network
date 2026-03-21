@@ -13,7 +13,7 @@
   <meta charset="utf-8">
   <title>HomeFix Check — Free Home Diagnosis Tool | HHSN</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta name="description" content="Describe your home problem and get an instant diagnosis, cost estimate, and licensed Highlands County contractor match — free, in under 2 minutes.">
+  <meta name="description" content="Describe your home problem and get an instant diagnosis, cost estimate, and a connection to a licensed Highlands County contractor — free.">
   <link rel="canonical" href="https://highlandshomeservicesnetwork.com/home-check">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="HomeFix Check — Free Home Diagnosis Tool | HHSN">
-  <meta property="og:description" content="Describe your home problem and get an instant diagnosis, cost estimate, and licensed Highlands County contractor match — free, in under 2 minutes.">
+  <meta property="og:description" content="Describe your home problem and get an instant diagnosis, cost estimate, and a connection to a licensed Highlands County contractor — free.">
   <meta property="og:url" content="https://highlandshomeservicesnetwork.com/home-check">
   <meta property="og:image" content="https://highlandshomeservicesnetwork.com/images/og-highlands-home-services.jpg">
   <meta property="og:site_name" content="Highlands Home Services Network">
@@ -96,6 +96,29 @@
       min-height: 700px;
       border: none;
       display: block;
+    }
+    /* Cost disclaimer */
+    .homefix-disclaimer {
+      background: #F5F2ED;
+      border-top: 1px solid #e0dcd6;
+      padding: .85rem 1.5rem;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .homefix-disclaimer p {
+      font-size: .78rem;
+      color: #666;
+      line-height: 1.55;
+      margin: 0;
+      font-family: var(--font-body, 'Inter', sans-serif);
+    }
+    .homefix-disclaimer a {
+      color: var(--color-primary, #1B3A5C);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    .homefix-disclaimer a:hover {
+      color: var(--color-accent, #C8972B);
     }
     /* Install banner */
     .pwa-install-banner {
@@ -257,7 +280,7 @@
   <section class="homefix-hero" aria-label="HomeFix Check home diagnosis tool">
     <p class="section-label">Free Homeowner Tool — Highlands County</p>
     <h1>What's wrong with your home? Get an instant answer.</h1>
-    <p>Describe the problem, upload a photo, and we'll tell you exactly what it is, what it costs to fix, and connect you with a licensed local contractor — in under 2 minutes.</p>
+    <p>Describe the problem, upload a photo, and we'll tell you exactly what it is, what it costs to fix, and connect you with a licensed local contractor.</p>
     <div class="homefix-trust-row">
       <span>Free to use</span>
       <span>No account required</span>
@@ -284,11 +307,26 @@
         id="homefixFrame"
       ></iframe>
     </div>
+    <!-- COST ESTIMATE DISCLAIMER -->
+    <div class="homefix-disclaimer" role="note" aria-label="Cost estimate disclaimer">
+      <p>
+        <strong>About cost estimates:</strong> All repair cost ranges shown are estimates based on
+        average labor and materials pricing for Central Florida, sourced from current industry
+        data including
+        <a href="https://www.homeadvisor.com/cost-guides/" target="_blank" rel="noopener noreferrer">HomeAdvisor Cost Guides</a>,
+        <a href="https://www.angi.com/articles/how-much-does-it-cost.htm" target="_blank" rel="noopener noreferrer">Angi Cost Reports</a>,
+        and the
+        <a href="https://www.bls.gov/regions/southeast/florida.htm" target="_blank" rel="noopener noreferrer">U.S. Bureau of Labor Statistics (Florida region)</a>.
+        Actual costs will vary based on your specific situation, contractor, and materials.
+        These estimates are provided for informational purposes only and do not constitute a quote or binding price.
+        Always request a written estimate from your contractor before authorizing any work.
+      </p>
+    </div>
   </section>
 
   <!-- HOW IT WORKS -->
   <section class="homefix-how" aria-label="How HomeFix Check works">
-    <p class="section-label">Three steps, under 2 minutes</p>
+    <p class="section-label">Simple, fast, and free</p>
     <h2>How HomeFix Check Works</h2>
     <div class="homefix-steps">
       <div class="homefix-step">
@@ -304,7 +342,7 @@
       <div class="homefix-step">
         <div class="homefix-step-num" aria-hidden="true">3</div>
         <h3>Get Your Answer</h3>
-        <p>Receive an instant diagnosis, a real cost range for Highlands County, and a direct connection to a licensed local contractor.</p>
+        <p>Receive an instant diagnosis, a real cost range for Central Florida, and a direct connection to a licensed local contractor.</p>
       </div>
     </div>
   </section>
@@ -312,7 +350,7 @@
   <!-- BOTTOM CTA -->
   <section class="homefix-cta" aria-label="Get service from a licensed contractor">
     <h2>Need a licensed contractor right now?</h2>
-    <p>Skip the diagnosis tool and request service directly. A licensed Highlands County contractor will follow up fast.</p>
+    <p>Skip the diagnosis tool and request service directly. A licensed Highlands County contractor will follow up.</p>
     <a href="/get-service.html" class="btn btn-primary">Request Service Now</a>
   </section>
 
@@ -324,8 +362,8 @@
     <div class="footer-brand">
       <strong style="font-family:var(--font-heading); color:var(--color-primary); font-size:1rem;">Highlands Home Services Network</strong>
       <div class="footer-meta">
-        Obsidian Peak Holdings LLC · Digital lead generation &amp; referral service<br>
-        Highlands County, Florida · Service area business — no public office
+        Obsidian Peak Holdings LLC &middot; Digital lead generation &amp; referral service<br>
+        Highlands County, Florida &middot; Service area business — no public office
       </div>
     </div>
     <nav class="footer-nav" aria-label="Footer navigation">
