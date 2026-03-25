@@ -352,11 +352,16 @@ p  { font-size: 1.1rem; margin-bottom: 1.25rem; }
 
 .aeo-definition {
   font-size: 1rem;
-  line-height: 1.85; /* ↑ WS was 1.7 */
+  line-height: 1.85;
   color: rgba(255,255,255,0.88);
   max-width: 780px;
-  margin: 0 0 2rem; /* ↑ WS was 24px */
+  margin: 0 0 2rem;
+  background: #1B3A5C;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
 }
+
 
 /* PAGE HERO — mobile */
 @media (max-width: 768px) {
