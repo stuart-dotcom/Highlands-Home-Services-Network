@@ -34,6 +34,82 @@ body {
   font-family: var(--font-body);
   color: var(--color-dark);
   background: var(--color-light);
+
+   /* ── HomeFix Check Callout Banner ─────────────────────── */
+.homefix-callout {
+  position: relative;
+  background: linear-gradient(135deg, #1B3A5C 60%, #0f2236 100%);
+  padding: 3.5rem 1.5rem;
+  overflow: hidden;
+}
+.homefix-callout-bg {
+  position: absolute;
+  inset: 0;
+  background: url('/images/bg-how-it-works.jpg') center/cover no-repeat;
+  opacity: .07;
+  pointer-events: none;
+}
+.homefix-callout-inner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.homefix-callout-text {
+  flex: 1 1 320px;
+}
+.homefix-callout-text .section-label {
+  color: #C8972B;
+}
+.homefix-callout-text h2 {
+  color: #fff;
+  font-family: var(--font-heading, 'Montserrat', sans-serif);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  margin-bottom: .75rem;
+  line-height: 1.2;
+}
+.homefix-callout-sub {
+  color: rgba(255,255,255,.82);
+  font-size: .95rem;
+  line-height: 1.65;
+  margin-bottom: 1rem;
+  max-width: 520px;
+}
+.homefix-callout-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.25rem;
+  font-size: .8rem;
+  color: rgba(255,255,255,.65);
+}
+.homefix-callout-trust span {
+  font-weight: 600;
+  color: #C8972B;
+}
+.homefix-callout-cta {
+  flex: 0 0 auto;
+  text-align: center;
+}
+.homefix-callout-btn {
+  display: inline-block;
+  font-size: 1rem;
+  padding: .9rem 2rem;
+  white-space: nowrap;
+}
+.homefix-callout-hint {
+  color: rgba(255,255,255,.5);
+  font-size: .75rem;
+  margin-top: .6rem;
+}
+@media (max-width: 640px) {
+  .homefix-callout-inner { flex-direction: column; text-align: center; }
+  .homefix-callout-trust { justify-content: center; }
+  .homefix-callout-sub { max-width: 100%; }
+}
+
   line-height: 1.8; /* ↑ WS was 1.65 */
   -webkit-font-smoothing: antialiased;
   width: 100%;
